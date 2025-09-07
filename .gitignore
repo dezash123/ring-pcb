@@ -1,0 +1,14 @@
+fp-info-cache
+*.kicad_prl
+*.gbr
+*.drl
+*.pos
+*.rpt
+*.ps
+*.pdf
+*.svg
+*.dxf
+*.plt
+*.net
+*.lck
+*-backups/
