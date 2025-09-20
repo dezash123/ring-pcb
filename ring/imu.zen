@@ -1,0 +1,75 @@
+C = Module("@stdlib/generics/Capacitor.zen")
+R = Module("@stdlib/generics/Resistor.zen")
+
+vdd = io("vdd", Net)
+sda = io("sda", Net)
+scl = io("scl", Net)
+int1 = io("int1", Net)
+int2 = io("int2", Net)
+gnd = io("gnd", Net)
+
+lsm6dox = Symbol(
+    definition = [
+        ("SDO/SA0", ["1"]),
+        ("SDx", ["2"]),
+        ("SCx", ["3"]),
+        ("INT1", ["4"]),
+        ("VDDIO", ["5"]),
+        ("GND", ["6", "7"]),
+        ("VDD", ["8"]),
+        ("INT2", ["9"]),
+        ("OCS_Aux", ["10"]),
+        ("SDO_Aux", ["11"]),
+        ("CS", ["12"]),
+        ("SCL", ["13"]),
+        ("SDA", ["14"]),
+    ]
+)
+
+Component(
+  name = "U3",
+  footprint = File("@kicad-footprints/Package_LGA.pretty/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y.kicad_mod"),
+  symbol = lsm6dox,
+  pins = {
+    "SDA": sda,
+    "SCL": scl,
+
+    "INT1": int1,
+    "INT2": int2,
+
+    "VDD": vdd,
+    "VDDIO": vdd,
+    "GND": gnd,
+
+    "CS": vdd,     
+    "SDO/SA0": gnd,
+    "SDx": gnd,
+    "SCx": gnd,
+    "OCS_Aux": Net(),
+    "SDO_Aux": Net(),
+  },
+)
+
+C(
+  name = "C5",
+  value = "100nF",
+  package = "0201",
+  P1 = vdd,
+  P2 = gnd,
+)
+
+C(
+  name = "C6",
+  value = "100nF",
+  package = "0201",
+  P1 = vdd,
+  P2 = gnd,
+)
+
+C(
+  name = "C7",
+  value = "1uF",
+  package = "0402",
+  P1 = vdd,
+  P2 = gnd,
+)

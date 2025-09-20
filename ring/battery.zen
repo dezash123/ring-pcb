@@ -1,0 +1,83 @@
+R = Module("@stdlib/generics/Resistor.zen")
+C = Module("@stdlib/generics/Capacitor.zen")
+
+vbatt = io("vbatt", Net)
+gnd = io("gnd", Net)
+
+cout = Net()
+dout = Net()
+vm = Net()
+bat = Net()
+vss = Net()
+
+Component(
+  name = "U5",
+  footprint = File("@kicad-footprints/Package_SON.pretty/WSON-6_1.5x1.5mm_P0.5mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Battery_Management.kicad_sym:BQ297xy"),
+  pins = {
+    "Cout": cout,
+    "Dout": dout,
+    "VSS": vss,
+    "V-": vm,
+    "BAT": bat,
+    "NC": NotConnected(),
+  },
+)
+
+qm = Net()
+
+Component(
+  name = "Q1",
+  footprint = File("@kicad-footprints/Package_DFN_QFN.pretty/Texas_PicoStar_DFN-3_0.69x0.60mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Transistor_FET.kicad_sym:CSD13380F3"),
+  pins = {
+    "S": vss,
+    "G": dout,
+    "D": qm,
+  },
+)
+
+Component(
+  name = "Q2",
+  footprint = File("@kicad-footprints/Package_DFN_QFN.pretty/Texas_PicoStar_DFN-3_0.69x0.60mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Transistor_FET.kicad_sym:CSD13380F3"),
+  pins = {
+    "S": gnd,
+    "G": cout,
+    "D": qm,
+  },
+)
+
+R(
+  name = "R3",
+  value = "2.2kohms",
+  package = "0201",
+  P1 = vm,
+  P2 = gnd
+)
+
+R(
+  name = "R4",
+  value = "330ohms",
+  package = "0201",
+  P1 = vbatt,
+  P2 = bat 
+)
+
+C(
+  name = "C33",
+  value = "100nF",
+  package = "0201",
+  P1 = bat,
+  P2 = vss
+)
+
+Component(
+  name = "BT1",
+  footprint = File("Battery.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Device.kicad_sym:Battery"),
+  pins = {
+    "+": vbatt,
+    "-": vss 
+  },
+)

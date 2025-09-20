@@ -1,0 +1,12 @@
+TP = Module("@stdlib/generics/TestPoint.zen")
+
+vbatt = io("vbatt", Net)
+gnd = io("gnd", Net)
+swdio = io("swdio", Net)
+swdclk = io("swdclk", Net)
+
+TP(
+  name = "TP5",
+  variant = "Pad_D1.5mm",
+  P1 = vbatt,
+)

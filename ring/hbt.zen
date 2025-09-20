@@ -1,0 +1,57 @@
+C = Module("@stdlib/generics/Capacitor.zen")
+
+vbatt = io("vbatt", Net)
+vdd = io("vdd", Net)
+sda = io("sda", Net)
+scl = io("scl", Net)
+int = io("int", Net)
+gnd = io("gnd", Net)
+
+Component(
+  name = "U4",
+  footprint = File("@kicad-footprints/OptoDevice.pretty/Maxim_OLGA-14_3.3x5.6mm_P0.8mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Sensor.kicad_sym:MAX30102"),
+  pins = {
+    "GND": gnd,
+    "PGND": gnd,
+    "VLED+": vbatt,
+    "VDD": vdd,
+    "SDA": sda,
+    "SCL": scl,
+    "~{INT}": int,
+    "NC": Net(),
+  },
+)
+
+C(
+  name = "C8",
+  value = "4.7uF",
+  package = "0402",
+  P1 = vdd,
+  P2 = gnd
+)
+
+C(
+  name = "C9",
+  value = "100nF",
+  package = "0201",
+  P1 = vdd,
+  P2 = gnd
+)
+
+C(
+  name = "C10",
+  value = "10uF",
+  package = "0402",
+  P1 = vbatt,
+  P2 = gnd, 
+)
+
+C(
+  name = "C11",
+  value = "100nF",
+  package = "0201",
+  P1 = vbatt,
+  P2 = gnd, 
+)
+

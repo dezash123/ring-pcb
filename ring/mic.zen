@@ -1,0 +1,28 @@
+C = Module("@stdlib/generics/Capacitor.zen")
+R = Module("@stdlib/generics/Resistor.zen")
+
+vdd = io("vdd", Net)
+clk = io("clk", Net)
+data = io("data", Net)
+gnd = io("gnd", Net)
+
+Component(
+  name = "MK1",
+  footprint = File("@kicad-footprints/Sensor_Audio.pretty/Infineon_PG-LLGA-5-1.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Sensor_Audio.kicad_sym:IM69D130"),
+  pins = {
+    "GND": gnd,
+    "SELECT": gnd,
+    "VDD": vdd,
+    "DATA": data,
+    "CLOCK": clk,
+  },
+)
+
+C(
+  name = "C26",
+  value = "100nF",
+  package = "0201",
+  P1 = vdd,
+  P2 = gnd
+)

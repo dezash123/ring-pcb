@@ -1,0 +1,111 @@
+C = Module("@stdlib/generics/Capacitor.zen")
+R = Module("@stdlib/generics/Resistor.zen")
+Y = Module("@stdlib/generics/Crystal.zen")
+FB = Module("@stdlib/generics/FerriteBead.zen")
+
+vdd = io("vdd", Net)
+mic_clk = io("mic_clk", Net)
+mic_data = io("mic_data", Net)
+gnd = io("gnd", Net)
+
+xin = Net()
+xout = Net()
+
+Y(
+  name = "Y1",
+  frequency = "38.4MHz",
+  package = "1210_4Pin",
+  XIN = xin,
+  XOUT = xout,
+  GND = gnd, 
+)
+
+decouple = Net()
+
+cpu = Symbol(
+    name = "EFR32BG27C140F768IM32-B",
+    definition = [
+        ("PC00", ["1"]),
+        ("PC01", ["2"]),
+        ("PC02", ["3"]),
+        ("PC03", ["4"]),
+        ("PC04", ["5"]),
+        ("PC05", ["6"]),
+        ("HFXTAL_I", ["7"]),
+        ("HFXTAL_O", ["8"]),
+        ("RESETn", ["9"]),
+        ("RFVDD", ["10"]),
+        ("RFVSS", ["11"]),
+        ("RF2G4_IO", ["12"]),
+        ("PAVDD", ["13"]),
+        ("PB02", ["14"]),
+        ("PB01", ["15"]),
+        ("PB00", ["16"]),
+        ("PA00", ["17"]),
+        ("PA01", ["18"]),
+        ("PA02", ["19"]),
+        ("PA03", ["20"]),
+        ("PA04", ["21"]),
+        ("PA05", ["22"]),
+        ("PA06", ["23"]),
+        ("DECOUPLE", ["24"]),
+        ("VREGSW", ["25"]),
+        ("VREGVDD", ["26"]),
+        ("VREGVSS", ["27"]),
+        ("DVDD", ["28"]),
+        ("AVDD", ["29"]),
+        ("IOVDD", ["30"]),
+        ("PD01", ["31"]),
+        ("PD00", ["32"]),
+        ("GND", ["33"]),
+    ]
+)
+
+Component(
+    name = "U7",
+    footprint = File("@kicad-footprints/Package_DFN_QFN.pretty/QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm.kicad_mod"),
+    symbol = cpu,
+    pins = {
+        "PC00": gnd, 
+        "PC01": gnd, 
+        "PC02": gnd, 
+        "PC03": gnd, 
+        "PC04": gnd, 
+        "PC05": gnd, 
+        "HFXTAL_I": xin,
+        "HFXTAL_O": xout,
+        "RESETn": gnd, 
+        "RFVDD":  gnd, 
+        "RFVSS":  gnd, 
+        "RF2G4_IO": gnd,
+        "PAVDD":  gnd, 
+        "PB02":   gnd, 
+        "PB01":   gnd, 
+        "PB00":   gnd, 
+        "PA00":   gnd, 
+        "PA01":   gnd, 
+        "PA02":   gnd, 
+        "PA03":   gnd, 
+        "PA04":   gnd, 
+        "PA05":   gnd, 
+        "PA06":   gnd, 
+        "DECOUPLE": decouple,
+        "VREGSW": gnd,
+        "VREGVDD": vdd,
+        "VREGVSS": gnd,
+        "DVDD": vdd,
+        "AVDD": vdd,
+        "IOVDD": vdd,
+        "PD01": mic_clk,
+        "PD00": mic_data,
+        "GND": gnd
+    },
+)
+
+C(
+    name = "C14",
+    value = "1uF",
+    package = "0402",
+    P1 = decouple,
+    P2 = gnd,
+)

@@ -1,0 +1,29 @@
+C = Module("@stdlib/generics/Capacitor.zen")
+
+vdd = io("vdd", Net)
+sda = io("sda", Net)
+scl = io("scl", Net)
+int = io("int", Net)
+gnd = io("gnd", Net)
+
+Component(
+  name = "U1",
+  footprint = File("@kicad-footprints/Package_SON.pretty/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Sensor_Temperature.kicad_sym:TMP117xxDRV"),
+  pins = {
+    "GND": gnd,
+    "ADD0": gnd,
+    "ALERT": int,
+    "V+": vdd,
+    "SDA": sda,
+    "SCL": scl,
+  },
+)
+
+C(
+  name = "C3",
+  value = "100nF",
+  package = "0201",
+  P1 = vdd,
+  P2 = gnd
+)

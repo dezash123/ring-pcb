@@ -12,3 +12,7 @@ fp-info-cache
 *.net
 *.lck
 *-backups/
+
+.direnv/
+
+.pcb/

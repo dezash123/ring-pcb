@@ -1,0 +1,106 @@
+load("@stdlib/properties.zen", "Layout")
+
+vbatt = Net("VBATT")
+vdd = Net("VDD")
+sda = Net("SDA")
+scl = Net("SCL")
+gnd = Net("GND")
+
+port = Module("port.zen")
+port(
+  name = "port",
+  vbatt = vbatt,
+  gnd = gnd,
+  swdio = sda,
+  swdclk = scl,
+)
+
+battery = Module("battery.zen")
+battery(
+  name = "battery",
+  vbatt = vbatt,
+  gnd = gnd,
+)
+
+bat_low = Net()
+
+batman = Module("batman.zen")
+batman(
+  name = "batman",
+  vbatt = vbatt,
+  vdd = vdd,
+  sda = sda,
+  scl = scl,
+  int = bat_low,
+  gnd = gnd,
+)
+
+vreg = Module("vreg.zen")
+vreg(
+  name = "vreg",
+  vbatt = vbatt,
+  vdd = vdd,
+  gnd = gnd,
+)
+
+hbt_int = Net()
+
+hbt = Module("hbt.zen")
+hbt(
+  name = "hbt",
+  vbatt = vbatt,
+  vdd = vdd,
+  sda = sda,
+  scl = scl,
+  int = hbt_int,
+  gnd = gnd,
+)
+
+tmp_int = Net()
+
+tmp = Module("skintmp.zen")
+tmp(
+  name = "tmp",
+  vdd = vdd,
+  sda = sda,
+  scl = scl,
+  int = hbt_int,
+  gnd = gnd,
+)
+
+mic_clk = Net()
+mic_data = Net()
+
+mic = Module("mic.zen")
+mic(
+  name = "mic",
+  vdd = vdd,
+  clk = mic_clk,
+  data = mic_data,
+  gnd = gnd,
+)
+
+imu_int1 = Net()
+imu_int2 = Net()
+
+imu = Module("imu.zen")
+imu(
+  name = "imu",
+  vdd = vdd,
+  sda = sda,
+  scl = scl,
+  int1 = imu_int1,
+  int2 = imu_int2,
+  gnd = gnd,
+)
+
+cpu = Module("cpu.zen")
+cpu(
+  name = "cpu",
+  vdd = vdd,
+  gnd = gnd,
+  mic_clk = mic_clk,
+  mic_data = mic_data,
+)
+
+Layout("layout", "layout/")
