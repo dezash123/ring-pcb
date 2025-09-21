@@ -1,9 +1,12 @@
 load("@stdlib/properties.zen", "Layout")
 
+TP = Module("@stdlib/generics/TestPoint.zen")
+R = Module("@stdlib/generics/Resistor.zen")
+
 vbatt = Net("VBATT")
 vdd = Net("VDD")
-sda = Net("SDA")
-scl = Net("SCL")
+sda = Net("sda")
+scl = Net("scl")
 gnd = Net("GND")
 
 port = Module("port.zen")
@@ -22,7 +25,7 @@ battery(
   gnd = gnd,
 )
 
-bat_low = Net()
+bat_low = Net("bat_low")
 
 batman = Module("batman.zen")
 batman(
@@ -43,7 +46,7 @@ vreg(
   gnd = gnd,
 )
 
-hbt_int = Net()
+hbt_int = Net("hbt_int")
 
 hbt = Module("hbt.zen")
 hbt(
@@ -56,7 +59,7 @@ hbt(
   gnd = gnd,
 )
 
-tmp_int = Net()
+tmp_int = Net("tmp_int")
 
 tmp = Module("skintmp.zen")
 tmp(
@@ -64,12 +67,12 @@ tmp(
   vdd = vdd,
   sda = sda,
   scl = scl,
-  int = hbt_int,
+  int = tmp_int,
   gnd = gnd,
 )
 
-mic_clk = Net()
-mic_data = Net()
+mic_clk = Net("mic_clk")
+mic_data = Net("mic_data")
 
 mic = Module("mic.zen")
 mic(
@@ -80,8 +83,8 @@ mic(
   gnd = gnd,
 )
 
-imu_int1 = Net()
-imu_int2 = Net()
+imu_int1 = Net("imu_int1")
+imu_int2 = Net("imu_int2")
 
 imu = Module("imu.zen")
 imu(
@@ -94,30 +97,55 @@ imu(
   gnd = gnd,
 )
 
+rst = Net("rst")
+
+TP(
+  name = "TP1",
+  variant = "Pad_D1.0mm",
+  P1 = rst,
+)
+
+R(
+  name = "R1",
+  value = "4.7kohms",
+  package = "0201",
+  P1 = vdd,
+  P2 = sda,
+)
+
+R(
+  name = "R6",
+  value = "4.7kohms",
+  package = "0201",
+  P1 = vdd,
+  P2 = scl,
+)
+
 cpu = Module("cpu.zen")
 cpu(
   name = "cpu",
   vdd = vdd,
   gnd = gnd,
-  rstn = gnd,
-  pc00 = gnd,
-  pc01 = gnd,
-  pc02 = gnd,
-  pc03 = gnd,
-  pc04 = gnd,
-  pc05 = gnd,
+  rstn = rst,
 
-  pb00 = gnd,
-  pb01 = gnd,
-  pb02 = gnd,
+  pc00 = bat_low,
+  pc01 = hbt_int,
+  pc02 = imu_int2,
+  pc03 = sda,
+  pc04 = scl,
+  pc05 = Net(),
 
-  pa00 = gnd,
-  pa01 = gnd,
-  pa02 = gnd,
-  pa03 = gnd,
-  pa04 = gnd,
-  pa05 = gnd,
-  pa06 = gnd,
+  pb00 = imu_int1,
+  pb01 = Net(),
+  pb02 = Net(),
+
+  pa00 = tmp_int,
+  pa01 = Net(),
+  pa02 = Net(),
+  pa03 = Net(),
+  pa04 = Net(),
+  pa05 = Net(),
+  pa06 = Net(),
 
   pd00 = mic_data,
   pd01 = mic_clk,

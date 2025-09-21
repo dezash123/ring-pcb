@@ -28,7 +28,15 @@ C(
 C(
   name = "C28",
   value = "1uF",
-  package = "0402",
+  package = "0201",
+  P1 = vdd,
+  P2 = gnd
+)
+
+C(
+  name = "C50",
+  value = "1uF",
+  package = "0201",
   P1 = vdd,
   P2 = gnd
 )

@@ -4,11 +4,11 @@ C = Module("@stdlib/generics/Capacitor.zen")
 vbatt = io("vbatt", Net)
 gnd = io("gnd", Net)
 
-cout = Net()
-dout = Net()
-vm = Net()
-bat = Net()
-vss = Net()
+cout = Net("bat_cout")
+dout = Net("bat_dout")
+vm = Net("bat_vm")
+bat = Net("bat2")
+vss = Net("bat_vss")
 
 Component(
   name = "U5",
@@ -24,7 +24,7 @@ Component(
   },
 )
 
-qm = Net()
+qm = Net("bat_qm")
 
 Component(
   name = "Q1",

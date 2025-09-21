@@ -32,7 +32,7 @@ C(
 # BLM18AG102SN1 recommended
 FB(
   name = "FB1",
-  package = "0603",
+  package = "0402",
   P1 = vdd,
   P2 = vout,
 )

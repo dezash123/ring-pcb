@@ -4,9 +4,9 @@ C = Module("@stdlib/generics/Capacitor.zen")
 ant = io("ant", Net)
 gnd = io("gnd", Net)
 
-out1 = Net()
-out2 = Net()
-out3 = Net()
+out1 = Net("out1")
+out2 = Net("out2")
+out3 = Net("out3")
 
 L(
   name = "L1",
@@ -17,7 +17,7 @@ L(
 )
 
 L(
-  name = "L1",
+  name = "L2",
   value = "3.2nH",
   package = "0201",
   P1 = out1, 

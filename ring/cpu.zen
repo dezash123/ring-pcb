@@ -29,8 +29,8 @@ pa06 = io("pa06", Net)
 pd00 = io("pd00", Net)
 pd01 = io("pd01", Net)
 
-xin = Net()
-xout = Net()
+xin = Net("xin")
+xout = Net("xout")
 
 Y(
   name = "Y1",
@@ -41,7 +41,7 @@ Y(
   GND = gnd, 
 )
 
-decouple = Net()
+decouple = Net("decouple")
 
 C(
     name = "C14",
@@ -53,8 +53,8 @@ C(
 
 rf_power = Module("rf_power.zen")
 
-rfvdd = Net()
-pavdd = Net()
+rfvdd = Net("rfvdd")
+pavdd = Net("pavdd")
 
 rf_power(
   name = "rfvdd",
@@ -134,7 +134,7 @@ C(
     P2 = gnd,
 )
 
-ant = Net()
+ant = Net("ant")
 
 antenna = Module("antenna.zen")
 

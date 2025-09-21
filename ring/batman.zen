@@ -8,8 +8,8 @@ scl = io("scl", Net)
 int = io("int", Net)
 gnd = io("gnd", Net)
 
-vdd_gen = Net()
-bin = Net()
+vdd_gen = Net("batman_vdd_out")
+bin = Net("bin")
 
 bq27427 = Symbol(
     definition = [
