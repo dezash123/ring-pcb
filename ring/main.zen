@@ -9,13 +9,16 @@ sda = Net("sda")
 scl = Net("scl")
 gnd = Net("GND")
 
+swdio = Net("swdio")
+swclk = Net("swclk")
+
 port = Module("port.zen")
 port(
   name = "port",
   vbatt = vbatt,
   gnd = gnd,
-  swdio = sda,
-  swdclk = scl,
+  swdio = swdio,
+  swclk = swclk,
 )
 
 battery = Module("battery.zen")
@@ -128,11 +131,11 @@ cpu(
   gnd = gnd,
   rstn = rst,
 
-  pc00 = bat_low,
-  pc01 = hbt_int,
-  pc02 = imu_int2,
+  pc00 = hbt_int,
+  pc01 = imu_int2,
+  pc02 = scl,
   pc03 = sda,
-  pc04 = scl,
+  pc04 = bat_low,
   pc05 = Net(),
 
   pb00 = imu_int1,
@@ -140,8 +143,8 @@ cpu(
   pb02 = Net(),
 
   pa00 = tmp_int,
-  pa01 = Net(),
-  pa02 = Net(),
+  pa01 = swclk,
+  pa02 = swdio,
   pa03 = Net(),
   pa04 = Net(),
   pa05 = Net(),

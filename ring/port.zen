@@ -3,7 +3,7 @@ TP = Module("@stdlib/generics/TestPoint.zen")
 vbatt = io("vbatt", Net)
 gnd = io("gnd", Net)
 swdio = io("swdio", Net)
-swclk = io("swdclk", Net)
+swclk = io("swclk", Net)
 
 Component(
   name = "D1",
