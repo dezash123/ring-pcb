@@ -3,10 +3,65 @@ TP = Module("@stdlib/generics/TestPoint.zen")
 vbatt = io("vbatt", Net)
 gnd = io("gnd", Net)
 swdio = io("swdio", Net)
-swdclk = io("swdclk", Net)
+swclk = io("swdclk", Net)
+
+Component(
+  name = "D1",
+  footprint = File("@kicad-footprints/Diode_SMD.pretty/D_SOD-923.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Diode.kicad_sym:ESD9B5.0ST5G"),
+  pins = {
+    "A1": vbatt,
+    "A2": gnd,
+  },
+)
+
+TP(
+  name = "TP2",
+  variant = "Pad_D2.0mm",
+  P1 = vbatt,
+)
+
+Component(
+  name = "D2",
+  footprint = File("@kicad-footprints/Diode_SMD.pretty/D_SOD-923.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Diode.kicad_sym:ESD9B3.3ST5G"),
+  pins = {
+    "A1": swdio,
+    "A2": gnd,
+  },
+)
+
+TP(
+  name = "TP3",
+  variant = "Pad_D1.0mm",
+  P1 = swdio,
+)
+
+Component(
+  name = "D3",
+  footprint = File("@kicad-footprints/Diode_SMD.pretty/D_SOD-923.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Diode.kicad_sym:ESD9B3.3ST5G"),
+  pins = {
+    "A1": swclk,
+    "A2": gnd,
+  },
+)
+
+TP(
+  name = "TP4",
+  variant = "Pad_D1.0mm",
+  P1 = swclk,
+)
 
 TP(
   name = "TP5",
-  variant = "Pad_D1.5mm",
-  P1 = vbatt,
+  variant = "Pad_D1.0mm",
+  P1 = gnd,
 )
+
+TP(
+  name = "TP6",
+  variant = "Pad_D1.0mm",
+  P1 = gnd,
+)
+

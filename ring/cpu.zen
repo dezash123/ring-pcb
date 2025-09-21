@@ -71,9 +71,78 @@ rf_power(
 )
 
 vregvdd = vdd
+
+C(
+    name = "C19",
+    value = "100nF",
+    package = "0201",
+    P1 = vregvdd,
+    P2 = gnd,
+)
+
 dvdd = vdd
+
+C(
+    name = "C18",
+    value = "100nF",
+    package = "0201",
+    P1 = dvdd,
+    P2 = gnd,
+)
+
+C(
+    name = "C17",
+    value = "10uF",
+    package = "0402",
+    P1 = dvdd,
+    P2 = gnd,
+)
+
 avdd = vdd
+
+C(
+    name = "C21",
+    value = "10nF",
+    package = "0201",
+    P1 = avdd,
+    P2 = gnd,
+)
+
+C(
+    name = "C20",
+    value = "1uF",
+    package = "0402",
+    P1 = avdd,
+    P2 = gnd,
+)
+
 iovdd = vdd
+
+C(
+    name = "C23",
+    value = "100nF",
+    package = "0201",
+    P1 = iovdd,
+    P2 = gnd,
+)
+
+C(
+    name = "C22",
+    value = "1uF",
+    package = "0402",
+    P1 = iovdd,
+    P2 = gnd,
+)
+
+ant = Net()
+
+antenna = Module("antenna.zen")
+
+antenna(
+  name = "ant",
+  ant = ant,
+  gnd = gnd,
+)
 
 cpu = Symbol(
     name = "EFR32BG27C140F768IM32-B",
@@ -145,7 +214,7 @@ Component(
         "HFXTAL_O": xout,
 
         "RESETn": rstn, 
-        "RF2G4_IO": gnd,
+        "RF2G4_IO": ant,
 
         "PAVDD":  pavdd, 
         "RFVDD":  rfvdd, 
