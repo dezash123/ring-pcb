@@ -1,34 +1,44 @@
-INFO: Loading schematic data from /tmp/.tmpF4wOBs/netlist.json
-INFO: Parsing JSON netlist from /tmp/.tmpF4wOBs/netlist.json
-INFO: Found module batman.C11 with layout_path: None
-INFO: Found module hbt.C8 with layout_path: None
-INFO: Found module hbt with layout_path: None
-INFO: Found module hbt.C9 with layout_path: None
+INFO: Loading schematic data from /tmp/.tmptWzk2O/netlist.json
+INFO: Parsing JSON netlist from /tmp/.tmptWzk2O/netlist.json
+INFO: Found module cpu.pavdd.C1 with layout_path: None
 INFO: Found module hbt.C10 with layout_path: None
-INFO: Found module cpu with layout_path: None
-INFO: Found module imu with layout_path: None
-INFO: Found module battery with layout_path: None
-INFO: Found module battery.R3 with layout_path: None
 INFO: Found module mic with layout_path: None
-INFO: Found module imu.C7 with layout_path: None
-INFO: Found module batman.C34 with layout_path: None
-INFO: Found module tmp.C3 with layout_path: None
-INFO: Found module mic.C26 with layout_path: None
-INFO: Found module imu.C6 with layout_path: None
-INFO: Found module batman.C4 with layout_path: None
 INFO: Found module cpu.C14 with layout_path: None
-INFO: Found module batman with layout_path: None
-INFO: Found module vreg with layout_path: None
-INFO: Found module hbt.C11 with layout_path: None
-INFO: Found module battery.R4 with layout_path: None
-INFO: Found module battery.C33 with layout_path: None
-INFO: Found module imu.C5 with layout_path: None
-INFO: Found module tmp with layout_path: None
 INFO: Found module port.TP5 with layout_path: None
-INFO: Found module port with layout_path: None
-INFO: Found module vreg.C27 with layout_path: None
-INFO: Found module vreg.C28 with layout_path: None
+INFO: Found module cpu.pavdd.C2 with layout_path: None
+INFO: Found module hbt.C9 with layout_path: None
+INFO: Found module battery.R3 with layout_path: None
+INFO: Found module batman with layout_path: None
+INFO: Found module imu.C6 with layout_path: None
+INFO: Found module battery.C33 with layout_path: None
+INFO: Found module cpu.rfvdd.C1 with layout_path: None
+INFO: Found module cpu.rfvdd.FB1 with layout_path: None
+INFO: Found module tmp with layout_path: None
+INFO: Found module batman.C11 with layout_path: None
+INFO: Found module cpu with layout_path: None
+INFO: Found module cpu.rfvdd with layout_path: None
+INFO: Found module cpu.pavdd.C3 with layout_path: None
+INFO: Found module imu.C5 with layout_path: None
+INFO: Found module imu with layout_path: None
+INFO: Found module batman.C34 with layout_path: None
+INFO: Found module vreg with layout_path: None
+INFO: Found module hbt.C8 with layout_path: None
 INFO: Found module cpu.Y1 with layout_path: None
+INFO: Found module hbt.C11 with layout_path: None
+INFO: Found module cpu.rfvdd.C3 with layout_path: None
+INFO: Found module batman.C4 with layout_path: None
+INFO: Found module vreg.C28 with layout_path: None
+INFO: Found module imu.C7 with layout_path: None
+INFO: Found module mic.C26 with layout_path: None
+INFO: Found module port with layout_path: None
+INFO: Found module hbt with layout_path: None
+INFO: Found module tmp.C3 with layout_path: None
+INFO: Found module vreg.C27 with layout_path: None
+INFO: Found module cpu.pavdd with layout_path: None
+INFO: Found module cpu.rfvdd.C2 with layout_path: None
+INFO: Found module battery with layout_path: None
+INFO: Found module cpu.pavdd.FB1 with layout_path: None
+INFO: Found module battery.R4 with layout_path: None
 INFO: --------------------------------------------------------------------------------
 INFO: Running step: SetupBoard
 INFO: --------------------------------------------------------------------------------
@@ -46,66 +56,94 @@ INFO: --------------------------------------------------------------------------
 INFO: Starting ImportNetlist...
 DEBUG: Environment setup took 0.000 seconds
 DEBUG: Footprint library map loading took 0.001 seconds
-INFO: dbaf3d89-2482-5fcc-b548-6e7315b0275b (TP1): Adding to board
-INFO: Loading footprint TestPoint_Pad_D1.5mm from /home/dezash/projects/ring/ring/layout/../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/TestPoint.pretty/
-INFO: fb3cca66-5243-56c5-a653-6378be380f40 (U1): Updating metadata
-INFO: 8af6d9cc-290d-5c92-8072-ab7bc0336f51 (U9): Updating metadata
-INFO: f3cc2a80-3520-5d90-bbfe-b0ee0a3ab4c3 (U7): Updating metadata
-INFO: f4a3fdcc-fee8-5d1d-93bb-f3df02d53599 (C15): Updating metadata
-INFO: e4e1d187-9ca0-5a53-ba82-c700d40a53ca (R3): Updating metadata
-INFO: 380516bc-4a6a-577c-bcc6-7f0ef97462c1 (U11): Updating metadata
-INFO: fbe92e9a-59bd-5512-b84c-1afa3474459d (C5): Updating metadata
-INFO: bf26c523-7924-5187-9103-f86a98452230 (U10): Updating metadata
-INFO: dbcb03e4-8339-52a9-bae2-4eb4dd235c56 (C12): Updating metadata
-INFO: cdb2222f-f594-544c-8dc4-a9c59d6bd877 (C11): Updating metadata
-INFO: 412ee531-6df4-5388-92bc-1d8c9dc60409 (U2): Updating metadata
-INFO: 6ed58d81-5652-58d5-8d58-a7d7e4bfdb10 (C10): Updating metadata
-INFO: ee68d577-cfe4-5ad4-abb1-926f6f0b3f09 (U3): Updating metadata
-INFO: 7da687fc-0ee2-5b21-8e86-00ba7cb4806d (U8): Updating metadata
-INFO: 38e7e301-dc39-5862-bc4b-b6fea9380161 (C13): Updating metadata
-INFO: 1ede9d21-b2d6-5ccc-bd9a-ba80854b5432 (C8): Updating metadata
-INFO: 22799189-3654-5a2e-a713-f8775cec8e25 (C3): Updating metadata
-INFO: 20e16c33-b60e-5548-8f05-d489f521c8ad (C7): Updating metadata
-INFO: 2c44b001-58bf-5185-affe-24e9ae1f8040 (R1): Updating metadata
-INFO: 26d2bc06-2b3b-5925-a9c7-551ea3e2dab5 (C9): Updating metadata
-INFO: bb1a363e-0250-5e18-a8ba-5d6cab5fd1fc (U4): Updating metadata
-INFO: a6935ffc-b33f-547e-8059-4b5ece76e690 (C4): Updating metadata
+INFO: 329c8ce6-e04d-5d5a-85cf-85da542598ac (C7): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/ring/layout/../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 688e6d8b-0570-56f7-8bae-14f1fb49f3ab (C6): Adding to board
+INFO: Loading footprint C_0201_0603Metric from /home/dezash/projects/ring/ring/layout/../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 054eb246-5e7b-5bd5-9176-28946d8bc817 (C5): Adding to board
+INFO: Loading footprint C_0201_0603Metric from /home/dezash/projects/ring/ring/layout/../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 186647cf-da26-55a4-b5d3-e754d73eab8d (FB1): Adding to board
+INFO: Loading footprint R_0603_1608Metric from /home/dezash/projects/ring/ring/layout/../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 1ede9d21-b2d6-5ccc-bd9a-ba80854b5432 (C14): Updating metadata
 INFO: edb49511-de30-5815-9b59-0305e97593a9 (C1): Updating metadata
-INFO: 80c9642f-46c5-5631-bf83-c1ea5a9b98f1 (U5): Updating metadata
-INFO: 416ddbc4-8744-5d55-b101-44065736c16c (C6): Updating metadata
-INFO: 93f94a35-099b-5eea-9243-a640a8819c49 (C14): Updating metadata
-INFO: f7c822b9-e5a7-5087-aa69-43919f4d6cb4 (U6): Updating metadata
+INFO: bb1a363e-0250-5e18-a8ba-5d6cab5fd1fc (U4): Updating metadata
+INFO: 26d2bc06-2b3b-5925-a9c7-551ea3e2dab5 (C15): Updating metadata
 INFO: 8ecdeb54-4f9b-55e8-991a-a5d84fb8fdb4 (R2): Updating metadata
+INFO: 38e7e301-dc39-5862-bc4b-b6fea9380161 (C19): Updating metadata
+INFO: a6935ffc-b33f-547e-8059-4b5ece76e690 (C4): Updating metadata
+INFO: fb3cca66-5243-56c5-a653-6378be380f40 (U1): Updating metadata
+INFO: dbcb03e4-8339-52a9-bae2-4eb4dd235c56 (C18): Updating metadata
+INFO: 416ddbc4-8744-5d55-b101-44065736c16c (C12): Updating metadata
+INFO: dbaf3d89-2482-5fcc-b548-6e7315b0275b (TP1): Updating metadata
+INFO: f3cc2a80-3520-5d90-bbfe-b0ee0a3ab4c3 (U7): Updating metadata
+INFO: 412ee531-6df4-5388-92bc-1d8c9dc60409 (U2): Updating metadata
+INFO: 20e16c33-b60e-5548-8f05-d489f521c8ad (C13): Updating metadata
+INFO: fbe92e9a-59bd-5512-b84c-1afa3474459d (C11): Updating metadata
+INFO: 2c44b001-58bf-5185-affe-24e9ae1f8040 (R1): Updating metadata
+INFO: e4e1d187-9ca0-5a53-ba82-c700d40a53ca (R3): Updating metadata
+INFO: cdb2222f-f594-544c-8dc4-a9c59d6bd877 (C17): Updating metadata
+INFO: 22799189-3654-5a2e-a713-f8775cec8e25 (C3): Updating metadata
+INFO: 93f94a35-099b-5eea-9243-a640a8819c49 (C20): Updating metadata
+INFO: 9950a03b-3f6d-53b2-80b4-4218947c2f42 (C9): Updating metadata
+INFO: 7da687fc-0ee2-5b21-8e86-00ba7cb4806d (U8): Updating metadata
+INFO: 8af6d9cc-290d-5c92-8072-ab7bc0336f51 (U9): Updating metadata
+INFO: ee68d577-cfe4-5ad4-abb1-926f6f0b3f09 (U3): Updating metadata
+INFO: f4a3fdcc-fee8-5d1d-93bb-f3df02d53599 (C21): Updating metadata
+INFO: 380516bc-4a6a-577c-bcc6-7f0ef97462c1 (U11): Updating metadata
+INFO: f7c822b9-e5a7-5087-aa69-43919f4d6cb4 (U6): Updating metadata
 INFO: d7464b19-4db9-515d-b387-7be753ecd057 (Y1): Updating metadata
+INFO: 566fe3da-cf41-5b25-b883-d499b5c71000 (C10): Updating metadata
+INFO: 6a9d6f35-a7a6-5b41-91ca-60e9bbbd97e4 (FB2): Updating metadata
 INFO: 153876f6-7ede-569c-8d84-68fba1e36cac (C2): Updating metadata
-INFO: Footprint synchronization took 0.024 seconds
-INFO: Adding net cpu.N259
-INFO: Connecting pad Y1/1 to net cpu.N259
-INFO: Connecting pad U6/7 to net cpu.N259
-INFO: Adding net VDD
-INFO: Connecting pad U1/C2 to net VDD
-INFO: Connecting pad U11/1 to net VDD
-INFO: Connecting pad C15/1 to net VDD
-INFO: Connecting pad U7/11 to net VDD
-INFO: Connecting pad C7/1 to net VDD
-INFO: Connecting pad C8/1 to net VDD
-INFO: Connecting pad U10/5 to net VDD
-INFO: Connecting pad C13/1 to net VDD
-INFO: Connecting pad U9/2 to net VDD
-INFO: Connecting pad C12/1 to net VDD
-INFO: Connecting pad U8/8 to net VDD
-INFO: Connecting pad U8/5 to net VDD
-INFO: Connecting pad U8/12 to net VDD
-INFO: Connecting pad C9/1 to net VDD
-INFO: Connecting pad C10/1 to net VDD
-INFO: Connecting pad C11/1 to net VDD
-INFO: Connecting pad U6/28 to net VDD
-INFO: Connecting pad U6/29 to net VDD
-INFO: Connecting pad U6/26 to net VDD
-INFO: Connecting pad U6/30 to net VDD
+INFO: 80c9642f-46c5-5631-bf83-c1ea5a9b98f1 (U5): Updating metadata
+INFO: bf26c523-7924-5187-9103-f86a98452230 (U10): Updating metadata
+INFO: 6ed58d81-5652-58d5-8d58-a7d7e4bfdb10 (C16): Updating metadata
+INFO: 75627468-ecf8-5d05-83c6-7d2161fe8ad6 (C8): Updating metadata
+INFO: Footprint synchronization took 0.051 seconds
+INFO: Adding net battery.N47
+INFO: Connecting pad U5/4 to net battery.N47
+INFO: Connecting pad U3/2 to net battery.N47
+INFO: Connecting pad C3/2 to net battery.N47
+INFO: Connecting pad U2/2 to net battery.N47
+INFO: Adding net cpu.N342
+INFO: Connecting pad C4/1 to net cpu.N342
+INFO: Connecting pad U6/24 to net cpu.N342
+INFO: Adding net N165
+INFO: Connecting pad U9/3 to net N165
+INFO: Connecting pad U6/31 to net N165
+INFO: Adding net cpu.N360
+INFO: Connecting pad C8/1 to net cpu.N360
+INFO: Connecting pad C9/1 to net cpu.N360
+INFO: Connecting pad C10/1 to net cpu.N360
+INFO: Connecting pad FB2/2 to net cpu.N360
+INFO: Connecting pad U6/10 to net cpu.N360
+INFO: Adding net SCL
+INFO: Connecting pad U1/A3 to net SCL
+INFO: Connecting pad U7/2 to net SCL
+INFO: Connecting pad U10/1 to net SCL
+INFO: Connecting pad U8/13 to net SCL
+INFO: Adding net SDA
+INFO: Connecting pad U1/A2 to net SDA
+INFO: Connecting pad U7/3 to net SDA
+INFO: Connecting pad U10/6 to net SDA
+INFO: Connecting pad U8/14 to net SDA
+INFO: Adding net battery.N46
+INFO: Connecting pad U5/5 to net battery.N46
+INFO: Connecting pad R3/2 to net battery.N46
+INFO: Connecting pad C3/1 to net battery.N46
+INFO: Adding net imu.N218
+INFO: Connecting pad U8/11 to net imu.N218
 INFO: Adding net batman.N85
 INFO: Connecting pad U1/B3 to net batman.N85
 INFO: Connecting pad C2/1 to net batman.N85
+INFO: Adding net N188
+INFO: Connecting pad U8/9 to net N188
+INFO: Adding net battery.N43
+INFO: Connecting pad U5/2 to net battery.N43
+INFO: Connecting pad U4/1 to net battery.N43
+INFO: Adding net battery.N45
+INFO: Connecting pad U5/6 to net battery.N45
+INFO: Connecting pad R2/1 to net battery.N45
 INFO: Adding net GND
 INFO: Connecting pad U4/2 to net GND
 INFO: Connecting pad R2/2 to net GND
@@ -116,60 +154,70 @@ INFO: Connecting pad C2/2 to net GND
 INFO: Connecting pad R1/2 to net GND
 INFO: Connecting pad U11/2 to net GND
 INFO: Connecting pad U11/5 to net GND
-INFO: Connecting pad C14/2 to net GND
-INFO: Connecting pad C15/2 to net GND
+INFO: Connecting pad C20/2 to net GND
+INFO: Connecting pad C21/2 to net GND
 INFO: Connecting pad U7/4 to net GND
 INFO: Connecting pad U7/12 to net GND
-INFO: Connecting pad C7/2 to net GND
-INFO: Connecting pad C8/2 to net GND
-INFO: Connecting pad C5/2 to net GND
-INFO: Connecting pad C6/2 to net GND
+INFO: Connecting pad C13/2 to net GND
+INFO: Connecting pad C14/2 to net GND
+INFO: Connecting pad C11/2 to net GND
+INFO: Connecting pad C12/2 to net GND
 INFO: Connecting pad U10/4 to net GND
 INFO: Connecting pad U10/2 to net GND
-INFO: Connecting pad C13/2 to net GND
-INFO: Connecting pad U9/4 to net GND
+INFO: Connecting pad C19/2 to net GND
 INFO: Connecting pad U9/5 to net GND
-INFO: Connecting pad C12/2 to net GND
+INFO: Connecting pad U9/4 to net GND
+INFO: Connecting pad C18/2 to net GND
 INFO: Connecting pad U8/6 to net GND
 INFO: Connecting pad U8/7 to net GND
+INFO: Connecting pad U8/1 to net GND
 INFO: Connecting pad U8/3 to net GND
 INFO: Connecting pad U8/2 to net GND
-INFO: Connecting pad U8/1 to net GND
+INFO: Connecting pad C15/2 to net GND
+INFO: Connecting pad C16/2 to net GND
+INFO: Connecting pad C17/2 to net GND
+INFO: Connecting pad Y1/4 to net GND
+INFO: Connecting pad Y1/2 to net GND
+INFO: Connecting pad C4/2 to net GND
+INFO: Connecting pad C8/2 to net GND
 INFO: Connecting pad C9/2 to net GND
 INFO: Connecting pad C10/2 to net GND
-INFO: Connecting pad C11/2 to net GND
-INFO: Connecting pad Y1/2 to net GND
-INFO: Connecting pad Y1/4 to net GND
-INFO: Connecting pad U6/16 to net GND
-INFO: Connecting pad U6/5 to net GND
-INFO: Connecting pad U6/23 to net GND
-INFO: Connecting pad U6/27 to net GND
+INFO: Connecting pad C5/2 to net GND
+INFO: Connecting pad C6/2 to net GND
+INFO: Connecting pad C7/2 to net GND
 INFO: Connecting pad U6/1 to net GND
-INFO: Connecting pad U6/25 to net GND
-INFO: Connecting pad U6/9 to net GND
-INFO: Connecting pad U6/13 to net GND
-INFO: Connecting pad U6/17 to net GND
-INFO: Connecting pad U6/14 to net GND
-INFO: Connecting pad U6/33 to net GND
-INFO: Connecting pad U6/3 to net GND
-INFO: Connecting pad U6/2 to net GND
-INFO: Connecting pad U6/6 to net GND
 INFO: Connecting pad U6/11 to net GND
-INFO: Connecting pad U6/18 to net GND
-INFO: Connecting pad U6/12 to net GND
-INFO: Connecting pad U6/10 to net GND
-INFO: Connecting pad U6/22 to net GND
+INFO: Connecting pad U6/5 to net GND
 INFO: Connecting pad U6/19 to net GND
-INFO: Connecting pad U6/20 to net GND
+INFO: Connecting pad U6/27 to net GND
 INFO: Connecting pad U6/15 to net GND
+INFO: Connecting pad U6/16 to net GND
+INFO: Connecting pad U6/2 to net GND
+INFO: Connecting pad U6/20 to net GND
+INFO: Connecting pad U6/14 to net GND
+INFO: Connecting pad U6/3 to net GND
+INFO: Connecting pad U6/17 to net GND
+INFO: Connecting pad U6/33 to net GND
+INFO: Connecting pad U6/22 to net GND
+INFO: Connecting pad U6/6 to net GND
+INFO: Connecting pad U6/12 to net GND
+INFO: Connecting pad U6/23 to net GND
+INFO: Connecting pad U6/18 to net GND
 INFO: Connecting pad U6/4 to net GND
 INFO: Connecting pad U6/21 to net GND
-INFO: Connecting pad C4/2 to net GND
-INFO: Adding net battery.N49
-INFO: Connecting pad U3/3 to net battery.N49
-INFO: Connecting pad U4/3 to net battery.N49
+INFO: Connecting pad U6/9 to net GND
+INFO: Adding net cpu.N337
+INFO: Connecting pad Y1/1 to net cpu.N337
+INFO: Connecting pad U6/7 to net cpu.N337
 INFO: Adding net battery.N48
 INFO: Connecting pad U5/1 to net battery.N48
+INFO: Adding net imu.N217
+INFO: Connecting pad U8/10 to net imu.N217
+INFO: Adding net cpu.N392
+INFO: Connecting pad U6/25 to net cpu.N392
+INFO: Adding net N111
+INFO: Connecting pad U7/13 to net N111
+INFO: Connecting pad U10/3 to net N111
 INFO: Adding net hbt.N137
 INFO: Connecting pad U7/1 to net hbt.N137
 INFO: Connecting pad U7/7 to net hbt.N137
@@ -177,127 +225,132 @@ INFO: Connecting pad U7/8 to net hbt.N137
 INFO: Connecting pad U7/14 to net hbt.N137
 INFO: Connecting pad U7/6 to net hbt.N137
 INFO: Connecting pad U7/5 to net hbt.N137
-INFO: Adding net battery.N43
-INFO: Connecting pad U5/2 to net battery.N43
-INFO: Connecting pad U4/1 to net battery.N43
-INFO: Adding net imu.N217
-INFO: Connecting pad U8/10 to net imu.N217
-INFO: Adding net N165
-INFO: Connecting pad U9/3 to net N165
-INFO: Connecting pad U6/31 to net N165
-INFO: Adding net SDA
-INFO: Connecting pad U1/A2 to net SDA
-INFO: Connecting pad U7/3 to net SDA
-INFO: Connecting pad U10/6 to net SDA
-INFO: Connecting pad U8/14 to net SDA
-INFO: Adding net cpu.N264
-INFO: Connecting pad U6/24 to net cpu.N264
-INFO: Connecting pad C4/1 to net cpu.N264
-INFO: Adding net imu.N218
-INFO: Connecting pad U8/11 to net imu.N218
 INFO: Adding net batman.N86
 INFO: Connecting pad U1/B1 to net batman.N86
 INFO: Connecting pad R1/1 to net batman.N86
-INFO: Adding net battery.N45
-INFO: Connecting pad U5/6 to net battery.N45
-INFO: Connecting pad R2/1 to net battery.N45
+INFO: Adding net cpu.N338
+INFO: Connecting pad Y1/3 to net cpu.N338
+INFO: Connecting pad U6/8 to net cpu.N338
+INFO: Adding net N187
+INFO: Connecting pad U8/4 to net N187
+INFO: Adding net N166
+INFO: Connecting pad U9/1 to net N166
+INFO: Connecting pad U6/32 to net N166
+INFO: Adding net VDD
+INFO: Connecting pad U1/C2 to net VDD
+INFO: Connecting pad U11/1 to net VDD
+INFO: Connecting pad C21/1 to net VDD
+INFO: Connecting pad U7/11 to net VDD
+INFO: Connecting pad C13/1 to net VDD
+INFO: Connecting pad C14/1 to net VDD
+INFO: Connecting pad U10/5 to net VDD
+INFO: Connecting pad C19/1 to net VDD
+INFO: Connecting pad U9/2 to net VDD
+INFO: Connecting pad C18/1 to net VDD
+INFO: Connecting pad U8/12 to net VDD
+INFO: Connecting pad U8/8 to net VDD
+INFO: Connecting pad U8/5 to net VDD
+INFO: Connecting pad C15/1 to net VDD
+INFO: Connecting pad C16/1 to net VDD
+INFO: Connecting pad C17/1 to net VDD
+INFO: Connecting pad FB2/1 to net VDD
+INFO: Connecting pad FB1/1 to net VDD
+INFO: Connecting pad U6/26 to net VDD
+INFO: Connecting pad U6/28 to net VDD
+INFO: Connecting pad U6/29 to net VDD
+INFO: Connecting pad U6/30 to net VDD
+INFO: Adding net battery.N44
+INFO: Connecting pad U5/3 to net battery.N44
+INFO: Connecting pad U3/1 to net battery.N44
+INFO: Adding net cpu.N361
+INFO: Connecting pad C5/1 to net cpu.N361
+INFO: Connecting pad C6/1 to net cpu.N361
+INFO: Connecting pad C7/1 to net cpu.N361
+INFO: Connecting pad FB1/2 to net cpu.N361
+INFO: Connecting pad U6/13 to net cpu.N361
+INFO: Adding net battery.N49
+INFO: Connecting pad U3/3 to net battery.N49
+INFO: Connecting pad U4/3 to net battery.N49
+INFO: Adding net N56
+INFO: Connecting pad U1/A1 to net N56
 INFO: Adding net VBATT
 INFO: Connecting pad TP1/1 to net VBATT
 INFO: Connecting pad R3/1 to net VBATT
 INFO: Connecting pad U2/1 to net VBATT
 INFO: Connecting pad U1/C3 to net VBATT
 INFO: Connecting pad C1/1 to net VBATT
-INFO: Connecting pad U11/4 to net VBATT
 INFO: Connecting pad U11/3 to net VBATT
-INFO: Connecting pad C14/1 to net VBATT
+INFO: Connecting pad U11/4 to net VBATT
+INFO: Connecting pad C20/1 to net VBATT
 INFO: Connecting pad U7/10 to net VBATT
 INFO: Connecting pad U7/9 to net VBATT
-INFO: Connecting pad C5/1 to net VBATT
-INFO: Connecting pad C6/1 to net VBATT
-INFO: Adding net N187
-INFO: Connecting pad U8/4 to net N187
-INFO: Adding net N188
-INFO: Connecting pad U8/9 to net N188
-INFO: Adding net cpu.N260
-INFO: Connecting pad Y1/3 to net cpu.N260
-INFO: Connecting pad U6/8 to net cpu.N260
-INFO: Adding net battery.N47
-INFO: Connecting pad U5/4 to net battery.N47
-INFO: Connecting pad U3/2 to net battery.N47
-INFO: Connecting pad C3/2 to net battery.N47
-INFO: Connecting pad U2/2 to net battery.N47
-INFO: Adding net N111
-INFO: Connecting pad U7/13 to net N111
-INFO: Connecting pad U10/3 to net N111
-INFO: Adding net N166
-INFO: Connecting pad U9/1 to net N166
-INFO: Connecting pad U6/32 to net N166
-INFO: Adding net N56
-INFO: Connecting pad U1/A1 to net N56
-INFO: Adding net battery.N44
-INFO: Connecting pad U5/3 to net battery.N44
-INFO: Connecting pad U3/1 to net battery.N44
-INFO: Adding net SCL
-INFO: Connecting pad U1/A3 to net SCL
-INFO: Connecting pad U7/2 to net SCL
-INFO: Connecting pad U10/1 to net SCL
-INFO: Connecting pad U8/13 to net SCL
-INFO: Adding net battery.N46
-INFO: Connecting pad U5/5 to net battery.N46
-INFO: Connecting pad R3/2 to net battery.N46
-INFO: Connecting pad C3/1 to net battery.N46
+INFO: Connecting pad C11/1 to net VBATT
+INFO: Connecting pad C12/1 to net VBATT
 INFO: Net synchronization took 0.002 seconds
-DEBUG: Will create group vreg with 3 children
-DEBUG: Will create group imu with 4 children
-DEBUG: Will create group batman with 4 children
-DEBUG: Will create group hbt with 5 children
-DEBUG: Will create group tmp with 2 children
+DEBUG: Will create group cpu with 5 children
 DEBUG: Will create group battery with 7 children
+DEBUG: Will create group vreg with 3 children
 DEBUG: Will create group mic with 2 children
-DEBUG: Will create group cpu with 3 children
+DEBUG: Will create group hbt with 5 children
+DEBUG: Will create group cpu.pavdd with 4 children
+DEBUG: Will create group tmp with 2 children
+DEBUG: Will create group batman with 4 children
+DEBUG: Will create group cpu.rfvdd with 4 children
+DEBUG: Will create group imu with 4 children
 INFO: Using existing group: batman
 INFO: Using existing group: battery
 INFO: Using existing group: cpu
+INFO: Created new group: cpu.pavdd
+DEBUG: Added group cpu.pavdd as child of cpu
+INFO: Using existing group: cpu.rfvdd
 INFO: Using existing group: hbt
 INFO: Using existing group: imu
 INFO: Using existing group: mic
 INFO: Using existing group: tmp
 INFO: Using existing group: vreg
-DEBUG: Added C11 to group imu
-DEBUG: Added C15 to group vreg
-DEBUG: Added U4 to group battery
-DEBUG: Added C9 to group imu
-DEBUG: Added U1 to group batman
-DEBUG: Added U5 to group battery
-DEBUG: Added C8 to group hbt
-DEBUG: Added U8 to group imu
+DEBUG: Added C14 to group hbt
+DEBUG: Added U3 to group battery
+DEBUG: Added C18 to group mic
+DEBUG: Added C4 to group cpu
 DEBUG: Added U6 to group cpu
 DEBUG: Added C2 to group batman
-DEBUG: Added U3 to group battery
-DEBUG: Added C10 to group imu
-DEBUG: Added U2 to group battery
-DEBUG: Added C13 to group tmp
-DEBUG: Added C7 to group hbt
+DEBUG: Added C9 to group cpu.rfvdd
 DEBUG: Added Y1 to group cpu
-DEBUG: Added C3 to group battery
-DEBUG: Added U11 to group vreg
-DEBUG: Added U7 to group hbt
-DEBUG: Added U10 to group tmp
-DEBUG: Added U9 to group mic
-DEBUG: Added R2 to group battery
-DEBUG: Added C1 to group batman
-DEBUG: Added C14 to group vreg
-DEBUG: Added C5 to group hbt
-DEBUG: Added C12 to group mic
-DEBUG: Added C6 to group hbt
-DEBUG: Added C4 to group cpu
+DEBUG: Added C8 to group cpu.rfvdd
+DEBUG: Added C20 to group vreg
+DEBUG: Added U2 to group battery
+DEBUG: Added C10 to group cpu.rfvdd
+DEBUG: Added C21 to group vreg
+DEBUG: Added U8 to group imu
 DEBUG: Added R1 to group batman
+DEBUG: Added C17 to group imu
+DEBUG: Added U10 to group tmp
+DEBUG: Added U7 to group hbt
+DEBUG: Added C5 to group cpu.pavdd
+DEBUG: Added U9 to group mic
+DEBUG: Added FB1 to group cpu.pavdd
+DEBUG: Added C6 to group cpu.pavdd
+DEBUG: Added C12 to group hbt
+DEBUG: Added C11 to group hbt
+DEBUG: Added FB2 to group cpu.rfvdd
+DEBUG: Added R2 to group battery
+DEBUG: Added C16 to group imu
 DEBUG: Added R3 to group battery
+DEBUG: Added C1 to group batman
+DEBUG: Added U4 to group battery
+DEBUG: Added C3 to group battery
+DEBUG: Added U1 to group batman
+DEBUG: Added C7 to group cpu.pavdd
+DEBUG: Added C13 to group hbt
+DEBUG: Added C15 to group imu
+DEBUG: Added U5 to group battery
+DEBUG: Added C19 to group tmp
+DEBUG: Added U11 to group vreg
 INFO: Group synchronization took 0.001 seconds
 DEBUG: Board refresh took 0.000 seconds
 INFO: Virtual DOM building took 0.001 seconds
 INFO: Virtual DOM structure:
-INFO: Board VirtualBoundingBox(x=-1275000, y=-1275000, width=270037857, height=128667500)
+INFO: Board VirtualBoundingBox(x=-1505000, y=-755000, width=295827857, height=128147500)
   batman VirtualBoundingBox(x=206182857, y=103295000, width=4350000, height=4400000)
     batman.C11 VirtualBoundingBox(x=206182857, y=103295000, width=1450000, height=750000)
       batman.C11.R (R_0201_0603Metric:R_0201_0603Metric) VirtualBoundingBox(x=206182857, y=103295000, width=1450000, height=750000)
@@ -317,11 +370,29 @@ INFO: Board VirtualBoundingBox(x=-1275000, y=-1275000, width=270037857, height=1
     battery.U5 (WSON-6_1.5x1.5mm_P0.5mm:WSON-6_1.5x1.5mm_P0.5mm) VirtualBoundingBox(x=183874643, y=122607500, width=2465000, height=2285000)
     battery.Q2 (Texas_PicoStar_DFN-3_0.69x0.60mm:Texas_PicoStar_DFN-3_0.69x0.60mm) VirtualBoundingBox(x=186339643, y=122732500, width=1180000, height=1080000)
     battery.Q1 (Texas_PicoStar_DFN-3_0.69x0.60mm:Texas_PicoStar_DFN-3_0.69x0.60mm) VirtualBoundingBox(x=186339643, y=123812500, width=1180000, height=1080000)
-  cpu VirtualBoundingBox(x=261777857, y=102385000, width=6985000, height=6220000)
+  cpu VirtualBoundingBox(x=-1505000, y=-755000, width=295827857, height=117250000)
     cpu.C14 VirtualBoundingBox(x=261777857, y=102385000, width=1870000, height=970000)
       cpu.C14.C (C_0402_1005Metric:C_0402_1005Metric) VirtualBoundingBox(x=261777857, y=102385000, width=1870000, height=970000)
     cpu.Y1 VirtualBoundingBox(x=267027857, y=106670000, width=1735000, height=1935000)
       cpu.Y1.Y (Crystal_SMD_1210-4Pin_1.2x1.0mm:Crystal_SMD_1210-4Pin_1.2x1.0mm) VirtualBoundingBox(x=267027857, y=106670000, width=1735000, height=1935000)
+    cpu.pavdd [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+      cpu.pavdd.C1 [NEW] VirtualBoundingBox(x=-725000, y=-375000, width=1450000, height=750000)
+        cpu.pavdd.C1.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=-725000, y=-375000, width=1450000, height=750000)
+      cpu.pavdd.C2 [NEW] VirtualBoundingBox(x=-725000, y=-375000, width=1450000, height=750000)
+        cpu.pavdd.C2.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=-725000, y=-375000, width=1450000, height=750000)
+      cpu.pavdd.C3 [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+        cpu.pavdd.C3.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      cpu.pavdd.FB1 [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+        cpu.pavdd.FB1.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+    cpu.rfvdd VirtualBoundingBox(x=291312857, y=113265000, width=3010000, height=3230000)
+      cpu.rfvdd.C1 VirtualBoundingBox(x=291312857, y=113265000, width=1450000, height=750000)
+        cpu.rfvdd.C1.C (C_0201_0603Metric:C_0201_0603Metric) VirtualBoundingBox(x=291312857, y=113265000, width=1450000, height=750000)
+      cpu.rfvdd.C2 VirtualBoundingBox(x=292762857, y=113265000, width=1450000, height=750000)
+        cpu.rfvdd.C2.C (C_0201_0603Metric:C_0201_0603Metric) VirtualBoundingBox(x=292762857, y=113265000, width=1450000, height=750000)
+      cpu.rfvdd.C3 VirtualBoundingBox(x=291312857, y=114015000, width=1870000, height=970000)
+        cpu.rfvdd.C3.C (C_0402_1005Metric:C_0402_1005Metric) VirtualBoundingBox(x=291312857, y=114015000, width=1870000, height=970000)
+      cpu.rfvdd.FB1 VirtualBoundingBox(x=291312857, y=114985000, width=3010000, height=1510000)
+        cpu.rfvdd.FB1.FB (R_0603_1608Metric:R_0603_1608Metric) VirtualBoundingBox(x=291312857, y=114985000, width=3010000, height=1510000)
     cpu.U7 (QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm:QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm) VirtualBoundingBox(x=261777857, y=103355000, width=5250000, height=5250000)
   hbt VirtualBoundingBox(x=173187500, y=102367500, width=5825000, height=6255000)
     hbt.C10 VirtualBoundingBox(x=177142500, y=107652500, width=1870000, height=970000)
@@ -345,9 +416,9 @@ INFO: Board VirtualBoundingBox(x=-1275000, y=-1275000, width=270037857, height=1
     mic.C26 VirtualBoundingBox(x=233467857, y=103257500, width=1450000, height=750000)
       mic.C26.C (C_0201_0603Metric:C_0201_0603Metric) VirtualBoundingBox(x=233467857, y=103257500, width=1450000, height=750000)
     mic.MK1 (Infineon_PG-LLGA-5-1:Infineon_PG-LLGA-5-1) VirtualBoundingBox(x=233467857, y=104007500, width=4725000, height=3725000)
-  port [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
-    port.TP5 [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
-      port.TP5.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+  port VirtualBoundingBox(x=278762857, y=113605000, width=2550000, height=2550000)
+    port.TP5 VirtualBoundingBox(x=278762857, y=113605000, width=2550000, height=2550000)
+      port.TP5.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) VirtualBoundingBox(x=278762857, y=113605000, width=2550000, height=2550000)
   tmp VirtualBoundingBox(x=220532857, y=103807500, width=2935000, height=3375000)
     tmp.C3 VirtualBoundingBox(x=220532857, y=103807500, width=1450000, height=750000)
       tmp.C3.C (C_0201_0603Metric:C_0201_0603Metric) VirtualBoundingBox(x=220532857, y=103807500, width=1450000, height=750000)
@@ -358,7 +429,7 @@ INFO: Board VirtualBoundingBox(x=-1275000, y=-1275000, width=270037857, height=1
     vreg.C28 VirtualBoundingBox(x=194107500, y=104347500, width=1870000, height=970000)
       vreg.C28.C (C_0402_1005Metric:C_0402_1005Metric) VirtualBoundingBox(x=194107500, y=104347500, width=1870000, height=970000)
     vreg.U2 (Texas_X2SON-4_1x1mm_P0.65mm:Texas_X2SON-4_1x1mm_P0.65mm) VirtualBoundingBox(x=194107500, y=106287500, width=2075357, height=1600000)
-INFO: Completed ImportNetlist in 0.030 seconds
+INFO: Completed ImportNetlist in 0.059 seconds
 INFO: --------------------------------------------------------------------------------
 INFO: Running step: SyncLayouts
 INFO: --------------------------------------------------------------------------------
@@ -369,7 +440,7 @@ DEBUG: Skipping group cpu - not newly added
 DEBUG: Skipping group hbt - not newly added
 DEBUG: Skipping group imu - not newly added
 DEBUG: Skipping group mic - not newly added
-DEBUG: Skipping group port - no layout_path
+DEBUG: Skipping group port - not newly added
 DEBUG: Skipping group tmp - not newly added
 DEBUG: Skipping group vreg - not newly added
 DEBUG: Skipping group batman.C11 - not newly added
@@ -380,6 +451,8 @@ DEBUG: Skipping group battery.R3 - not newly added
 DEBUG: Skipping group battery.R4 - not newly added
 DEBUG: Skipping group cpu.C14 - not newly added
 DEBUG: Skipping group cpu.Y1 - not newly added
+DEBUG: Skipping group cpu.pavdd - no layout_path
+DEBUG: Skipping group cpu.rfvdd - not newly added
 DEBUG: Skipping group hbt.C10 - not newly added
 DEBUG: Skipping group hbt.C11 - not newly added
 DEBUG: Skipping group hbt.C8 - not newly added
@@ -388,10 +461,18 @@ DEBUG: Skipping group imu.C5 - not newly added
 DEBUG: Skipping group imu.C6 - not newly added
 DEBUG: Skipping group imu.C7 - not newly added
 DEBUG: Skipping group mic.C26 - not newly added
-DEBUG: Skipping group port.TP5 - no layout_path
+DEBUG: Skipping group port.TP5 - not newly added
 DEBUG: Skipping group tmp.C3 - not newly added
 DEBUG: Skipping group vreg.C27 - not newly added
 DEBUG: Skipping group vreg.C28 - not newly added
+DEBUG: Skipping group cpu.pavdd.C1 - no layout_path
+DEBUG: Skipping group cpu.pavdd.C2 - no layout_path
+DEBUG: Skipping group cpu.pavdd.C3 - no layout_path
+DEBUG: Skipping group cpu.pavdd.FB1 - no layout_path
+DEBUG: Skipping group cpu.rfvdd.C1 - not newly added
+DEBUG: Skipping group cpu.rfvdd.C2 - not newly added
+DEBUG: Skipping group cpu.rfvdd.C3 - not newly added
+DEBUG: Skipping group cpu.rfvdd.FB1 - not newly added
 INFO: Completed layout sync: synced 0 groups
 INFO: Completed SyncLayouts in 0.000 seconds
 INFO: --------------------------------------------------------------------------------
@@ -399,25 +480,84 @@ INFO: Running step: PlaceComponents
 INFO: --------------------------------------------------------------------------------
 INFO: Starting PlaceComponents...
 INFO: Starting hierarchical component placement
-INFO: Placing 1 items in group port.TP5
+INFO: Placing 1 items in group cpu.pavdd.C1
 INFO: 
-port.TP5.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
-INFO: Placing port.TP5.TP...
-INFO: Placed port.TP5.TP at VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-INFO: Placing 1 items in group port
+cpu.pavdd.C1.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=-725000, y=-375000, width=1450000, height=750000)
+INFO: Placing cpu.pavdd.C1.C...
+INFO: Placed cpu.pavdd.C1.C at VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+INFO: Placing 1 items in group cpu.pavdd.C2
 INFO: 
-port.TP5 [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-  port.TP5.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-INFO: Placing port.TP5...
-INFO: Placed port.TP5 at VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+cpu.pavdd.C2.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=-725000, y=-375000, width=1450000, height=750000)
+INFO: Placing cpu.pavdd.C2.C...
+INFO: Placed cpu.pavdd.C2.C at VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+INFO: Placing 1 items in group cpu.pavdd.C3
+INFO: 
+cpu.pavdd.C3.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing cpu.pavdd.C3.C...
+INFO: Placed cpu.pavdd.C3.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group cpu.pavdd.FB1
+INFO: 
+cpu.pavdd.FB1.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+INFO: Placing cpu.pavdd.FB1.FB...
+INFO: Placed cpu.pavdd.FB1.FB at VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing 4 items in group cpu.pavdd
+INFO: 
+cpu.pavdd.C1 [NEW] VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+  cpu.pavdd.C1.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+INFO: 
+cpu.pavdd.C2 [NEW] VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+  cpu.pavdd.C2.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+INFO: 
+cpu.pavdd.C3 [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  cpu.pavdd.C3.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+cpu.pavdd.FB1 [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+  cpu.pavdd.FB1.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing cpu.pavdd.FB1...
+INFO: Placed cpu.pavdd.FB1 at VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing cpu.pavdd.C3...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 3010000, 1510000
+INFO: Placed cpu.pavdd.C3 at (0, -970000)
+INFO: Placing cpu.pavdd.C1...
+DEBUG: Trying placement point 3010000, 1510000
+DEBUG: Trying placement point 0, -970000
+DEBUG: Trying placement point 1870000, 0
+INFO: Placed cpu.pavdd.C1 at (0, -1720000)
+INFO: Placing cpu.pavdd.C2...
+DEBUG: Trying placement point 3010000, 1510000
+DEBUG: Trying placement point 1870000, 0
+DEBUG: Trying placement point 0, -1720000
+DEBUG: Trying placement point 1450000, -970000
+INFO: Placed cpu.pavdd.C2 at (1450000, -1720000)
+INFO: Placing 1 items in group cpu
+INFO: 
+cpu.pavdd [NEW] VirtualBoundingBox(x=0, y=-1720000, width=3010000, height=3230000)
+  cpu.pavdd.C1 [NEW] VirtualBoundingBox(x=0, y=-1720000, width=1450000, height=750000)
+    cpu.pavdd.C1.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=0, y=-1720000, width=1450000, height=750000)
+  cpu.pavdd.C2 [NEW] VirtualBoundingBox(x=1450000, y=-1720000, width=1450000, height=750000)
+    cpu.pavdd.C2.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=1450000, y=-1720000, width=1450000, height=750000)
+  cpu.pavdd.C3 [NEW] VirtualBoundingBox(x=0, y=-970000, width=1870000, height=970000)
+    cpu.pavdd.C3.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=-970000, width=1870000, height=970000)
+  cpu.pavdd.FB1 [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+    cpu.pavdd.FB1.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing cpu.pavdd...
+INFO: Placed cpu.pavdd at VirtualBoundingBox(x=0, y=0, width=3010000, height=3230000)
 INFO: Placing 1 items in group Board
 INFO: 
-port [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-  port.TP5 [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-    port.TP5.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-INFO: Placing port...
-INFO: Placed port at VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
-INFO: Positioned new content with offset (278762857, 113605000)
+cpu [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=3230000)
+  cpu.pavdd [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=3230000)
+    cpu.pavdd.C1 [NEW] VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+      cpu.pavdd.C1.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1450000, height=750000)
+    cpu.pavdd.C2 [NEW] VirtualBoundingBox(x=1450000, y=0, width=1450000, height=750000)
+      cpu.pavdd.C2.C (C_0201_0603Metric:C_0201_0603Metric) [NEW] VirtualBoundingBox(x=1450000, y=0, width=1450000, height=750000)
+    cpu.pavdd.C3 [NEW] VirtualBoundingBox(x=0, y=750000, width=1870000, height=970000)
+      cpu.pavdd.C3.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=750000, width=1870000, height=970000)
+    cpu.pavdd.FB1 [NEW] VirtualBoundingBox(x=0, y=1720000, width=3010000, height=1510000)
+      cpu.pavdd.FB1.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=1720000, width=3010000, height=1510000)
+INFO: Placing cpu...
+INFO: Placed cpu at VirtualBoundingBox(x=0, y=0, width=3010000, height=3230000)
+INFO: Positioned new content with offset (304322857, 113265000)
 INFO: Completed hierarchical component placement
 INFO: Completed PlaceComponents in 0.001 seconds
 INFO: --------------------------------------------------------------------------------
@@ -425,28 +565,15 @@ INFO: Running step: FinalizeBoard
 INFO: --------------------------------------------------------------------------------
 INFO: Starting FinalizeBoard...
 INFO: Saved layout snapshot to /home/dezash/projects/ring/ring/layout/snapshot.layout.json
-INFO: Snapshot export took 0.057 seconds
+INFO: Snapshot export took 0.066 seconds
 INFO: Board saving took 0.006 seconds
-INFO: Completed FinalizeBoard in 0.064 seconds
-RENAME: 'battery.N31' -> 'battery.N43' (2 pads)
-RENAME: 'battery.N37' -> 'battery.N49' (2 pads)
-RENAME: 'cpu.N247' -> 'cpu.N259' (2 pads)
-RENAME: 'cpu.N248' -> 'cpu.N260' (2 pads)
-RENAME: 'cpu.N252' -> 'cpu.N264' (2 pads)
-RENAME: 'N153' -> 'N165' (2 pads)
-RENAME: 'N154' -> 'N166' (2 pads)
-RENAME: 'battery.N35' -> 'battery.N47' (4 pads)
-RENAME: 'batman.N73' -> 'batman.N85' (2 pads)
-RENAME: 'battery.N34' -> 'battery.N46' (3 pads)
-RENAME: 'battery.N36' -> 'battery.N48' (1 pads)
-RENAME: 'battery.N32' -> 'battery.N44' (2 pads)
-RENAME: 'battery.N33' -> 'battery.N45' (2 pads)
-RENAME: 'N99' -> 'N111' (2 pads)
-RENAME: 'N175' -> 'N187' (1 pads)
-RENAME: 'N176' -> 'N188' (1 pads)
-RENAME: 'imu.N205' -> 'imu.N217' (1 pads)
-RENAME: 'imu.N206' -> 'imu.N218' (1 pads)
-RENAME: 'N44' -> 'N56' (1 pads)
-RENAME: 'batman.N74' -> 'batman.N86' (2 pads)
-RENAME: 'hbt.N125' -> 'hbt.N137' (6 pads)
-SUMMARY: 5 unchanged, 21 renamed, 0 split
+INFO: Completed FinalizeBoard in 0.074 seconds
+SPLIT: 'GND' (59 pads) split into:
+  -> 'GND' (58 pads, 98.3%)
+  -> 'cpu.N361' (1 pads, 1.7%)
+RENAME: 'cpu.N325' -> 'cpu.N337' (2 pads)
+RENAME: 'cpu.N326' -> 'cpu.N338' (2 pads)
+RENAME: 'cpu.N348' -> 'cpu.N360' (5 pads)
+RENAME: 'cpu.N330' -> 'cpu.N342' (2 pads)
+RENAME: 'cpu.N364' -> 'cpu.N392' (1 pads)
+SUMMARY: 22 unchanged, 5 renamed, 1 split

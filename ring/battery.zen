@@ -20,7 +20,7 @@ Component(
     "VSS": vss,
     "V-": vm,
     "BAT": bat,
-    "NC": NotConnected(),
+    "NC": Net(),
   },
 )
 

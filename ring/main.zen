@@ -99,8 +99,28 @@ cpu(
   name = "cpu",
   vdd = vdd,
   gnd = gnd,
-  mic_clk = mic_clk,
-  mic_data = mic_data,
+  rstn = gnd,
+  pc00 = gnd,
+  pc01 = gnd,
+  pc02 = gnd,
+  pc03 = gnd,
+  pc04 = gnd,
+  pc05 = gnd,
+
+  pb00 = gnd,
+  pb01 = gnd,
+  pb02 = gnd,
+
+  pa00 = gnd,
+  pa01 = gnd,
+  pa02 = gnd,
+  pa03 = gnd,
+  pa04 = gnd,
+  pa05 = gnd,
+  pa06 = gnd,
+
+  pd00 = mic_data,
+  pd01 = mic_clk,
 )
 
 Layout("layout", "layout/")
