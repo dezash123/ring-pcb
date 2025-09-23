@@ -1,5 +1,6 @@
 C = Module("@stdlib/generics/Capacitor.zen")
 R = Module("@stdlib/generics/Resistor.zen")
+load("@stdlib/interfaces.zen", "NotConnected")
 
 vdd = io("vdd", Net)
 sda = io("sda", Net)
@@ -45,8 +46,8 @@ Component(
     "SDO/SA0": gnd,
     "SDx": gnd,
     "SCx": gnd,
-    "OCS_Aux": Net(),
-    "SDO_Aux": Net(),
+    "OCS_Aux": NotConnected(),
+    "SDO_Aux": NotConnected(),
   },
 )
 

@@ -2,6 +2,7 @@ load("@stdlib/properties.zen", "Layout")
 
 TP = Module("@stdlib/generics/TestPoint.zen")
 R = Module("@stdlib/generics/Resistor.zen")
+load("@stdlib/interfaces.zen", "NotConnected")
 
 vbatt = Net("VBATT")
 vdd = Net("VDD")
@@ -136,19 +137,19 @@ cpu(
   pc02 = scl,
   pc03 = sda,
   pc04 = bat_low,
-  pc05 = Net(),
+  pc05 = NotConnected(),
 
   pb00 = imu_int1,
-  pb01 = Net(),
-  pb02 = Net(),
+  pb01 = NotConnected(),
+  pb02 = NotConnected(),
 
   pa00 = tmp_int,
   pa01 = swclk,
   pa02 = swdio,
-  pa03 = Net(),
-  pa04 = Net(),
-  pa05 = Net(),
-  pa06 = Net(),
+  pa03 = NotConnected(),
+  pa04 = NotConnected(),
+  pa05 = NotConnected(),
+  pa06 = NotConnected(),
 
   pd00 = mic_data,
   pd01 = mic_clk,

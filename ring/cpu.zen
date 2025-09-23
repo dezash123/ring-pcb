@@ -1,3 +1,4 @@
+load("@stdlib/interfaces.zen", "NotConnected")
 C = Module("@stdlib/generics/Capacitor.zen")
 Y = Module("@stdlib/generics/Crystal.zen")
 FB = Module("@stdlib/generics/FerriteBead.zen")
@@ -222,7 +223,7 @@ Component(
 
         "DECOUPLE": decouple,
 
-        "VREGSW": Net(),
+        "VREGSW": NotConnected(),
         "VREGVDD": vregvdd,
         "VREGVSS": gnd,
         "DVDD": dvdd,

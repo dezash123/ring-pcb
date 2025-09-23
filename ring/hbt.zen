@@ -1,4 +1,5 @@
 C = Module("@stdlib/generics/Capacitor.zen")
+load("@stdlib/interfaces.zen", "NotConnected")
 
 vbatt = io("vbatt", Net)
 vdd = io("vdd", Net)
@@ -19,7 +20,7 @@ Component(
     "SDA": sda,
     "SCL": scl,
     "~{INT}": int,
-    "NC": Net(),
+    "NC": NotConnected(),
   },
 )
 

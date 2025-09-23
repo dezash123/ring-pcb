@@ -1,5 +1,6 @@
 R = Module("@stdlib/generics/Resistor.zen")
 C = Module("@stdlib/generics/Capacitor.zen")
+load("@stdlib/interfaces.zen", "NotConnected")
 
 vbatt = io("vbatt", Net)
 gnd = io("gnd", Net)
@@ -20,7 +21,7 @@ Component(
     "VSS": vss,
     "V-": vm,
     "BAT": bat,
-    "NC": Net(),
+    "NC": NotConnected(),
   },
 )
 
