@@ -11,7 +11,7 @@ scl = Net("scl")
 gnd = Net("GND")
 
 swdio = Net("swdio")
-swclk = Net("swclk")
+swdclk = Net("swdclk")
 
 port = Module("port.zen")
 port(
@@ -19,7 +19,7 @@ port(
   vbatt = vbatt,
   gnd = gnd,
   swdio = swdio,
-  swclk = swclk,
+  swdclk = swdclk,
 )
 
 battery = Module("battery.zen")
@@ -129,23 +129,35 @@ cpu = Module("cpu.zen")
 cpu(
   name = "cpu",
 
+  # Power
   vdd   = vdd,
-  vddh  = vdd,
-  vbus  = vdd,
   gnd   = gnd,
 
-  swdclk = NotConnected(),
-  swdio  = NotConnected(),
-  resetn = NotConnected(),
+  # I2C (maps to P1.02/P1.03 inside cpu.zen)
+  sda = sda,
+  scl = scl,
 
-  usb_dp = NotConnected(),
-  usb_dm = NotConnected(),
+  # NFC not used
+  nfc1 = NotConnected(),
+  nfc2 = NotConnected(),
 
-  ant  = NotConnected(),
-  p0_00 = NotConnected(),
-  p0_01 = NotConnected(),
-  p0_02 = NotConnected(),
-  p0_03 = NotConnected(),
+  # Debug / reset
+  swdclk = swdclk,
+  swdio = swdio,
+  resetn = rst,
+
+  p0_19 = imu_int1,      # IMU INT1
+  p0_20 = imu_int2,      # IMU INT2
+
+  p0_21 = bat_low,
+
+  p0_22 = tmp_int,
+
+  p0_23 = hbt_int,
+
+  p0_24 = mic_clk,
+  p0_25 = mic_data,
+
   p0_04 = NotConnected(),
   p0_05 = NotConnected(),
   p0_06 = NotConnected(),
@@ -161,23 +173,15 @@ cpu(
   p0_16 = NotConnected(),
   p0_17 = NotConnected(),
   p0_18 = NotConnected(),
-  p0_19 = NotConnected(),
-  p0_20 = NotConnected(),
-  p0_21 = NotConnected(),
-  p0_22 = NotConnected(),
-  p0_23 = NotConnected(),
-  p0_24 = NotConnected(),
-  p0_25 = NotConnected(),
   p0_26 = NotConnected(),
   p0_27 = NotConnected(),
   p0_28 = NotConnected(),
   p0_29 = NotConnected(),
   p0_30 = NotConnected(),
   p0_31 = NotConnected(),
+
   p1_00 = NotConnected(),
   p1_01 = NotConnected(),
-  p1_02 = NotConnected(),
-  p1_03 = NotConnected(),
   p1_04 = NotConnected(),
   p1_05 = NotConnected(),
   p1_06 = NotConnected(),
