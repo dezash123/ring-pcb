@@ -11,57 +11,16 @@ swdclk  = io("swdclk", Net)
 swdio  = io("swdio", Net)
 resetn = io("resetn", Net)
 
-nfc1 = io("nfc1", Net)
-nfc2 = io("nfc2", Net)
-p004 = io("p0_04", Net)
-p005 = io("p0_05", Net)
-p006 = io("p0_06", Net)
-p007 = io("p0_07", Net)
-p008 = io("p0_08", Net)
-p009 = io("p0_09", Net)
-p010 = io("p0_10", Net)
-p011 = io("p0_11", Net)
-p012 = io("p0_12", Net)
-p013 = io("p0_13", Net)
-p014 = io("p0_14", Net)
-p015 = io("p0_15", Net)
-p016 = io("p0_16", Net)
-p017 = io("p0_17", Net)
-p018 = io("p0_18", Net)
-p019 = io("p0_19", Net)
-p020 = io("p0_20", Net)
-p021 = io("p0_21", Net)
-p022 = io("p0_22", Net)
-p023 = io("p0_23", Net)
-p024 = io("p0_24", Net)
-p025 = io("p0_25", Net)
-p026 = io("p0_26", Net)
-p027 = io("p0_27", Net)
-p028 = io("p0_28", Net)
-p029 = io("p0_29", Net)
-p030 = io("p0_30", Net)
-p031 = io("p0_31", Net)
-p100 = io("p1_00", Net)
-p101 = io("p1_01", Net)
-sda  = io("sda", Net)
-scl  = io("scl", Net)
-p104 = io("p1_04", Net)
-p105 = io("p1_05", Net)
-p106 = io("p1_06", Net)
-p107 = io("p1_07", Net)
-p108 = io("p1_08", Net)
-p109 = io("p1_09", Net)
-p110 = io("p1_10", Net)
-p111 = io("p1_11", Net)
-p112 = io("p1_12", Net)
-p113 = io("p1_13", Net)
-p114 = io("p1_14", Net)
-p115 = io("p1_15", Net)
+gpio0 = io("gpio0", Net)
+gpio1 = io("gpio1", Net)
+gpio2 = io("gpio2", Net)
+gpio3 = io("gpio3", Net)
+
 
 # Crystals
-xc1 = Net("xc1")
-xc2 = Net("xc2")
-Y(name="Y1", frequency="32MHz", package="2016_4Pin", XIN=xc1, XOUT=xc2, GND=gnd)
+xin = Net("xin")
+xout = Net("xout")
+Y(name="Y1", frequency="32MHz", package="2016_4Pin", XIN=xin, XOUT=xout, GND=gnd)
 
 # antenna
 antenna = Module("antenna.zen")
@@ -100,77 +59,37 @@ C(name="C61", value="1uF", package="0402", P1=decr, P2=gnd)
 C(name="C62", value="2.2nF", package="0201", P1=decr, P2=gnd)
 
 cpu = Symbol(
-  name = "nRF5340-CLAA_WLCSP-95",
+  name = "ESP32-H2-QFN32",
   definition = [
-    ("XC1", ["A1"]),
-    ("XC2", ["A2"]),
-    ("P0.00/XL1", ["F11"]),
-    ("P0.01/XL2", ["F12"]),
-    ("SWDIO", ["F1"]),
-    ("SWDCLK", ["F2"]),
-    ("RESET", ["G2"]),
-    ("D-", ["A11"]),
-    ("D+", ["A12"]),
-    ("VBUS", ["B11"]),
-    ("DECUSB", ["C11"]),
-    ("ANT", ["D1"]),
-    ("DECRF", ["B1"]),
-    ("VDD", ["A3","B7","B10","D2","E11","K1","L5","L11","H11"]),
-    ("VDDH", ["B12"]),
-    ("VSS", ["A5","B2","B9","C2","D12","E5","E6","E7","E8","F5","F6","F7","F8","G5","G6","G7","G8","K11","K6"]),
-    ("DECA", ["B8"]),
-    ("DECD", ["A7"]),
-    ("DECR", ["B4"]),
-    ("DECN", ["B5"]),
-    ("DCCD", ["A9"]),
-    ("DCC", ["B6"]),
-    ("DCCH", ["D11"]),
-    ("P0.02/NFC1", ["G11"]),
-    ("P0.03/NFC2", ["H12"]),
-    ("P0.04/AIN0", ["G10"]),
-    ("P0.05/AIN1", ["F10"]),
-    ("P0.06/AIN2", ["H10"]),
-    ("P0.07/AIN3", ["J10"]),
-    ("P0.08/TRACEDATA3", ["L12"]),
-    ("P0.09/TRACEDATA2", ["J9"]),
-    ("P0.10/TRACEDATA1", ["J8"]),
-    ("P0.11/TRACEDATA0", ["J7"]),
-    ("P0.12/TRACECLK", ["J6"]),
-    ("P0.13/QSPI_IO0", ["K10"]),
-    ("P0.14/QSPI_IO1", ["K9"]),
-    ("P0.15/QSPI_IO2", ["L9"]),
-    ("P0.16/QSPI_IO3", ["K8"]),
-    ("P0.17/QSPI_CLK", ["L7"]),
-    ("P0.18/QSPI_CS", ["K7"]),
-    ("P0.19", ["J5"]),
-    ("P0.20", ["K5"]),
-    ("P0.21", ["J4"]),
-    ("P0.22", ["K4"]),
-    ("P0.23", ["H3"]),
-    ("P0.24", ["K2"]),
-    ("P0.25/AIN4", ["L1"]),
-    ("P0.26/AIN5", ["J2"]),
-    ("P0.27/AIN6", ["H1"]),
-    ("P0.28/AIN7", ["E3"]),
-    ("P0.29", ["E2"]),
-    ("P0.30", ["C4"]),
-    ("P0.31", ["C5"]),
-    ("P1.00", ["D10"]),
-    ("P1.01", ["E10"]),
-    ("P1.02/TWI_SDA_HS", ["J11"]),
-    ("P1.03/TWI_SCL_HS", ["K12"]),
-    ("P1.04", ["K3"]),
-    ("P1.05", ["L3"]),
-    ("P1.06", ["J3"]),
-    ("P1.07", ["G3"]),
-    ("P1.08", ["F3"]),
-    ("P1.09", ["H2"]),
-    ("P1.10", ["E4"]),
-    ("P1.11", ["C6"]),
-    ("P1.12", ["C7"]),
-    ("P1.13", ["C8"]),
-    ("P1.14", ["C9"]),
-    ("P1.15", ["C10"])
+    ("VDD3P3", ["1","2","27","30","31"]),
+    ("GPIO0", ["3"]),
+    ("GPIO1", ["4"]),
+    ("MTMS",   ["5"]),
+    ("MTDO",   ["6"]),
+    ("MTCK",   ["7"]),
+    ("MTDI",   ["8"]),
+    ("VDDPST1", ["9"]),
+    ("GPIO8",  ["10"]),
+    ("GPIO9",  ["11"]),
+    ("GPIO10", ["12"]),
+    ("GPIO11", ["13"]),
+    ("GPIO12", ["14"]),
+    ("XTAL_32K_N", ["15"]),
+    ("XTAL_32K_P", ["16"]),
+    ("CHIP_EN",   ["17"]),
+    ("VBAT",      ["18"]),
+    ("VDDA_PMU",  ["19"]),
+    ("VDDPST1",   ["20"]),
+    ("GPIO22",    ["21"]),
+    ("U0RXD",     ["22"]),
+    ("U0TXD",     ["23"]),
+    ("GPIO25",    ["24"]),
+    ("GPIO26",    ["25"]),
+    ("GPIO27",    ["26"]),
+    ("XTAL_N",    ["28"]),
+    ("XTAL_P",    ["29"]),
+    ("ANT",       ["32"]),
+    ("GND",       ["33"])
   ]
 )
 
@@ -179,26 +98,34 @@ Component(
   footprint = File("WLCSP95_4.390X3.994_NOR.kicad_mod"),
   symbol = cpu,
   pins = {
-    "VDD": vdd, "VDDH": vdd, "VBUS": gnd, "VSS": gnd,
-    "ANT": ant, "DECRF": decr,
-    "XC1": xc1, "XC2": xc2,
-    "P0.00/XL1": NotConnected(), "P0.01/XL2": NotConnected(),
-    "D+": NotConnected(), "D-": NotConnected(), "DECUSB": NotConnected(),
-    "DECA": deca, "DECD": decd, "DECR": decr, "DECN": decn,
-    "DCCD": dccd, "DCC": dcc, "DCCH": NotConnected(),
-    "SWDIO": swdio, "SWDCLK": swdclk, "RESET": resetn,
-    "P0.02/NFC1": nfc1, "P0.03/NFC2": nfc2,
-    "P0.04/AIN0": p004, "P0.05/AIN1": p005, "P0.06/AIN2": p006, "P0.07/AIN3": p007,
-    "P0.08/TRACEDATA3": p008, "P0.09/TRACEDATA2": p009, "P0.10/TRACEDATA1": p010, "P0.11/TRACEDATA0": p011,
-    "P0.12/TRACECLK": p012,
-    "P0.13/QSPI_IO0": p013, "P0.14/QSPI_IO1": p014, "P0.15/QSPI_IO2": p015,
-    "P0.16/QSPI_IO3": p016, "P0.17/QSPI_CLK": p017, "P0.18/QSPI_CS": p018,
-    "P0.19": p019, "P0.20": p020, "P0.21": p021, "P0.22": p022, "P0.23": p023, "P0.24": p024,
-    "P0.25/AIN4": p025, "P0.26/AIN5": p026, "P0.27/AIN6": p027, "P0.28/AIN7": p028,
-    "P0.29": p029, "P0.30": p030, "P0.31": p031,
-    "P1.00": p100, "P1.01": p101, "P1.02/TWI_SDA_HS": sda, "P1.03/TWI_SCL_HS": scl,
-    "P1.04": p104, "P1.05": p105, "P1.06": p106, "P1.07": p107,
-    "P1.08": p108, "P1.09": p109, "P1.10": p110, "P1.11": p111,
-    "P1.12": p112, "P1.13": p113, "P1.14": p114, "P1.15": p115,
+    "VDD3P3" = vdd
+    "GPIO0" = gpio0
+    "GPIO1" = gpio1
+    "MTMS" = gnd
+    "MTDO" = gnd
+    "MTCK" = gnd
+    "MTDI" = gnd
+    "VDDPST1" = gnd
+    "GPIO8" = gnd
+    "GPIO9" = gnd
+    "GPIO10" = gnd
+    "GPIO11" = gnd
+    "GPIO12" = gnd
+    "XTAL_32K_N" = gnd
+    "XTAL_32K_P" = gnd
+    "CHIP_EN" = gnd
+    "VBAT" = gnd
+    "VDDA_PMU" = gnd
+    "VDDPST1" = gnd
+    "GPIO22" = gnd
+    "U0RXD" = gnd
+    "U0TXD" = gnd
+    "GPIO25" = gnd
+    "GPIO26" = gnd
+    "GPIO27" = gnd
+    "XTAL_N" = xin
+    "XTAL_P" = xout
+    "ANT" = ant
+    "GND" = gnd
   },
 )
