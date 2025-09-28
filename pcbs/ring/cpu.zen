@@ -16,7 +16,6 @@ gpio1 = io("gpio1", Net)
 gpio2 = io("gpio2", Net)
 gpio3 = io("gpio3", Net)
 
-
 # Crystals
 xin = Net("xin")
 xout = Net("xout")
