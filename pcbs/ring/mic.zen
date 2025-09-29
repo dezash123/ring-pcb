@@ -17,6 +17,7 @@ Component(
     "DATA": data,
     "CLOCK": clk,
   },
+  mpn = "IM72D128V01"
 )
 
 C(
