@@ -132,8 +132,28 @@ cpu(
   gnd   = gnd,
 
   swdclk = swdclk,
-  swdio = swdio,
+  swdio  = swdio,
   resetn = rst,
+
+  p002 = imu_int1,
+  p003 = tmp_int,
+  p004 = sda,
+  p005 = scl,
+
+  nfc1 = Net("nfc1"),
+  nfc2 = Net("nfc2"),
+
+  p011 = imu_int2,
+  p015 = mic_data,
+  p017 = mic_clk,
+  p020 = hbt_int,
+
+  p028 = NotConnected(),
+  p029 = NotConnected(),
+  p030 = NotConnected(),
+  p031 = NotConnected(),
+
+  p109 = bat_low,
 )
 
 Layout("layout", "layout/")

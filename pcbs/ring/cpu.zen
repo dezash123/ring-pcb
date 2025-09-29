@@ -2,6 +2,7 @@ load("@stdlib/interfaces.zen", "NotConnected")
 C = Module("@stdlib/generics/Capacitor.zen")
 R = Module("@stdlib/generics/Resistor.zen")
 Y = Module("@stdlib/generics/Crystal.zen")
+L = Module("@stdlib/generics/Inductor.zen")
 
 vdd = io("vdd", Net)
 gnd = io("gnd", Net)
@@ -9,6 +10,22 @@ gnd = io("gnd", Net)
 swdclk = io("swdclk", Net)
 swdio  = io("swdio", Net)
 resetn = io("resetn", Net)
+
+p002 = io("p002", Net)  # AIN0/P0.02
+p003 = io("p003", Net)  # AIN1/P0.03
+p004 = io("p004", Net)  # AIN2/P0.04
+p005 = io("p005", Net)  # AIN3/P0.05
+p009 = io("nfc1", Net)  # NFC1/P0.09
+p010 = io("nfc2", Net)  # NFC2/P0.10
+p011 = io("p011", Net)  # P0.11
+p015 = io("p015", Net)  # P0.15
+p017 = io("p017", Net)  # P0.17
+p020 = io("p020", Net)  # P0.20
+p028 = io("p028", Net)  # AIN4/P0.28
+p029 = io("p029", Net)  # AIN5/P0.29
+p030 = io("p030", Net)  # AIN6/P0.30
+p031 = io("p031", Net)  # AIN7/P0.31
+p109 = io("p109", Net)  # P1.09
 
 xin  = Net("xin")
 xout = Net("xout")
@@ -18,13 +35,13 @@ C(name="C2", value="12pF", package="0201", P1=xout, P2=gnd)
 
 xl1 = Net("xl1")
 xl2 = Net("xl2")
-Y(name="X2", frequency="32.768kHz", package="2012_2Pin", XIN=xl1, XOUT=xl2, GND=gnd)
+Y(name="X2", frequency="32.768kHz", package="1210_4Pin", XIN=xl1, XOUT=xl2, GND=gnd)
 C(name="C4", value="12pF", package="0201", P1=xl1, P2=gnd)
 C(name="C5", value="12pF", package="0201", P1=xl2, P2=gnd)
 
 antenna = Module("antenna.zen")
 ant = Net("ant")
-antenna(name="ant_match", ant=ant, gnd=gnd)
+antenna(name="antenna", ant=ant, gnd=gnd)
 
 dec1 = Net("dec1")
 C(name="C6", value="100nF", package="0201", P1=dec1, P2=gnd)
@@ -34,15 +51,21 @@ C(name="C7", value="100pF", package="0201", P1=dec3, P2=gnd)
 
 dec4_6 = Net("dec4_6")
 C(name="C8", value="1uF", package="0402", P1=dec4_6, P2=gnd)
+C(name="C9", value="47nF", package="0201", P1=dec4_6, P2=gnd)
+
+dcc = Net("dcc")
+dcc_mid = Net("dcc_mid")
+L(name="L1", value="10uH", package="0603", P1=dcc, P2=dcc_mid)
+L(name="L2", value="15nH", package="0402", P1=dcc_mid, P2=dec4_6)
 
 # pin 8+9
-C(name="C9",  value="4.7uF", package="0603", P1=vdd, P2=gnd)
+C(name="C10",  value="4.7uF", package="0603", P1=vdd, P2=gnd)
 # pin 40
-C(name="C10", value="1uF",   package="0402", P1=vdd, P2=gnd)
+C(name="C11", value="1uF",   package="0402", P1=vdd, P2=gnd)
 # pin 18
-C(name="C11", value="100nF", package="0201", P1=vdd, P2=gnd)
-# pin 30
 C(name="C12", value="100nF", package="0201", P1=vdd, P2=gnd)
+# pin 30
+C(name="C13", value="100nF", package="0201", P1=vdd, P2=gnd)
 
 Component(
   name = "U15",
@@ -66,24 +89,24 @@ Component(
     "VDDH": vdd,
     "VSS_PA": gnd,
     "VBUS": gnd,
-    "DCC": NotConnected(),
+    "DCC": dcc,
     "XL1/P0.00": xl1,
     "XL2/P0.01": xl2,
-    "AIN0/P0.02": NotConnected(),
-    "AIN1/P0.03": NotConnected(),
-    "AIN2/P0.04": NotConnected(),
-    "AIN3/P0.05": NotConnected(),
-    "NFC1/P0.09": NotConnected(),
-    "NFC2/P0.10": NotConnected(),
-    "P0.11": NotConnected(),
-    "P0.15": NotConnected(),
-    "P0.17": NotConnected(),
-    "P0.20": NotConnected(),
-    "AIN4/P0.28": NotConnected(),
-    "AIN5/P0.29": NotConnected(),
-    "AIN6/P0.30": NotConnected(),
-    "AIN7/P0.31": NotConnected(),
-    "P1.09": NotConnected(),
+    "AIN0/P0.02": p002,
+    "AIN1/P0.03": p003,
+    "AIN2/P0.04": p004,
+    "AIN3/P0.05": p005,
+    "NFC1/P0.09": p009,
+    "NFC2/P0.10": p010,
+    "P0.11": p011,
+    "P0.15": p015,
+    "P0.17": p017,
+    "P0.20": p020,
+    "AIN4/P0.28": p028,
+    "AIN5/P0.29": p029,
+    "AIN6/P0.30": p030,
+    "AIN7/P0.31": p031,
+    "P1.09": p109,
     "D-": NotConnected(),
     "D+": NotConnected(),
   },
