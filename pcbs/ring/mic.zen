@@ -6,6 +6,7 @@ clk = io("clk", Net)
 data = io("data", Net)
 gnd = io("gnd", Net)
 
+# MAY want to consider mic that can allow wake on sound; only options have lower SNR tho
 Component(
   name = "MK1",
   footprint = File("@kicad-footprints/Sensor_Audio.pretty/Infineon_PG-LLGA-5-1.kicad_mod"),
@@ -18,6 +19,7 @@ Component(
     "CLOCK": clk,
   },
   mpn = "IM72D128V01"
+  prefix = "MK"
 )
 
 C(

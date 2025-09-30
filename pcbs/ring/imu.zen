@@ -30,7 +30,7 @@ lsm6dox = Symbol(
 Component(
   name = "U3",
   footprint = File("@kicad-footprints/Package_LGA.pretty/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y.kicad_mod"),
-  symbol = lsm6dox,
+  symbol = lsm6sdox,
   pins = {
     "SDA": sda,
     "SCL": scl,
@@ -49,6 +49,7 @@ Component(
     "OCS_Aux": NotConnected(),
     "SDO_Aux": NotConnected(),
   },
+  mpn = "LSM6DSOX"
 )
 
 C(

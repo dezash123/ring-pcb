@@ -38,6 +38,7 @@ Component(
     "BIN": bin,
     "BAT": vbatt,
   },
+  mpn = "BQ27427YZFR"
 )
 
 C(

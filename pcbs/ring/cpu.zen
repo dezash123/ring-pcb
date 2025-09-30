@@ -110,4 +110,5 @@ Component(
     "D-": NotConnected(),
     "D+": NotConnected(),
   },
+  mpn = "nRF52833-QDAA"
 )
