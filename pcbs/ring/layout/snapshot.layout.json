@@ -3856,9 +3856,9 @@
         "x": 161277500,
         "y": 82715179
       },
-      "reference": "U12",
+      "reference": "U7",
       "uuid": "380516bc-4a6a-577c-bcc6-7f0ef97462c1",
-      "value": "?"
+      "value": "TPS7A2018PDQN"
     },
     {
       "dnp": false,
@@ -4132,7 +4132,7 @@
         "x": 166252500,
         "y": 83100000
       },
-      "reference": "U2",
+      "reference": "BT1",
       "uuid": "412ee531-6df4-5388-92bc-1d8c9dc60409",
       "value": "?"
     },
@@ -6462,9 +6462,9 @@
         "x": 154200000,
         "y": 83450000
       },
-      "reference": "U9",
+      "reference": "U5",
       "uuid": "7da687fc-0ee2-5b21-8e86-00ba7cb4806d",
-      "value": "?"
+      "value": "LSM6DSOX"
     },
     {
       "dnp": false,
@@ -6784,9 +6784,9 @@
         "x": 163977500,
         "y": 84665000
       },
-      "reference": "U5",
+      "reference": "U2",
       "uuid": "80c9642f-46c5-5631-bf83-c1ea5a9b98f1",
-      "value": "?"
+      "value": "BQ29700"
     },
     {
       "dnp": false,
@@ -7476,7 +7476,7 @@
         "x": 150450000,
         "y": 81875000
       },
-      "reference": "U10",
+      "reference": "MK1",
       "uuid": "8af6d9cc-290d-5c92-8072-ab7bc0336f51",
       "value": "IM72D128V01"
     },
@@ -8510,9 +8510,9 @@
         "x": 141150000,
         "y": 83100000
       },
-      "reference": "U6",
+      "reference": "U3",
       "uuid": "8c1c7710-c072-5b96-a659-f3e473461043",
-      "value": "?"
+      "value": "nRF52833-QDAA"
     },
     {
       "dnp": false,
@@ -11898,9 +11898,9 @@
         "x": 165677500,
         "y": 85200000
       },
-      "reference": "U4",
+      "reference": "Q2",
       "uuid": "bb1a363e-0250-5e18-a8ba-5d6cab5fd1fc",
-      "value": "?"
+      "value": "CSD13380F3T"
     },
     {
       "dnp": false,
@@ -12244,9 +12244,9 @@
         "x": 149900000,
         "y": 84887500
       },
-      "reference": "U11",
+      "reference": "U6",
       "uuid": "bf26c523-7924-5187-9103-f86a98452230",
-      "value": "?"
+      "value": "TMP117AIDRVR"
     },
     {
       "dnp": false,
@@ -14602,9 +14602,9 @@
         "x": 165675000,
         "y": 84112500
       },
-      "reference": "U3",
+      "reference": "Q1",
       "uuid": "ee68d577-cfe4-5ad4-abb1-926f6f0b3f09",
-      "value": "?"
+      "value": "CSD13380F3T"
     },
     {
       "dnp": false,
@@ -14988,9 +14988,9 @@
         "x": 157602500,
         "y": 83112500
       },
-      "reference": "U8",
+      "reference": "U4",
       "uuid": "f3cc2a80-3520-5d90-bbfe-b0ee0a3ab4c3",
-      "value": "?"
+      "value": "MAX30102EFD+T"
     },
     {
       "dnp": false,
@@ -15564,7 +15564,7 @@
         "x": 121500000,
         "y": 80600000
       },
-      "reference": "U7",
+      "reference": "J1",
       "uuid": "f8c684c1-16c6-5af0-bb39-c9994e001b25",
       "value": "?"
     },
@@ -15952,7 +15952,7 @@
       },
       "reference": "U1",
       "uuid": "fb3cca66-5243-56c5-a653-6378be380f40",
-      "value": "?"
+      "value": "BQ27427YZFR"
     },
     {
       "dnp": false,

@@ -86,4 +86,9 @@ Component(
     "+": vbatt,
     "-": vss 
   },
+  prefix = "BT",
+  properties = {
+    "do_not_place": True,
+    "exclude_from_bom": True,
+  },
 )

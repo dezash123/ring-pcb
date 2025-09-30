@@ -16,6 +16,10 @@ Component(
   name = "J1",
   footprint = File("@kicad-footprints/RF_Antenna.pretty/Texas_SWRA117D_2.4GHz_Left.kicad_mod"),
   symbol = Symbol("@kicad-symbols/Connector.kicad_sym:Conn_Coaxial_Small"),
-  pins = { "In": n2, "Ext": gnd }
-
+  pins = { "In": n2, "Ext": gnd },
+  prefix = "J",
+  properties = {
+    "do_not_place": True,
+    "exclude_from_bom": True,
+  }
 )

@@ -9,7 +9,7 @@ int1 = io("int1", Net)
 int2 = io("int2", Net)
 gnd = io("gnd", Net)
 
-lsm6dox = Symbol(
+lsm6sdox = Symbol(
     definition = [
         ("SDO/SA0", ["1"]),
         ("SDx", ["2"]),
