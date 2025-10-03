@@ -1,0 +1,74 @@
+# =========================================================
+# rp2040_swd_probe.zen — RP2040-based SWD probe over USB
+# Exposes: SWDIO, SWCLK, GND, VTREF(3V3); consumes USB D+/D-
+# =========================================================
+load("@stdlib/interfaces.zen", "Power", "Ground", "Usb2", "Swd", "OscPair")
+Resistor = Module("@stdlib/generics/Resistor.zen")
+Capacitor = Module("@stdlib/generics/Capacitor.zen")
+Crystal = Module("@stdlib/generics/Crystal.zen")
+TestPoint = Module("@stdlib/generics/TestPoint.zen")
+TagConnect = Module("@stdlib/kicad/TagConnect.zen")
+
+# Rails & interfaces
+vdd = Power("3V3")
+gnd = Ground("GND")
+usb = Usb2(DP=Net("USB_DP"), DN=Net("USB_DN"), VBUS=Power("VBUS_5V").NET, GND=gnd.NET)
+swd = Swd(SWDIO=Net("PROBE_SWDIO"), SWDCLK=Net("PROBE_SWCLK"), RESET=Net("PROBE_nRESET"))
+
+# 12MHz crystal for RP2040
+XO = OscPair(XI=Net("XIN"), XO=Net("XOUT"))
+Crystal("X1", frequency="12MHz", load_capacitance="10pF", package="3225_4Pin", XIN=XO.XI, XOUT=XO.XO, GND=gnd.NET)
+Capacitor("CX1", "10pF", "0402", voltage="50V", P1=XO.XI, P2=gnd.NET)
+Capacitor("CX2", "10pF", "0402", voltage="50V", P1=XO.XO, P2=gnd.NET)
+
+# RP2040 (placeholder symbol/footprint)
+load("@stdlib/config.zen", "config_properties")
+Component(
+  name = "U_RP2040",
+  type = "mcu",
+  prefix = "U",
+  symbol = Symbol(library="@kicad-symbols/MCU_RaspberryPi.kicad_sym", name="RP2040"),
+  footprint = File("@kicad-footprints/Package_QFN.pretty/QFN-56-1EP_7x7mm_P0.4mm.kicad_mod"),
+  properties = config_properties({"mpn": "RP2040"}),
+  pins = {
+    # Power
+    "3V3": vdd.NET,
+    "GND": gnd.NET,
+    # USB
+    "USB_DP": usb.DP,
+    "USB_DM": usb.DN,
+    # Crystal
+    "XIN": XO.XI,
+    "XOUT": XO.XO,
+    # SWD to target (route via chosen GPIOs in firmware)
+    "GPIO2": swd.SWDIO,
+    "GPIO3": swd.SWDCLK,
+    "RUN": Net("PROBE_RUN"),
+  },
+)
+
+# Decoupling
+Capacitor("C_VDD1", "100nF", "0402", voltage="10V", P1=vdd.NET, P2=gnd.NET)
+Capacitor("C_VDD2", "100nF", "0402", voltage="10V", P1=vdd.NET, P2=gnd.NET)
+Capacitor("C_VDD_BULK", "10uF 20%", "0603", voltage="10V", P1=vdd.NET, P2=gnd.NET)
+
+# SWD output header (TagConnect 2x03)
+TagConnect(
+  "J_SWD_OUT",
+  tag_type="TC2030-IDC-NL-2x03",
+  P1=vdd.NET,         # VTREF
+  P2=swd.SWDIO,
+  P3=Net("PROBE_nRESET"),
+  P4=swd.SWDCLK,
+  P5=gnd.NET,
+  P6=Net("SWO")       # optional
+)
+
+# Helpful test pads
+TestPoint("TP_SWDIO", variant="Pad_D1.0mm", P1=swd.SWDIO)
+TestPoint("TP_SWCLK", variant="Pad_D1.0mm", P1=swd.SWDCLK)
+
+export vdd
+export gnd
+export usb
+export swd

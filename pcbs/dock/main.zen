@@ -1,0 +1,41 @@
+load("@stdlib/properties.zen", "Layout")
+
+UsbIn   = Module("usb_c_frontend.zen")
+Ldo3v3  = Module("ldo_3v3.zen")
+Ldo1v8  = Module("ldo_1v8.zen")
+Chg     = Module("liion_charger.zen")
+BattOut = Module("direct_charge_breakout.zen")
+Wlc     = Module("nfc_wlc_breakout.zen")
+Probe   = Module("rp2040_swd_probe.zen")
+
+GND      = Net("GND")
+VBUS_5V  = Net("VBUS_5V")
+VDD_3V3  = Net("VDD_3V3")
+VDD_1V8  = Net("VDD_1V8")
+VBATT    = Net("VBATT")
+USB_DP   = Net("USB_DP")
+USB_DN   = Net("USB_DN")
+
+UsbIn(name="usb", vbus_out=VBUS_5V, gnd=GND, usb_dp=USB_DP, usb_dn=USB_DN)
+
+Ldo3v3(name="ldo3", vin=VBUS_5V, vout=VDD_3V3, gnd=GND)
+Ldo1v8(name="ldo1", vin=VBUS_5V, vout=VDD_1V8, gnd=GND)
+
+Chg(name="charger", vin=VBUS_5V, vbatt=VBATT, gnd=GND)
+BattOut(name="batt", vbatt=VBATT, gnd=GND)
+
+Wlc(
+  name="wlc",
+  vin5=VBUS_5V, gnd=GND,
+  txp=Net("WLC_TXP"), txn=Net("WLC_TXN"),
+  comm=Net("WLC_COMM"), vrect=Net("WLC_VRECT")
+)
+
+Probe(
+  name="probe",
+  iovdd=VDD_1V8, usbvdd=VDD_3V3, vregvin=VDD_1V8, gnd=GND,
+  usb_dp=USB_DP, usb_dn=USB_DN,
+  swdio=Net("PROBE_SWDIO"), swclk=Net("PROBE_SWCLK"), nreset=Net("PROBE_nRESET")
+)
+
+Layout("layout", "layout/")

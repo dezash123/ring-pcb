@@ -1,0 +1,1207 @@
+INFO: Creating new board file at /home/dezash/projects/ring/pcbs/dock/layout/layout.kicad_pcb
+INFO: Loading schematic data from /tmp/.tmplSgGnW/netlist.json
+INFO: Parsing JSON netlist from /tmp/.tmplSgGnW/netlist.json
+INFO: Found module probe.R_WP with layout_path: None
+INFO: Found module probe.C_FLASH_VCC with layout_path: None
+INFO: Found module ldo3.COUT3 with layout_path: None
+INFO: Found module wlc.J_WLC with layout_path: None
+INFO: Found module usb.FB_VBUS with layout_path: None
+INFO: Found module wlc with layout_path: None
+INFO: Found module probe.C_XIN with layout_path: None
+INFO: Found module ldo1.COUT1 with layout_path: None
+INFO: Found module usb with layout_path: None
+INFO: Found module charger with layout_path: None
+INFO: Found module charger.R_PROG with layout_path: None
+INFO: Found module probe.X1 with layout_path: None
+INFO: Found module ldo1.CIN1 with layout_path: None
+INFO: Found module charger.D_STAT with layout_path: None
+INFO: Found module probe.C_VREGVIN with layout_path: None
+INFO: Found module usb.C_VBUS with layout_path: None
+INFO: Found module probe.C_USBVDD with layout_path: None
+INFO: Found module charger.C_BAT with layout_path: None
+INFO: Found module probe with layout_path: None
+INFO: Found module probe.C_XOUT with layout_path: None
+INFO: Found module batt.J_BATT with layout_path: None
+INFO: Found module ldo3 with layout_path: None
+INFO: Found module usb.R_CC2 with layout_path: None
+INFO: Found module batt.TP_GND with layout_path: None
+INFO: Found module batt.TP_VBATT with layout_path: None
+INFO: Found module probe.C_IOVDD with layout_path: None
+INFO: Found module charger.R_STAT with layout_path: None
+INFO: Found module batt with layout_path: None
+INFO: Found module charger.C_IN with layout_path: None
+INFO: Found module usb.C_VBUS_HF with layout_path: None
+INFO: Found module probe.J_SWD with layout_path: None
+INFO: Found module probe.C_AVDD_1 with layout_path: None
+INFO: Found module usb.R_CC1 with layout_path: None
+INFO: Found module probe.C_AVDD_0 with layout_path: None
+INFO: Found module ldo3.CIN3 with layout_path: None
+INFO: Found module probe.C_VREGVOUT with layout_path: None
+INFO: Found module probe.R_HOLD with layout_path: None
+INFO: Found module ldo1 with layout_path: None
+INFO: --------------------------------------------------------------------------------
+INFO: Running step: SetupBoard
+INFO: --------------------------------------------------------------------------------
+INFO: Starting SetupBoard...
+INFO: Completed SetupBoard in 0.000 seconds
+INFO: --------------------------------------------------------------------------------
+INFO: Running step: ApplyMovedPaths
+INFO: --------------------------------------------------------------------------------
+INFO: Starting ApplyMovedPaths...
+INFO: No moved paths to apply
+INFO: Completed ApplyMovedPaths in 0.000 seconds
+INFO: --------------------------------------------------------------------------------
+INFO: Running step: ImportNetlist
+INFO: --------------------------------------------------------------------------------
+INFO: Starting ImportNetlist...
+DEBUG: Environment setup took 0.000 seconds
+DEBUG: Footprint library map loading took 0.001 seconds
+INFO: 4fef1de5-4450-5cc3-be99-914709075b66 (C9): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 5f35665e-f996-5b5a-a633-1623a909bfb4 (U1): Adding to board
+INFO: Loading footprint SOT-23-5 from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Package_TO_SOT_SMD.pretty/
+INFO: f9a79878-5822-5a0b-8f06-178bf622cc4d (U3): Adding to board
+INFO: Loading footprint SOT-223 from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Package_TO_SOT_SMD.pretty/
+INFO: 3291158a-9372-57e7-9ec9-c40ded2ac6a0 (C11): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 9dfe44c2-97e4-5956-8ebc-4eb274c1d0d6 (C3): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 8fb317e8-7b71-589f-b458-cd267a80ebd5 (C4): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 1b3e4cbe-4422-51ec-a468-2a512f4bd7b5 (C14): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 8ebd882d-7984-59fe-a148-1add4c9e0855 (J2): Adding to board
+INFO: Loading footprint Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Connector.pretty/
+INFO: 212e9f88-e1a2-5950-8716-6c3ac19ff781 (U2): Adding to board
+INFO: Loading footprint SOT-23-5 from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Package_TO_SOT_SMD.pretty/
+INFO: 6d387508-2610-5127-96d6-595f52d206b7 (C13): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: f5f56ef6-5c00-5d0e-848e-48042d8105ff (U5): Adding to board
+INFO: Loading footprint QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Package_DFN_QFN.pretty/
+INFO: b3f700d1-3202-59a6-8b7c-e87b995e9c1c (C2): Adding to board
+INFO: Loading footprint C_0603_1608Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: d0add21f-7705-5329-af7d-f9ad7bfc5f2f (TP1): Adding to board
+INFO: Loading footprint TestPoint_Pad_D1.5mm from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/TestPoint.pretty/
+INFO: 6f110918-883e-5db3-b083-e480fe4ffdd5 (TP2): Adding to board
+INFO: Loading footprint TestPoint_Pad_D1.5mm from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/TestPoint.pretty/
+INFO: f08ad11d-52f3-509e-94e8-c139f483888c (FB1): Adding to board
+INFO: Loading footprint R_0603_1608Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 935786b1-e3d5-5397-89cd-3f1af348a122 (C10): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 598256d2-873e-5044-acd1-0470da4dbb3b (C7): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: bdeac89f-1fd2-5bcb-b48e-11c42cababf5 (C17): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 14b4fc02-96e7-5358-b7ff-87c79e7ab16c (J3): Adding to board
+INFO: Loading footprint Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Connector_Molex.pretty/
+INFO: aab2f633-ec8a-543a-9733-8138219f0927 (R6): Adding to board
+INFO: Loading footprint R_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 639ad84d-f2ed-54f7-ba81-afac80434380 (J1): Adding to board
+INFO: Loading footprint Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Connector_Molex.pretty/
+INFO: 6292a9c2-0f66-5c26-9505-694b2f6a3b24 (C12): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 1c984044-1e61-5bb8-8b5f-d33df6cdcb6e (R1): Adding to board
+INFO: Loading footprint R_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: ab1d14d1-1dca-55bf-a558-05fa4aedc1d9 (C6): Adding to board
+INFO: Loading footprint C_1206_3216Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 0ed4b13e-badd-5d8e-a939-abd2442bcbd6 (C15): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: c4c1d35d-417b-5784-ab55-9c0ac3c16a71 (Y1): Adding to board
+INFO: Loading footprint Crystal_SMD_3225-4Pin_3.2x2.5mm from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Crystal.pretty/
+INFO: 43905658-e22f-5106-86f5-27399470cffd (R5): Adding to board
+INFO: Loading footprint R_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 2f67394c-096e-559f-8901-9ec60e09ba2b (C16): Adding to board
+INFO: Loading footprint C_1206_3216Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 8fcc0ce0-9b6e-5ad2-8339-c8afc25ab43c (C8): Adding to board
+INFO: Loading footprint C_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 1b70c9ba-bc79-5253-aa5f-9e47eb96cb80 (D1): Adding to board
+INFO: Loading footprint LED_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/LED_SMD.pretty/
+INFO: a4fb89c7-f036-568c-aa83-efc074888b56 (C5): Adding to board
+INFO: Loading footprint C_1206_3216Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 15abd066-dfbd-5452-9083-6e1375985d17 (R4): Adding to board
+INFO: Loading footprint R_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 393f832c-ba7d-5449-9c0b-e27f1e6f3242 (R3): Adding to board
+INFO: Loading footprint R_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 2bfd0f10-5dc3-541e-ab1b-227b79714515 (U4): Adding to board
+INFO: Loading footprint SOIC-8_3.9x4.9mm_P1.27mm from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Package_SO.pretty/
+INFO: 77316517-6151-54fd-94f0-c677a1bd7d3b (R2): Adding to board
+INFO: Loading footprint R_0402_1005Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/
+INFO: 3e9e5622-60a6-5d68-8c5f-0491ebed406b (C1): Adding to board
+INFO: Loading footprint C_0603_1608Metric from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Capacitor_SMD.pretty/
+INFO: 1ce71389-bddd-56c9-a51c-92b471ffd6c3 (U6): Adding to board
+INFO: Loading footprint USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal from /home/dezash/projects/ring/pcbs/dock/layout/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Connector_USB.pretty/
+INFO: Footprint synchronization took 1.446 seconds
+INFO: Adding net probe.NC_8
+INFO: Connecting pad U5/9 to net probe.NC_8
+INFO: Adding net probe.XIN
+INFO: Connecting pad Y1/1 to net probe.XIN
+INFO: Connecting pad C14/1 to net probe.XIN
+INFO: Connecting pad U5/20 to net probe.XIN
+INFO: Adding net VDD_3V3
+INFO: Connecting pad U3/2 to net VDD_3V3
+INFO: Connecting pad C6/1 to net VDD_3V3
+INFO: Connecting pad U5/48 to net VDD_3V3
+INFO: Connecting pad C11/1 to net VDD_3V3
+INFO: Connecting pad U4/8 to net VDD_3V3
+INFO: Connecting pad C9/1 to net VDD_3V3
+INFO: Connecting pad R4/2 to net VDD_3V3
+INFO: Connecting pad R3/2 to net VDD_3V3
+INFO: Adding net probe.NC_17
+INFO: Connecting pad U5/27 to net probe.NC_17
+INFO: Adding net probe.QSPI_SD2
+INFO: Connecting pad U5/54 to net probe.QSPI_SD2
+INFO: Adding net probe.NC_26
+INFO: Connecting pad U5/37 to net probe.NC_26
+INFO: Adding net probe.XOUT
+INFO: Connecting pad Y1/3 to net probe.XOUT
+INFO: Connecting pad C15/1 to net probe.XOUT
+INFO: Connecting pad U5/21 to net probe.XOUT
+INFO: Adding net probe.NC_21
+INFO: Connecting pad U5/31 to net probe.NC_21
+INFO: Adding net probe.NC_10
+INFO: Connecting pad U5/12 to net probe.NC_10
+INFO: Adding net probe.NC_25
+INFO: Connecting pad U5/36 to net probe.NC_25
+INFO: Adding net usb.NC
+INFO: Connecting pad U6/A8 to net usb.NC
+INFO: Adding net probe.NC_15
+INFO: Connecting pad U5/17 to net probe.NC_15
+INFO: Adding net probe.NC_27
+INFO: Connecting pad U5/38 to net probe.NC_27
+INFO: Adding net WLC_COMM
+INFO: Connecting pad J3/5 to net WLC_COMM
+INFO: Adding net probe.NC_3
+INFO: Connecting pad U5/2 to net probe.NC_3
+INFO: Adding net WLC_VRECT
+INFO: Connecting pad J3/6 to net WLC_VRECT
+INFO: Adding net VBUS_5V
+INFO: Connecting pad FB1/2 to net VBUS_5V
+INFO: Connecting pad C16/1 to net VBUS_5V
+INFO: Connecting pad C17/1 to net VBUS_5V
+INFO: Connecting pad U3/3 to net VBUS_5V
+INFO: Connecting pad C5/1 to net VBUS_5V
+INFO: Connecting pad U2/1 to net VBUS_5V
+INFO: Connecting pad U2/3 to net VBUS_5V
+INFO: Connecting pad C3/1 to net VBUS_5V
+INFO: Connecting pad U1/4 to net VBUS_5V
+INFO: Connecting pad C2/1 to net VBUS_5V
+INFO: Connecting pad J3/1 to net VBUS_5V
+INFO: Adding net probe.QSPI_SD0_2
+INFO: Connecting pad U4/5 to net probe.QSPI_SD0_2
+INFO: Adding net USB_DN
+INFO: Connecting pad U6/A7 to net USB_DN
+INFO: Connecting pad U6/B7 to net USB_DN
+INFO: Connecting pad U5/46 to net USB_DN
+INFO: Adding net PROBE_SWDIO
+INFO: Connecting pad U5/4 to net PROBE_SWDIO
+INFO: Connecting pad J2/2 to net PROBE_SWDIO
+INFO: Adding net probe.NC_2
+INFO: Connecting pad U5/25 to net probe.NC_2
+INFO: Adding net charger.CHG_STAT
+INFO: Connecting pad U1/1 to net charger.CHG_STAT
+INFO: Connecting pad R2/1 to net charger.CHG_STAT
+INFO: Adding net charger.ISET
+INFO: Connecting pad U1/5 to net charger.ISET
+INFO: Connecting pad R1/1 to net charger.ISET
+INFO: Adding net probe.QSPI_SD1_2
+INFO: Connecting pad U4/2 to net probe.QSPI_SD1_2
+INFO: Adding net probe.NC_16
+INFO: Connecting pad U5/18 to net probe.NC_16
+INFO: Adding net probe.NC_6
+INFO: Connecting pad U5/7 to net probe.NC_6
+INFO: Adding net probe.NC_12
+INFO: Connecting pad U5/14 to net probe.NC_12
+INFO: Adding net probe.NC_29
+INFO: Connecting pad U5/40 to net probe.NC_29
+INFO: Adding net probe.NC_11
+INFO: Connecting pad U5/13 to net probe.NC_11
+INFO: Adding net usb.VBUS_RAW
+INFO: Connecting pad U6/A4 to net usb.VBUS_RAW
+INFO: Connecting pad U6/A9 to net usb.VBUS_RAW
+INFO: Connecting pad U6/B4 to net usb.VBUS_RAW
+INFO: Connecting pad U6/B9 to net usb.VBUS_RAW
+INFO: Connecting pad FB1/1 to net usb.VBUS_RAW
+INFO: Adding net PROBE_SWCLK
+INFO: Connecting pad U5/5 to net PROBE_SWCLK
+INFO: Connecting pad J2/4 to net PROBE_SWCLK
+INFO: Adding net probe.QSPI_SS_2
+INFO: Connecting pad U4/1 to net probe.QSPI_SS_2
+INFO: Adding net probe.QSPI_SS
+INFO: Connecting pad U5/56 to net probe.QSPI_SS
+INFO: Adding net probe.NC_23
+INFO: Connecting pad U5/34 to net probe.NC_23
+INFO: Adding net probe.QSPI_SD0
+INFO: Connecting pad U5/53 to net probe.QSPI_SD0
+INFO: Adding net probe.QSPI_SCLK
+INFO: Connecting pad U5/52 to net probe.QSPI_SCLK
+INFO: Adding net probe.NC_14
+INFO: Connecting pad U5/16 to net probe.NC_14
+INFO: Adding net ldo1.NC
+INFO: Connecting pad U2/4 to net ldo1.NC
+INFO: Adding net probe.QSPI_SD2_3
+INFO: Connecting pad R4/1 to net probe.QSPI_SD2_3
+INFO: Adding net probe.QSPI_SD3_3
+INFO: Connecting pad R3/1 to net probe.QSPI_SD3_3
+INFO: Adding net probe.NC_7
+INFO: Connecting pad U5/8 to net probe.NC_7
+INFO: Adding net probe.QSPI_SD1
+INFO: Connecting pad U5/55 to net probe.QSPI_SD1
+INFO: Adding net probe.NC_18
+INFO: Connecting pad U5/28 to net probe.NC_18
+INFO: Adding net usb.CC1
+INFO: Connecting pad U6/A5 to net usb.CC1
+INFO: Connecting pad R5/1 to net usb.CC1
+INFO: Adding net probe.VREG_VOUT
+INFO: Connecting pad C13/1 to net probe.VREG_VOUT
+INFO: Connecting pad U5/45 to net probe.VREG_VOUT
+INFO: Connecting pad U5/23 to net probe.VREG_VOUT
+INFO: Connecting pad U5/50 to net probe.VREG_VOUT
+INFO: Adding net probe.NC_9
+INFO: Connecting pad U5/11 to net probe.NC_9
+INFO: Adding net PROBE_nRESET
+INFO: Connecting pad U5/26 to net PROBE_nRESET
+INFO: Connecting pad J2/3 to net PROBE_nRESET
+INFO: Adding net charger.LED_A
+INFO: Connecting pad R2/2 to net charger.LED_A
+INFO: Connecting pad D1/2 to net charger.LED_A
+INFO: Adding net probe.NC_19
+INFO: Connecting pad U5/29 to net probe.NC_19
+INFO: Adding net probe.NC_20
+INFO: Connecting pad U5/30 to net probe.NC_20
+INFO: Adding net probe.NC_31
+INFO: Connecting pad J2/6 to net probe.NC_31
+INFO: Adding net usb.NC_2
+INFO: Connecting pad U6/B8 to net usb.NC_2
+INFO: Adding net USB_DP
+INFO: Connecting pad U6/A6 to net USB_DP
+INFO: Connecting pad U6/B6 to net USB_DP
+INFO: Connecting pad U5/47 to net USB_DP
+INFO: Adding net probe.QSPI_SD3
+INFO: Connecting pad U5/51 to net probe.QSPI_SD3
+INFO: Adding net probe.NC_13
+INFO: Connecting pad U5/15 to net probe.NC_13
+INFO: Adding net probe.NC_22
+INFO: Connecting pad U5/32 to net probe.NC_22
+INFO: Adding net probe.NC_24
+INFO: Connecting pad U5/35 to net probe.NC_24
+INFO: Adding net probe.NC_5
+INFO: Connecting pad U5/6 to net probe.NC_5
+INFO: Adding net probe.QSPI_SD2_2
+INFO: Connecting pad U4/3 to net probe.QSPI_SD2_2
+INFO: Adding net probe.QSPI_SD3_2
+INFO: Connecting pad U4/7 to net probe.QSPI_SD3_2
+INFO: Adding net WLC_TXN
+INFO: Connecting pad J3/4 to net WLC_TXN
+INFO: Adding net probe.NC_4
+INFO: Connecting pad U5/3 to net probe.NC_4
+INFO: Adding net WLC_TXP
+INFO: Connecting pad J3/3 to net WLC_TXP
+INFO: Adding net usb.CC2
+INFO: Connecting pad U6/B5 to net usb.CC2
+INFO: Connecting pad R6/1 to net usb.CC2
+INFO: Adding net probe.ADC_AVDD
+INFO: Connecting pad C7/1 to net probe.ADC_AVDD
+INFO: Connecting pad C8/1 to net probe.ADC_AVDD
+INFO: Connecting pad U5/43 to net probe.ADC_AVDD
+INFO: Adding net VDD_1V8
+INFO: Connecting pad U2/5 to net VDD_1V8
+INFO: Connecting pad C4/1 to net VDD_1V8
+INFO: Connecting pad U5/44 to net VDD_1V8
+INFO: Connecting pad U5/1 to net VDD_1V8
+INFO: Connecting pad U5/10 to net VDD_1V8
+INFO: Connecting pad U5/22 to net VDD_1V8
+INFO: Connecting pad U5/33 to net VDD_1V8
+INFO: Connecting pad U5/42 to net VDD_1V8
+INFO: Connecting pad U5/49 to net VDD_1V8
+INFO: Connecting pad C10/1 to net VDD_1V8
+INFO: Connecting pad C12/1 to net VDD_1V8
+INFO: Connecting pad J2/1 to net VDD_1V8
+INFO: Adding net GND
+INFO: Connecting pad U6/S1 to net GND
+INFO: Connecting pad U6/S1 to net GND
+INFO: Connecting pad U6/S1 to net GND
+INFO: Connecting pad U6/S1 to net GND
+INFO: Connecting pad U6/A1 to net GND
+INFO: Connecting pad U6/A12 to net GND
+INFO: Connecting pad U6/B1 to net GND
+INFO: Connecting pad U6/B12 to net GND
+INFO: Connecting pad R5/2 to net GND
+INFO: Connecting pad R6/2 to net GND
+INFO: Connecting pad C16/2 to net GND
+INFO: Connecting pad C17/2 to net GND
+INFO: Connecting pad U3/1 to net GND
+INFO: Connecting pad C5/2 to net GND
+INFO: Connecting pad C6/2 to net GND
+INFO: Connecting pad U2/2 to net GND
+INFO: Connecting pad C3/2 to net GND
+INFO: Connecting pad C4/2 to net GND
+INFO: Connecting pad U1/2 to net GND
+INFO: Connecting pad R1/2 to net GND
+INFO: Connecting pad D1/1 to net GND
+INFO: Connecting pad C2/2 to net GND
+INFO: Connecting pad C1/2 to net GND
+INFO: Connecting pad J1/2 to net GND
+INFO: Connecting pad TP1/1 to net GND
+INFO: Connecting pad J3/2 to net GND
+INFO: Connecting pad Y1/2 to net GND
+INFO: Connecting pad Y1/4 to net GND
+INFO: Connecting pad C14/2 to net GND
+INFO: Connecting pad C15/2 to net GND
+INFO: Connecting pad C13/2 to net GND
+INFO: Connecting pad C7/2 to net GND
+INFO: Connecting pad C8/2 to net GND
+INFO: Connecting pad U5/57 to net GND
+INFO: Connecting pad U5/19 to net GND
+INFO: Connecting pad C10/2 to net GND
+INFO: Connecting pad C11/2 to net GND
+INFO: Connecting pad C12/2 to net GND
+INFO: Connecting pad U4/4 to net GND
+INFO: Connecting pad C9/2 to net GND
+INFO: Connecting pad J2/5 to net GND
+INFO: Adding net VBATT
+INFO: Connecting pad U1/3 to net VBATT
+INFO: Connecting pad C1/1 to net VBATT
+INFO: Connecting pad J1/1 to net VBATT
+INFO: Connecting pad TP2/1 to net VBATT
+INFO: Adding net probe.QSPI_SCLK_2
+INFO: Connecting pad U4/6 to net probe.QSPI_SCLK_2
+INFO: Adding net probe.NC
+INFO: Connecting pad U5/24 to net probe.NC
+INFO: Adding net probe.NC_28
+INFO: Connecting pad U5/39 to net probe.NC_28
+INFO: Adding net probe.NC_30
+INFO: Connecting pad U5/41 to net probe.NC_30
+INFO: Net synchronization took 0.003 seconds
+DEBUG: Will create group usb with 6 children
+DEBUG: Will create group batt with 3 children
+DEBUG: Will create group ldo1 with 3 children
+DEBUG: Will create group ldo3 with 3 children
+DEBUG: Will create group charger with 6 children
+DEBUG: Will create group probe with 15 children
+INFO: Created new group: batt
+INFO: Created new group: charger
+INFO: Created new group: ldo1
+INFO: Created new group: ldo3
+INFO: Created new group: probe
+INFO: Created new group: usb
+DEBUG: Added C6 to group ldo3
+DEBUG: Added R2 to group charger
+DEBUG: Added U1 to group charger
+DEBUG: Added C16 to group usb
+DEBUG: Added C5 to group ldo3
+DEBUG: Added C11 to group probe
+DEBUG: Added C15 to group probe
+DEBUG: Added J1 to group batt
+DEBUG: Added TP1 to group batt
+DEBUG: Added R4 to group probe
+DEBUG: Added C2 to group charger
+DEBUG: Added U6 to group usb
+DEBUG: Added D1 to group charger
+DEBUG: Added C1 to group charger
+DEBUG: Added C14 to group probe
+DEBUG: Added C12 to group probe
+DEBUG: Added FB1 to group usb
+DEBUG: Added U5 to group probe
+DEBUG: Added C3 to group ldo1
+DEBUG: Added C13 to group probe
+DEBUG: Added C9 to group probe
+DEBUG: Added U3 to group ldo3
+DEBUG: Added C8 to group probe
+DEBUG: Added U2 to group ldo1
+DEBUG: Added U4 to group probe
+DEBUG: Added C7 to group probe
+DEBUG: Added C17 to group usb
+DEBUG: Added R5 to group usb
+DEBUG: Added C4 to group ldo1
+DEBUG: Added R6 to group usb
+DEBUG: Added R1 to group charger
+DEBUG: Added R3 to group probe
+DEBUG: Added J2 to group probe
+DEBUG: Added TP2 to group batt
+DEBUG: Added Y1 to group probe
+DEBUG: Added C10 to group probe
+INFO: Group synchronization took 0.001 seconds
+DEBUG: Board refresh took 0.000 seconds
+INFO: Virtual DOM building took 0.067 seconds
+INFO: Virtual DOM structure:
+INFO: Board [NEW] VirtualBoundingBox(x=-5345000, y=-4785000, width=13620000, height=8990000)
+  batt [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=5300000, height=4250000)
+    batt.J_BATT [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=5300000, height=4250000)
+      batt.J_BATT.MPB (Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=5300000, height=4250000)
+    batt.TP_GND [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+      batt.TP_GND.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+    batt.TP_VBATT [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+      batt.TP_VBATT.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+  charger [NEW] VirtualBoundingBox(x=-2075000, y=-1900000, width=4150000, height=3625000)
+    charger.C_BAT [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+      charger.C_BAT.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+    charger.C_IN [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+      charger.C_IN.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+    charger.D_STAT [NEW] VirtualBoundingBox(x=-1190000, y=-495000, width=2145000, height=990000)
+      charger.D_STAT.LED (LED_0402_1005Metric:LED_0402_1005Metric) [NEW] VirtualBoundingBox(x=-1190000, y=-495000, width=2145000, height=990000)
+    charger.R_PROG [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+      charger.R_PROG.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+    charger.R_STAT [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+      charger.R_STAT.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+    charger.U_CHG (SOT-23-5:SOT-23-5) [NEW] VirtualBoundingBox(x=-2075000, y=-1900000, width=4150000, height=3625000)
+  ldo1 [NEW] VirtualBoundingBox(x=-2075000, y=-1900000, width=4150000, height=3625000)
+    ldo1.CIN1 [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      ldo1.CIN1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    ldo1.COUT1 [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      ldo1.COUT1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    ldo1.U_LDO1V8 (SOT-23-5:SOT-23-5) [NEW] VirtualBoundingBox(x=-2075000, y=-1900000, width=4150000, height=3625000)
+  ldo3 [NEW] VirtualBoundingBox(x=-4425000, y=-3700000, width=8850000, height=7325000)
+    ldo3.CIN3 [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+      ldo3.CIN3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+    ldo3.COUT3 [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+      ldo3.COUT3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+    ldo3.U_LDO3V3 (SOT-223:SOT-223) [NEW] VirtualBoundingBox(x=-4425000, y=-3700000, width=8850000, height=7325000)
+  probe [NEW] VirtualBoundingBox(x=-4155000, y=-4155000, width=8310000, height=8310000)
+    probe.C_AVDD_0 [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_AVDD_0.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_AVDD_1 [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_AVDD_1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_FLASH_VCC [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_FLASH_VCC.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_IOVDD [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_IOVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_USBVDD [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_USBVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_VREGVIN [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_VREGVIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_VREGVOUT [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_VREGVOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_XIN [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_XIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.C_XOUT [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      probe.C_XOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    probe.J_SWD [NEW] VirtualBoundingBox(x=-3525000, y=-2025000, width=7050000, height=4050000)
+      probe.J_SWD.TAG_CONNECT (Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical) [NEW] VirtualBoundingBox(x=-3525000, y=-2025000, width=7050000, height=4050000)
+    probe.R_HOLD [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+      probe.R_HOLD.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+    probe.R_WP [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+      probe.R_WP.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+    probe.X1 [NEW] VirtualBoundingBox(x=-2125000, y=-1725000, width=4250000, height=3450000)
+      probe.X1.Y (Crystal_SMD_3225-4Pin_3.2x2.5mm:Crystal_SMD_3225-4Pin_3.2x2.5mm) [NEW] VirtualBoundingBox(x=-2125000, y=-1725000, width=4250000, height=3450000)
+    probe.U_FLASH (SOIC-8_3.9x4.9mm_P1.27mm:SOIC-8_3.9x4.9mm_P1.27mm) [NEW] VirtualBoundingBox(x=-3725000, y=-2855000, width=7450000, height=5580000)
+    probe.U_RP2040 (QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm) [NEW] VirtualBoundingBox(x=-4155000, y=-4155000, width=8310000, height=8310000)
+  usb [NEW] VirtualBoundingBox(x=-5345000, y=-4785000, width=10690000, height=8990000)
+    usb.C_VBUS [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+      usb.C_VBUS.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+    usb.C_VBUS_HF [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+      usb.C_VBUS_HF.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+    usb.FB_VBUS [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+      usb.FB_VBUS.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+    usb.R_CC1 [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+      usb.R_CC1.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+    usb.R_CC2 [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+      usb.R_CC2.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+    usb.J_USB (USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal) [NEW] VirtualBoundingBox(x=-5345000, y=-4785000, width=10690000, height=8990000)
+  wlc [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=10300000, height=4250000)
+    wlc.J_WLC [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=10300000, height=4250000)
+      wlc.J_WLC.MPB (Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical:Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=10300000, height=4250000)
+INFO: Completed ImportNetlist in 1.520 seconds
+INFO: --------------------------------------------------------------------------------
+INFO: Running step: SyncLayouts
+INFO: --------------------------------------------------------------------------------
+INFO: Starting SyncLayouts...
+DEBUG: Skipping group batt - no layout_path
+DEBUG: Skipping group charger - no layout_path
+DEBUG: Skipping group ldo1 - no layout_path
+DEBUG: Skipping group ldo3 - no layout_path
+DEBUG: Skipping group probe - no layout_path
+DEBUG: Skipping group usb - no layout_path
+DEBUG: Skipping group wlc - no layout_path
+DEBUG: Skipping group batt.J_BATT - no layout_path
+DEBUG: Skipping group batt.TP_GND - no layout_path
+DEBUG: Skipping group batt.TP_VBATT - no layout_path
+DEBUG: Skipping group charger.C_BAT - no layout_path
+DEBUG: Skipping group charger.C_IN - no layout_path
+DEBUG: Skipping group charger.D_STAT - no layout_path
+DEBUG: Skipping group charger.R_PROG - no layout_path
+DEBUG: Skipping group charger.R_STAT - no layout_path
+DEBUG: Skipping group ldo1.CIN1 - no layout_path
+DEBUG: Skipping group ldo1.COUT1 - no layout_path
+DEBUG: Skipping group ldo3.CIN3 - no layout_path
+DEBUG: Skipping group ldo3.COUT3 - no layout_path
+DEBUG: Skipping group probe.C_AVDD_0 - no layout_path
+DEBUG: Skipping group probe.C_AVDD_1 - no layout_path
+DEBUG: Skipping group probe.C_FLASH_VCC - no layout_path
+DEBUG: Skipping group probe.C_IOVDD - no layout_path
+DEBUG: Skipping group probe.C_USBVDD - no layout_path
+DEBUG: Skipping group probe.C_VREGVIN - no layout_path
+DEBUG: Skipping group probe.C_VREGVOUT - no layout_path
+DEBUG: Skipping group probe.C_XIN - no layout_path
+DEBUG: Skipping group probe.C_XOUT - no layout_path
+DEBUG: Skipping group probe.J_SWD - no layout_path
+DEBUG: Skipping group probe.R_HOLD - no layout_path
+DEBUG: Skipping group probe.R_WP - no layout_path
+DEBUG: Skipping group probe.X1 - no layout_path
+DEBUG: Skipping group usb.C_VBUS - no layout_path
+DEBUG: Skipping group usb.C_VBUS_HF - no layout_path
+DEBUG: Skipping group usb.FB_VBUS - no layout_path
+DEBUG: Skipping group usb.R_CC1 - no layout_path
+DEBUG: Skipping group usb.R_CC2 - no layout_path
+DEBUG: Skipping group wlc.J_WLC - no layout_path
+INFO: Completed layout sync: synced 0 groups
+INFO: Completed SyncLayouts in 0.000 seconds
+INFO: --------------------------------------------------------------------------------
+INFO: Running step: PlaceComponents
+INFO: --------------------------------------------------------------------------------
+INFO: Starting PlaceComponents...
+INFO: Starting hierarchical component placement
+INFO: Placing 1 items in group batt.J_BATT
+INFO: 
+batt.J_BATT.MPB (Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=5300000, height=4250000)
+INFO: Placing batt.J_BATT.MPB...
+INFO: Placed batt.J_BATT.MPB at VirtualBoundingBox(x=0, y=0, width=5300000, height=4250000)
+INFO: Placing 1 items in group batt.TP_GND
+INFO: 
+batt.TP_GND.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+INFO: Placing batt.TP_GND.TP...
+INFO: Placed batt.TP_GND.TP at VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+INFO: Placing 1 items in group batt.TP_VBATT
+INFO: 
+batt.TP_VBATT.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=-1275000, y=-1275000, width=2550000, height=2550000)
+INFO: Placing batt.TP_VBATT.TP...
+INFO: Placed batt.TP_VBATT.TP at VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+INFO: Placing 3 items in group batt
+INFO: 
+batt.J_BATT [NEW] VirtualBoundingBox(x=0, y=0, width=5300000, height=4250000)
+  batt.J_BATT.MPB (Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=0, y=0, width=5300000, height=4250000)
+INFO: 
+batt.TP_GND [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+  batt.TP_GND.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+INFO: 
+batt.TP_VBATT [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+  batt.TP_VBATT.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=0, y=0, width=2550000, height=2550000)
+INFO: Placing batt.J_BATT...
+INFO: Placed batt.J_BATT at VirtualBoundingBox(x=0, y=0, width=5300000, height=4250000)
+INFO: Placing batt.TP_GND...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 5300000, 4250000
+INFO: Placed batt.TP_GND at (0, -2550000)
+INFO: Placing batt.TP_VBATT...
+DEBUG: Trying placement point 5300000, 4250000
+DEBUG: Trying placement point 0, -2550000
+DEBUG: Trying placement point 2550000, 0
+INFO: Placed batt.TP_VBATT at (2550000, -2550000)
+INFO: Placing 1 items in group charger.C_BAT
+INFO: 
+charger.C_BAT.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+INFO: Placing charger.C_BAT.C...
+INFO: Placed charger.C_BAT.C at VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing 1 items in group charger.C_IN
+INFO: 
+charger.C_IN.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+INFO: Placing charger.C_IN.C...
+INFO: Placed charger.C_IN.C at VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing 1 items in group charger.D_STAT
+INFO: 
+charger.D_STAT.LED (LED_0402_1005Metric:LED_0402_1005Metric) [NEW] VirtualBoundingBox(x=-1190000, y=-495000, width=2145000, height=990000)
+INFO: Placing charger.D_STAT.LED...
+INFO: Placed charger.D_STAT.LED at VirtualBoundingBox(x=0, y=0, width=2145000, height=990000)
+INFO: Placing 1 items in group charger.R_PROG
+INFO: 
+charger.R_PROG.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+INFO: Placing charger.R_PROG.R...
+INFO: Placed charger.R_PROG.R at VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing 1 items in group charger.R_STAT
+INFO: 
+charger.R_STAT.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+INFO: Placing charger.R_STAT.R...
+INFO: Placed charger.R_STAT.R at VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing 6 items in group charger
+INFO: 
+charger.C_BAT [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+  charger.C_BAT.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: 
+charger.C_IN [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+  charger.C_IN.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: 
+charger.D_STAT [NEW] VirtualBoundingBox(x=0, y=0, width=2145000, height=990000)
+  charger.D_STAT.LED (LED_0402_1005Metric:LED_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=2145000, height=990000)
+INFO: 
+charger.R_PROG [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+  charger.R_PROG.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: 
+charger.R_STAT [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+  charger.R_STAT.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: 
+charger.U_CHG (SOT-23-5:SOT-23-5) [NEW] VirtualBoundingBox(x=-2075000, y=-1900000, width=4150000, height=3625000)
+INFO: Placing charger.U_CHG...
+INFO: Placed charger.U_CHG at VirtualBoundingBox(x=0, y=0, width=4150000, height=3625000)
+INFO: Placing charger.C_BAT...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 4150000, 3625000
+INFO: Placed charger.C_BAT at (0, -1510000)
+INFO: Placing charger.C_IN...
+DEBUG: Trying placement point 4150000, 3625000
+DEBUG: Trying placement point 0, -1510000
+DEBUG: Trying placement point 3010000, 0
+INFO: Placed charger.C_IN at (3010000, -1510000)
+INFO: Placing charger.D_STAT...
+DEBUG: Trying placement point 4150000, 3625000
+DEBUG: Trying placement point 0, -1510000
+DEBUG: Trying placement point 3010000, -1510000
+DEBUG: Trying placement point 6020000, 0
+INFO: Placed charger.D_STAT at (0, -2500000)
+INFO: Placing charger.R_PROG...
+DEBUG: Trying placement point 4150000, 3625000
+DEBUG: Trying placement point 3010000, -1510000
+DEBUG: Trying placement point 6020000, 0
+DEBUG: Trying placement point 0, -2500000
+DEBUG: Trying placement point 2145000, -1510000
+INFO: Placed charger.R_PROG at (4150000, 2635000)
+INFO: Placing charger.R_STAT...
+DEBUG: Trying placement point 3010000, -1510000
+DEBUG: Trying placement point 6020000, 0
+DEBUG: Trying placement point 0, -2500000
+DEBUG: Trying placement point 2145000, -1510000
+DEBUG: Trying placement point 4150000, 2635000
+DEBUG: Trying placement point 6060000, 3625000
+INFO: Placed charger.R_STAT at (3010000, -2500000)
+INFO: Placing 1 items in group ldo1.CIN1
+INFO: 
+ldo1.CIN1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing ldo1.CIN1.C...
+INFO: Placed ldo1.CIN1.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group ldo1.COUT1
+INFO: 
+ldo1.COUT1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing ldo1.COUT1.C...
+INFO: Placed ldo1.COUT1.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 3 items in group ldo1
+INFO: 
+ldo1.CIN1 [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  ldo1.CIN1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+ldo1.COUT1 [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  ldo1.COUT1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+ldo1.U_LDO1V8 (SOT-23-5:SOT-23-5) [NEW] VirtualBoundingBox(x=-2075000, y=-1900000, width=4150000, height=3625000)
+INFO: Placing ldo1.U_LDO1V8...
+INFO: Placed ldo1.U_LDO1V8 at VirtualBoundingBox(x=0, y=0, width=4150000, height=3625000)
+INFO: Placing ldo1.CIN1...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 4150000, 3625000
+INFO: Placed ldo1.CIN1 at (0, -970000)
+INFO: Placing ldo1.COUT1...
+DEBUG: Trying placement point 4150000, 3625000
+DEBUG: Trying placement point 0, -970000
+DEBUG: Trying placement point 1870000, 0
+INFO: Placed ldo1.COUT1 at (1870000, -970000)
+INFO: Placing 1 items in group ldo3.CIN3
+INFO: 
+ldo3.CIN3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+INFO: Placing ldo3.CIN3.C...
+INFO: Placed ldo3.CIN3.C at VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+INFO: Placing 1 items in group ldo3.COUT3
+INFO: 
+ldo3.COUT3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+INFO: Placing ldo3.COUT3.C...
+INFO: Placed ldo3.COUT3.C at VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+INFO: Placing 3 items in group ldo3
+INFO: 
+ldo3.CIN3 [NEW] VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+  ldo3.CIN3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+INFO: 
+ldo3.COUT3 [NEW] VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+  ldo3.COUT3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+INFO: 
+ldo3.U_LDO3V3 (SOT-223:SOT-223) [NEW] VirtualBoundingBox(x=-4425000, y=-3700000, width=8850000, height=7325000)
+INFO: Placing ldo3.U_LDO3V3...
+INFO: Placed ldo3.U_LDO3V3 at VirtualBoundingBox(x=0, y=0, width=8850000, height=7325000)
+INFO: Placing ldo3.CIN3...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 8850000, 7325000
+INFO: Placed ldo3.CIN3 at (0, -2350000)
+INFO: Placing ldo3.COUT3...
+DEBUG: Trying placement point 8850000, 7325000
+DEBUG: Trying placement point 0, -2350000
+DEBUG: Trying placement point 4650000, 0
+INFO: Placed ldo3.COUT3 at (4650000, -2350000)
+INFO: Placing 1 items in group probe.C_AVDD_0
+INFO: 
+probe.C_AVDD_0.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_AVDD_0.C...
+INFO: Placed probe.C_AVDD_0.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_AVDD_1
+INFO: 
+probe.C_AVDD_1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_AVDD_1.C...
+INFO: Placed probe.C_AVDD_1.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_FLASH_VCC
+INFO: 
+probe.C_FLASH_VCC.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_FLASH_VCC.C...
+INFO: Placed probe.C_FLASH_VCC.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_IOVDD
+INFO: 
+probe.C_IOVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_IOVDD.C...
+INFO: Placed probe.C_IOVDD.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_USBVDD
+INFO: 
+probe.C_USBVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_USBVDD.C...
+INFO: Placed probe.C_USBVDD.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_VREGVIN
+INFO: 
+probe.C_VREGVIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_VREGVIN.C...
+INFO: Placed probe.C_VREGVIN.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_VREGVOUT
+INFO: 
+probe.C_VREGVOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_VREGVOUT.C...
+INFO: Placed probe.C_VREGVOUT.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_XIN
+INFO: 
+probe.C_XIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_XIN.C...
+INFO: Placed probe.C_XIN.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.C_XOUT
+INFO: 
+probe.C_XOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing probe.C_XOUT.C...
+INFO: Placed probe.C_XOUT.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group probe.J_SWD
+INFO: 
+probe.J_SWD.TAG_CONNECT (Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical) [NEW] VirtualBoundingBox(x=-3525000, y=-2025000, width=7050000, height=4050000)
+INFO: Placing probe.J_SWD.TAG_CONNECT...
+INFO: Placed probe.J_SWD.TAG_CONNECT at VirtualBoundingBox(x=0, y=0, width=7050000, height=4050000)
+INFO: Placing 1 items in group probe.R_HOLD
+INFO: 
+probe.R_HOLD.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+INFO: Placing probe.R_HOLD.R...
+INFO: Placed probe.R_HOLD.R at VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing 1 items in group probe.R_WP
+INFO: 
+probe.R_WP.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+INFO: Placing probe.R_WP.R...
+INFO: Placed probe.R_WP.R at VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing 1 items in group probe.X1
+INFO: 
+probe.X1.Y (Crystal_SMD_3225-4Pin_3.2x2.5mm:Crystal_SMD_3225-4Pin_3.2x2.5mm) [NEW] VirtualBoundingBox(x=-2125000, y=-1725000, width=4250000, height=3450000)
+INFO: Placing probe.X1.Y...
+INFO: Placed probe.X1.Y at VirtualBoundingBox(x=0, y=0, width=4250000, height=3450000)
+INFO: Placing 15 items in group probe
+INFO: 
+probe.C_AVDD_0 [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_AVDD_0.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_AVDD_1 [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_AVDD_1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_FLASH_VCC [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_FLASH_VCC.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_IOVDD [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_IOVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_USBVDD [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_USBVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_VREGVIN [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_VREGVIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_VREGVOUT [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_VREGVOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_XIN [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_XIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.C_XOUT [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  probe.C_XOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+probe.J_SWD [NEW] VirtualBoundingBox(x=0, y=0, width=7050000, height=4050000)
+  probe.J_SWD.TAG_CONNECT (Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical) [NEW] VirtualBoundingBox(x=0, y=0, width=7050000, height=4050000)
+INFO: 
+probe.R_HOLD [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+  probe.R_HOLD.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: 
+probe.R_WP [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+  probe.R_WP.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: 
+probe.U_FLASH (SOIC-8_3.9x4.9mm_P1.27mm:SOIC-8_3.9x4.9mm_P1.27mm) [NEW] VirtualBoundingBox(x=-3725000, y=-2855000, width=7450000, height=5580000)
+INFO: 
+probe.U_RP2040 (QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm) [NEW] VirtualBoundingBox(x=-4155000, y=-4155000, width=8310000, height=8310000)
+INFO: 
+probe.X1 [NEW] VirtualBoundingBox(x=0, y=0, width=4250000, height=3450000)
+  probe.X1.Y (Crystal_SMD_3225-4Pin_3.2x2.5mm:Crystal_SMD_3225-4Pin_3.2x2.5mm) [NEW] VirtualBoundingBox(x=0, y=0, width=4250000, height=3450000)
+INFO: Placing probe.U_RP2040...
+INFO: Placed probe.U_RP2040 at VirtualBoundingBox(x=0, y=0, width=8310000, height=8310000)
+INFO: Placing probe.U_FLASH...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 8310000, 8310000
+INFO: Placed probe.U_FLASH at (0, -5580000)
+INFO: Placing probe.J_SWD...
+DEBUG: Trying placement point 8310000, 8310000
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 7450000, 0
+INFO: Placed probe.J_SWD at (7450000, -4050000)
+INFO: Placing probe.X1...
+DEBUG: Trying placement point 8310000, 8310000
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 7450000, -4050000
+DEBUG: Trying placement point 14500000, 0
+INFO: Placed probe.X1 at (8310000, 4860000)
+INFO: Placing probe.R_HOLD...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 7450000, -4050000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 8310000, 4860000
+DEBUG: Trying placement point 12560000, 8310000
+INFO: Placed probe.R_HOLD at (7450000, -5040000)
+INFO: Placing probe.R_WP...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 8310000, 4860000
+DEBUG: Trying placement point 12560000, 8310000
+DEBUG: Trying placement point 7450000, -5040000
+DEBUG: Trying placement point 9360000, -4050000
+INFO: Placed probe.R_WP at (8310000, 3870000)
+INFO: Placing probe.C_AVDD_0...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 12560000, 8310000
+DEBUG: Trying placement point 7450000, -5040000
+DEBUG: Trying placement point 9360000, -4050000
+DEBUG: Trying placement point 8310000, 3870000
+DEBUG: Trying placement point 10220000, 4860000
+INFO: Placed probe.C_AVDD_0 at (12560000, 7340000)
+INFO: Placing probe.C_AVDD_1...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 7450000, -5040000
+DEBUG: Trying placement point 9360000, -4050000
+DEBUG: Trying placement point 8310000, 3870000
+DEBUG: Trying placement point 10220000, 4860000
+DEBUG: Trying placement point 12560000, 7340000
+DEBUG: Trying placement point 14430000, 8310000
+INFO: Placed probe.C_AVDD_1 at (7450000, -6010000)
+INFO: Placing probe.C_FLASH_VCC...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 9360000, -4050000
+DEBUG: Trying placement point 8310000, 3870000
+DEBUG: Trying placement point 10220000, 4860000
+DEBUG: Trying placement point 12560000, 7340000
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9320000, -5040000
+INFO: Placed probe.C_FLASH_VCC at (9360000, -5020000)
+INFO: Placing probe.C_IOVDD...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 8310000, 3870000
+DEBUG: Trying placement point 10220000, 4860000
+DEBUG: Trying placement point 12560000, 7340000
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9320000, -5040000
+DEBUG: Trying placement point 9360000, -5020000
+DEBUG: Trying placement point 11230000, -4050000
+INFO: Placed probe.C_IOVDD at (8310000, 2900000)
+INFO: Placing probe.C_USBVDD...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 10220000, 4860000
+DEBUG: Trying placement point 12560000, 7340000
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9320000, -5040000
+DEBUG: Trying placement point 9360000, -5020000
+DEBUG: Trying placement point 11230000, -4050000
+DEBUG: Trying placement point 8310000, 2900000
+DEBUG: Trying placement point 10180000, 3870000
+INFO: Placed probe.C_USBVDD at (10220000, 3890000)
+INFO: Placing probe.C_VREGVIN...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 12560000, 7340000
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9320000, -5040000
+DEBUG: Trying placement point 9360000, -5020000
+DEBUG: Trying placement point 11230000, -4050000
+DEBUG: Trying placement point 8310000, 2900000
+DEBUG: Trying placement point 10180000, 3870000
+DEBUG: Trying placement point 10220000, 3890000
+DEBUG: Trying placement point 12090000, 4860000
+INFO: Placed probe.C_VREGVIN at (12560000, 6370000)
+INFO: Placing probe.C_VREGVOUT...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9320000, -5040000
+DEBUG: Trying placement point 9360000, -5020000
+DEBUG: Trying placement point 11230000, -4050000
+DEBUG: Trying placement point 8310000, 2900000
+DEBUG: Trying placement point 10180000, 3870000
+DEBUG: Trying placement point 10220000, 3890000
+DEBUG: Trying placement point 12090000, 4860000
+DEBUG: Trying placement point 12560000, 6370000
+DEBUG: Trying placement point 14430000, 7340000
+INFO: Placed probe.C_VREGVOUT at (9320000, -6010000)
+INFO: Placing probe.C_XIN...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9360000, -5020000
+DEBUG: Collision detected with probe.C_VREGVOUT
+DEBUG: Trying placement point 11230000, -4050000
+DEBUG: Trying placement point 8310000, 2900000
+DEBUG: Trying placement point 10180000, 3870000
+DEBUG: Trying placement point 10220000, 3890000
+DEBUG: Trying placement point 12090000, 4860000
+DEBUG: Trying placement point 12560000, 6370000
+DEBUG: Trying placement point 14430000, 7340000
+DEBUG: Trying placement point 9320000, -6010000
+DEBUG: Trying placement point 11190000, -5040000
+INFO: Placed probe.C_XIN at (11230000, -5020000)
+INFO: Placing probe.C_XOUT...
+DEBUG: Trying placement point 0, -5580000
+DEBUG: Trying placement point 14500000, 0
+DEBUG: Trying placement point 14430000, 8310000
+DEBUG: Trying placement point 7450000, -6010000
+DEBUG: Trying placement point 9360000, -5020000
+DEBUG: Collision detected with probe.C_VREGVOUT
+DEBUG: Trying placement point 8310000, 2900000
+DEBUG: Trying placement point 10180000, 3870000
+DEBUG: Trying placement point 10220000, 3890000
+DEBUG: Trying placement point 12090000, 4860000
+DEBUG: Trying placement point 12560000, 6370000
+DEBUG: Trying placement point 14430000, 7340000
+DEBUG: Trying placement point 9320000, -6010000
+DEBUG: Trying placement point 11190000, -5040000
+DEBUG: Trying placement point 11230000, -5020000
+DEBUG: Trying placement point 13100000, -4050000
+INFO: Placed probe.C_XOUT at (8310000, 1930000)
+INFO: Placing 1 items in group usb.C_VBUS
+INFO: 
+usb.C_VBUS.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=-2325000, y=-1175000, width=4650000, height=2350000)
+INFO: Placing usb.C_VBUS.C...
+INFO: Placed usb.C_VBUS.C at VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+INFO: Placing 1 items in group usb.C_VBUS_HF
+INFO: 
+usb.C_VBUS_HF.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=-935000, y=-485000, width=1870000, height=970000)
+INFO: Placing usb.C_VBUS_HF.C...
+INFO: Placed usb.C_VBUS_HF.C at VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: Placing 1 items in group usb.FB_VBUS
+INFO: 
+usb.FB_VBUS.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=-1505000, y=-755000, width=3010000, height=1510000)
+INFO: Placing usb.FB_VBUS.FB...
+INFO: Placed usb.FB_VBUS.FB at VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: Placing 1 items in group usb.R_CC1
+INFO: 
+usb.R_CC1.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+INFO: Placing usb.R_CC1.R...
+INFO: Placed usb.R_CC1.R at VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing 1 items in group usb.R_CC2
+INFO: 
+usb.R_CC2.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=-955000, y=-495000, width=1910000, height=990000)
+INFO: Placing usb.R_CC2.R...
+INFO: Placed usb.R_CC2.R at VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing 6 items in group usb
+INFO: 
+usb.C_VBUS [NEW] VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+  usb.C_VBUS.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=4650000, height=2350000)
+INFO: 
+usb.C_VBUS_HF [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+  usb.C_VBUS_HF.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1870000, height=970000)
+INFO: 
+usb.FB_VBUS [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+  usb.FB_VBUS.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=3010000, height=1510000)
+INFO: 
+usb.J_USB (USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal) [NEW] VirtualBoundingBox(x=-5345000, y=-4785000, width=10690000, height=8990000)
+INFO: 
+usb.R_CC1 [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+  usb.R_CC1.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: 
+usb.R_CC2 [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+  usb.R_CC2.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=0, width=1910000, height=990000)
+INFO: Placing usb.J_USB...
+INFO: Placed usb.J_USB at VirtualBoundingBox(x=0, y=0, width=10690000, height=8990000)
+INFO: Placing usb.C_VBUS...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 10690000, 8990000
+INFO: Placed usb.C_VBUS at (0, -2350000)
+INFO: Placing usb.FB_VBUS...
+DEBUG: Trying placement point 10690000, 8990000
+DEBUG: Trying placement point 0, -2350000
+DEBUG: Trying placement point 4650000, 0
+INFO: Placed usb.FB_VBUS at (4650000, -1510000)
+INFO: Placing usb.R_CC1...
+DEBUG: Trying placement point 10690000, 8990000
+DEBUG: Trying placement point 0, -2350000
+DEBUG: Trying placement point 4650000, -1510000
+DEBUG: Trying placement point 7660000, 0
+INFO: Placed usb.R_CC1 at (7660000, -990000)
+INFO: Placing usb.R_CC2...
+DEBUG: Trying placement point 10690000, 8990000
+DEBUG: Trying placement point 0, -2350000
+DEBUG: Trying placement point 4650000, -1510000
+DEBUG: Trying placement point 7660000, -990000
+DEBUG: Trying placement point 9570000, 0
+INFO: Placed usb.R_CC2 at (7660000, -1980000)
+INFO: Placing usb.C_VBUS_HF...
+DEBUG: Trying placement point 10690000, 8990000
+DEBUG: Trying placement point 0, -2350000
+DEBUG: Trying placement point 4650000, -1510000
+DEBUG: Trying placement point 9570000, 0
+DEBUG: Trying placement point 7660000, -1980000
+DEBUG: Trying placement point 9570000, -990000
+INFO: Placed usb.C_VBUS_HF at (9570000, -970000)
+INFO: Placing 1 items in group wlc.J_WLC
+INFO: 
+wlc.J_WLC.MPB (Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical:Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=-2025000, y=-2575000, width=10300000, height=4250000)
+INFO: Placing wlc.J_WLC.MPB...
+INFO: Placed wlc.J_WLC.MPB at VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+INFO: Placing 1 items in group wlc
+INFO: 
+wlc.J_WLC [NEW] VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+  wlc.J_WLC.MPB (Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical:Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+INFO: Placing wlc.J_WLC...
+INFO: Placed wlc.J_WLC at VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+INFO: Placing 7 items in group Board
+INFO: 
+batt [NEW] VirtualBoundingBox(x=0, y=-2550000, width=5300000, height=6800000)
+  batt.J_BATT [NEW] VirtualBoundingBox(x=0, y=0, width=5300000, height=4250000)
+    batt.J_BATT.MPB (Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=0, y=0, width=5300000, height=4250000)
+  batt.TP_GND [NEW] VirtualBoundingBox(x=0, y=-2550000, width=2550000, height=2550000)
+    batt.TP_GND.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=0, y=-2550000, width=2550000, height=2550000)
+  batt.TP_VBATT [NEW] VirtualBoundingBox(x=2550000, y=-2550000, width=2550000, height=2550000)
+    batt.TP_VBATT.TP (TestPoint_Pad_D1.5mm:TestPoint_Pad_D1.5mm) [NEW] VirtualBoundingBox(x=2550000, y=-2550000, width=2550000, height=2550000)
+INFO: 
+charger [NEW] VirtualBoundingBox(x=0, y=-2500000, width=6060000, height=6125000)
+  charger.C_BAT [NEW] VirtualBoundingBox(x=0, y=-1510000, width=3010000, height=1510000)
+    charger.C_BAT.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=0, y=-1510000, width=3010000, height=1510000)
+  charger.C_IN [NEW] VirtualBoundingBox(x=3010000, y=-1510000, width=3010000, height=1510000)
+    charger.C_IN.C (C_0603_1608Metric:C_0603_1608Metric) [NEW] VirtualBoundingBox(x=3010000, y=-1510000, width=3010000, height=1510000)
+  charger.D_STAT [NEW] VirtualBoundingBox(x=0, y=-2500000, width=2145000, height=990000)
+    charger.D_STAT.LED (LED_0402_1005Metric:LED_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=-2500000, width=2145000, height=990000)
+  charger.R_PROG [NEW] VirtualBoundingBox(x=4150000, y=2635000, width=1910000, height=990000)
+    charger.R_PROG.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=4150000, y=2635000, width=1910000, height=990000)
+  charger.R_STAT [NEW] VirtualBoundingBox(x=3010000, y=-2500000, width=1910000, height=990000)
+    charger.R_STAT.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=3010000, y=-2500000, width=1910000, height=990000)
+  charger.U_CHG (SOT-23-5:SOT-23-5) [NEW] VirtualBoundingBox(x=0, y=0, width=4150000, height=3625000)
+INFO: 
+ldo1 [NEW] VirtualBoundingBox(x=0, y=-970000, width=4150000, height=4595000)
+  ldo1.CIN1 [NEW] VirtualBoundingBox(x=0, y=-970000, width=1870000, height=970000)
+    ldo1.CIN1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=0, y=-970000, width=1870000, height=970000)
+  ldo1.COUT1 [NEW] VirtualBoundingBox(x=1870000, y=-970000, width=1870000, height=970000)
+    ldo1.COUT1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=1870000, y=-970000, width=1870000, height=970000)
+  ldo1.U_LDO1V8 (SOT-23-5:SOT-23-5) [NEW] VirtualBoundingBox(x=0, y=0, width=4150000, height=3625000)
+INFO: 
+ldo3 [NEW] VirtualBoundingBox(x=0, y=-2350000, width=9300000, height=9675000)
+  ldo3.CIN3 [NEW] VirtualBoundingBox(x=0, y=-2350000, width=4650000, height=2350000)
+    ldo3.CIN3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=0, y=-2350000, width=4650000, height=2350000)
+  ldo3.COUT3 [NEW] VirtualBoundingBox(x=4650000, y=-2350000, width=4650000, height=2350000)
+    ldo3.COUT3.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=4650000, y=-2350000, width=4650000, height=2350000)
+  ldo3.U_LDO3V3 (SOT-223:SOT-223) [NEW] VirtualBoundingBox(x=0, y=0, width=8850000, height=7325000)
+INFO: 
+probe [NEW] VirtualBoundingBox(x=0, y=-6010000, width=14500000, height=14320000)
+  probe.C_AVDD_0 [NEW] VirtualBoundingBox(x=12560000, y=7340000, width=1870000, height=970000)
+    probe.C_AVDD_0.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=12560000, y=7340000, width=1870000, height=970000)
+  probe.C_AVDD_1 [NEW] VirtualBoundingBox(x=7450000, y=-6010000, width=1870000, height=970000)
+    probe.C_AVDD_1.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=7450000, y=-6010000, width=1870000, height=970000)
+  probe.C_FLASH_VCC [NEW] VirtualBoundingBox(x=9360000, y=-5020000, width=1870000, height=970000)
+    probe.C_FLASH_VCC.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=9360000, y=-5020000, width=1870000, height=970000)
+  probe.C_IOVDD [NEW] VirtualBoundingBox(x=8310000, y=2900000, width=1870000, height=970000)
+    probe.C_IOVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=8310000, y=2900000, width=1870000, height=970000)
+  probe.C_USBVDD [NEW] VirtualBoundingBox(x=10220000, y=3890000, width=1870000, height=970000)
+    probe.C_USBVDD.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=10220000, y=3890000, width=1870000, height=970000)
+  probe.C_VREGVIN [NEW] VirtualBoundingBox(x=12560000, y=6370000, width=1870000, height=970000)
+    probe.C_VREGVIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=12560000, y=6370000, width=1870000, height=970000)
+  probe.C_VREGVOUT [NEW] VirtualBoundingBox(x=9320000, y=-6010000, width=1870000, height=970000)
+    probe.C_VREGVOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=9320000, y=-6010000, width=1870000, height=970000)
+  probe.C_XIN [NEW] VirtualBoundingBox(x=11230000, y=-5020000, width=1870000, height=970000)
+    probe.C_XIN.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=11230000, y=-5020000, width=1870000, height=970000)
+  probe.C_XOUT [NEW] VirtualBoundingBox(x=8310000, y=1930000, width=1870000, height=970000)
+    probe.C_XOUT.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=8310000, y=1930000, width=1870000, height=970000)
+  probe.J_SWD [NEW] VirtualBoundingBox(x=7450000, y=-4050000, width=7050000, height=4050000)
+    probe.J_SWD.TAG_CONNECT (Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical) [NEW] VirtualBoundingBox(x=7450000, y=-4050000, width=7050000, height=4050000)
+  probe.R_HOLD [NEW] VirtualBoundingBox(x=7450000, y=-5040000, width=1910000, height=990000)
+    probe.R_HOLD.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=7450000, y=-5040000, width=1910000, height=990000)
+  probe.R_WP [NEW] VirtualBoundingBox(x=8310000, y=3870000, width=1910000, height=990000)
+    probe.R_WP.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=8310000, y=3870000, width=1910000, height=990000)
+  probe.U_FLASH (SOIC-8_3.9x4.9mm_P1.27mm:SOIC-8_3.9x4.9mm_P1.27mm) [NEW] VirtualBoundingBox(x=0, y=-5580000, width=7450000, height=5580000)
+  probe.U_RP2040 (QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm) [NEW] VirtualBoundingBox(x=0, y=0, width=8310000, height=8310000)
+  probe.X1 [NEW] VirtualBoundingBox(x=8310000, y=4860000, width=4250000, height=3450000)
+    probe.X1.Y (Crystal_SMD_3225-4Pin_3.2x2.5mm:Crystal_SMD_3225-4Pin_3.2x2.5mm) [NEW] VirtualBoundingBox(x=8310000, y=4860000, width=4250000, height=3450000)
+INFO: 
+usb [NEW] VirtualBoundingBox(x=0, y=-2350000, width=11440000, height=11340000)
+  usb.C_VBUS [NEW] VirtualBoundingBox(x=0, y=-2350000, width=4650000, height=2350000)
+    usb.C_VBUS.C (C_1206_3216Metric:C_1206_3216Metric) [NEW] VirtualBoundingBox(x=0, y=-2350000, width=4650000, height=2350000)
+  usb.C_VBUS_HF [NEW] VirtualBoundingBox(x=9570000, y=-970000, width=1870000, height=970000)
+    usb.C_VBUS_HF.C (C_0402_1005Metric:C_0402_1005Metric) [NEW] VirtualBoundingBox(x=9570000, y=-970000, width=1870000, height=970000)
+  usb.FB_VBUS [NEW] VirtualBoundingBox(x=4650000, y=-1510000, width=3010000, height=1510000)
+    usb.FB_VBUS.FB (R_0603_1608Metric:R_0603_1608Metric) [NEW] VirtualBoundingBox(x=4650000, y=-1510000, width=3010000, height=1510000)
+  usb.J_USB (USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal) [NEW] VirtualBoundingBox(x=0, y=0, width=10690000, height=8990000)
+  usb.R_CC1 [NEW] VirtualBoundingBox(x=7660000, y=-990000, width=1910000, height=990000)
+    usb.R_CC1.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=7660000, y=-990000, width=1910000, height=990000)
+  usb.R_CC2 [NEW] VirtualBoundingBox(x=7660000, y=-1980000, width=1910000, height=990000)
+    usb.R_CC2.R (R_0402_1005Metric:R_0402_1005Metric) [NEW] VirtualBoundingBox(x=7660000, y=-1980000, width=1910000, height=990000)
+INFO: 
+wlc [NEW] VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+  wlc.J_WLC [NEW] VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+    wlc.J_WLC.MPB (Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical:Molex_PicoBlade_53047-0610_1x06_P1.25mm_Vertical) [NEW] VirtualBoundingBox(x=0, y=0, width=10300000, height=4250000)
+INFO: Placing probe...
+INFO: Placed probe at VirtualBoundingBox(x=0, y=0, width=14500000, height=14320000)
+INFO: Placing usb...
+DEBUG: Trying placement point 0, 0
+DEBUG: Trying placement point 14500000, 14320000
+INFO: Placed usb at (0, -11340000)
+INFO: Placing ldo3...
+DEBUG: Trying placement point 14500000, 14320000
+DEBUG: Trying placement point 0, -11340000
+DEBUG: Trying placement point 11440000, 0
+INFO: Placed ldo3 at (14500000, 4645000)
+INFO: Placing wlc...
+DEBUG: Trying placement point 0, -11340000
+DEBUG: Trying placement point 11440000, 0
+DEBUG: Trying placement point 14500000, 4645000
+DEBUG: Trying placement point 23800000, 14320000
+INFO: Placed wlc at (11440000, -4250000)
+INFO: Placing charger...
+DEBUG: Trying placement point 0, -11340000
+DEBUG: Trying placement point 14500000, 4645000
+DEBUG: Collision detected with wlc
+DEBUG: Trying placement point 23800000, 14320000
+DEBUG: Trying placement point 11440000, -4250000
+DEBUG: Trying placement point 21740000, 0
+INFO: Placed charger at (11440000, -10375000)
+INFO: Placing batt...
+DEBUG: Trying placement point 0, -11340000
+DEBUG: Trying placement point 14500000, 4645000
+DEBUG: Collision detected with wlc
+DEBUG: Trying placement point 23800000, 14320000
+DEBUG: Trying placement point 21740000, 0
+DEBUG: Trying placement point 11440000, -10375000
+DEBUG: Trying placement point 17500000, -4250000
+INFO: Placed batt at (17500000, -11050000)
+INFO: Placing ldo1...
+DEBUG: Trying placement point 0, -11340000
+DEBUG: Trying placement point 14500000, 4645000
+DEBUG: Trying placement point 23800000, 14320000
+DEBUG: Trying placement point 21740000, 0
+DEBUG: Collision detected with batt
+DEBUG: Trying placement point 11440000, -10375000
+DEBUG: Trying placement point 17500000, -11050000
+DEBUG: Trying placement point 22800000, -4250000
+INFO: Placed ldo1 at (14500000, 50000)
+INFO: Positioned new content with offset (136600000, 103510000)
+INFO: Completed hierarchical component placement
+INFO: Completed PlaceComponents in 0.016 seconds
+INFO: --------------------------------------------------------------------------------
+INFO: Running step: FinalizeBoard
+INFO: --------------------------------------------------------------------------------
+INFO: Starting FinalizeBoard...
+INFO: Saved layout snapshot to /home/dezash/projects/ring/pcbs/dock/layout/snapshot.layout.json
+INFO: Snapshot export took 0.023 seconds
+INFO: Board saving took 0.001 seconds
+INFO: Completed FinalizeBoard in 0.026 seconds

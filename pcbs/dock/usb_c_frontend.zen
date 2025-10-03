@@ -1,0 +1,38 @@
+load("@stdlib/interfaces.zen", "NotConnected")
+R  = Module("@stdlib/generics/Resistor.zen")
+C  = Module("@stdlib/generics/Capacitor.zen")
+FB = Module("@stdlib/generics/FerriteBead.zen")
+
+vbus_out = io("vbus_out", Net)   # filtered 5V
+gnd      = io("gnd", Net)
+usb_dp   = io("usb_dp", Net)
+usb_dn   = io("usb_dn", Net)
+
+VBUS_RAW = Net("VBUS_RAW")
+CC1 = Net("CC1")
+CC2 = Net("CC2")
+
+Component(
+  name = "J_USB",
+  footprint = File("@kicad-footprints/Connector_USB.pretty/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Connector.kicad_sym:USB_C_Receptacle_USB2.0_16P"),
+  pins = {
+    "VBUS": VBUS_RAW,
+    "GND": gnd,
+    "CC1": CC1,
+    "CC2": CC2,
+    "D+": usb_dp,
+    "D-": usb_dn,
+    "SBU1": NotConnected(),
+    "SBU2": NotConnected(),
+    "SHIELD": gnd,
+  },
+)
+
+R(name="R_CC1", value="5.1kOhm 1%", package="0402", P1=CC1, P2=gnd)
+R(name="R_CC2", value="5.1kOhm 1%", package="0402", P1=CC2, P2=gnd)
+
+FB(name="FB_VBUS", resistance="120Ohm", frequency="100MHz", package="0603", P1=VBUS_RAW, P2=vbus_out)
+C(name="C_VBUS",    value="10uF",  package="1206", voltage="16V", P1=vbus_out, P2=gnd)
+C(name="C_VBUS_HF", value="100nF", package="0402", voltage="16V", P1=vbus_out, P2=gnd)
+

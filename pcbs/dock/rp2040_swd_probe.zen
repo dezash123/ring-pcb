@@ -1,0 +1,153 @@
+load("@stdlib/interfaces.zen", "NotConnected")
+Y  = Module("@stdlib/generics/Crystal.zen")
+C  = Module("@stdlib/generics/Capacitor.zen")
+R  = Module("@stdlib/generics/Resistor.zen")
+TagConnect = Module("@stdlib/kicad/TagConnect.zen")
+
+# Rails & I/O
+iovdd   = io("iovdd", Net)     # 1.8V I/O domain (and VTREF on header)
+usbvdd  = io("usbvdd", Net)    # 3.3V USB PHY & analog domain
+vregvin = io("vregvin", Net)   # feed 1.8V (allowed 1.8–3.3V)
+gnd     = io("gnd", Net)
+usb_dp  = io("usb_dp", Net)
+usb_dn  = io("usb_dn", Net)
+
+swdio   = io("swdio", Net)     # target SWD out
+swclk   = io("swclk", Net)
+nreset  = io("nreset", Net)
+
+# Clock
+xin  = Net("XIN")
+xout = Net("XOUT")
+Y(name="X1", frequency="12MHz", load_capacitance="10pF", package="3225_4Pin", XIN=xin, XOUT=xout, GND=gnd)
+C(name="C_XIN",  value="10pF", package="0402", voltage="50V", P1=xin,  P2=gnd)
+C(name="C_XOUT", value="10pF", package="0402", voltage="50V", P1=xout, P2=gnd)
+
+# Internal regulator output (must be tied to DVDD and decoupled)
+vreg_vout = Net("VREG_VOUT")
+C(name="C_VREGVOUT", value="1uF", package="0402", voltage="10V", P1=vreg_vout, P2=gnd)
+
+# Analog domain (ADC_AVDD) uses 3.3V rail with local decoupling
+adc_avdd = Net("ADC_AVDD")
+C(name="C_AVDD_0", value="100nF", package="0402", voltage="10V", P1=adc_avdd, P2=gnd)
+C(name="C_AVDD_1", value="1uF",   package="0402", voltage="10V", P1=adc_avdd, P2=gnd)
+
+# ---- RP2040 MCU ----
+Component(
+  name = "U_RP2040",
+  footprint = File("@kicad-footprints/Package_DFN_QFN.pretty/QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/MCU_RaspberryPi.kicad_sym:RP2040"),
+  pins = {
+    # supplies
+    "IOVDD":    iovdd,
+    "USB_VDD":  usbvdd,
+    "ADC_AVDD": adc_avdd,
+    "VREG_IN": vregvin,
+    "VREG_VOUT": vreg_vout,
+    "DVDD":     vreg_vout,
+    "GND":      gnd,
+
+    # usb
+    "USB_DP": usb_dp,
+    "USB_DM": usb_dn,
+
+    # crystal
+    "XIN":  xin,
+    "XOUT": xout,
+
+    # target SWD on GPIO2/GPIO3 (1.8V domain)
+    "GPIO2": swdio,
+    "GPIO3": swclk,
+    "RUN":   nreset,
+
+    # on-chip SWD (for programming RP2040 itself) — not used on this dock
+    "SWCLK": NotConnected(),
+    "SWD":   NotConnected(),
+    "TESTEN": gnd,         # tie low per datasheet
+
+    # spare GPIOs (NC)
+    "GPIO0": NotConnected(),
+    "GPIO1": NotConnected(),
+    "GPIO4": NotConnected(),
+    "GPIO5": NotConnected(),
+    "GPIO6": NotConnected(),
+    "GPIO7": NotConnected(),
+    "GPIO8": NotConnected(),
+    "GPIO9": NotConnected(),
+    "GPIO10": NotConnected(),
+    "GPIO11": NotConnected(),
+    "GPIO12": NotConnected(),
+    "GPIO13": NotConnected(),
+    "GPIO14": NotConnected(),
+    "GPIO15": NotConnected(),
+    "GPIO16": NotConnected(),
+    "GPIO17": NotConnected(),
+    "GPIO18": NotConnected(),
+    "GPIO19": NotConnected(),
+    "GPIO20": NotConnected(),
+    "GPIO21": NotConnected(),
+    "GPIO22": NotConnected(),
+    "GPIO23": NotConnected(),
+    "GPIO24": NotConnected(),
+    "GPIO25": NotConnected(),
+    "GPIO26_ADC0": NotConnected(),
+    "GPIO27_ADC1": NotConnected(),
+    "GPIO28_ADC2": NotConnected(),
+    "GPIO29_ADC3": NotConnected(),
+
+    # QSPI flash interface (wired below)
+    "QSPI_SCLK": Net("QSPI_SCLK"),
+    "QSPI_SS":   Net("QSPI_SS"),
+    "QSPI_SD0":  Net("QSPI_SD0"),
+    "QSPI_SD1":  Net("QSPI_SD1"),
+    "QSPI_SD2":  Net("QSPI_SD2"),
+    "QSPI_SD3":  Net("QSPI_SD3"),
+  },
+  mpn = "RP2040"
+)
+
+# decoupling near rails
+C(name="C_IOVDD",   value="100nF", package="0402", voltage="6.3V", P1=iovdd,   P2=gnd)
+C(name="C_USBVDD",  value="100nF", package="0402", voltage="10V",  P1=usbvdd,  P2=gnd)
+C(name="C_VREGVIN", value="1uF",   package="0402", voltage="10V",  P1=vregvin, P2=gnd)
+
+# ---- External QSPI flash (symbol present in your lib) ----
+# Use a symbol you have, e.g. W25Q16JVSS or W25Q32JVSS
+Component(
+  name = "U_FLASH",
+  footprint = File("@kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Memory_Flash.kicad_sym:W25Q16JVSS"),
+  pins = {
+    "VCC": usbvdd,
+    "GND": gnd,
+
+    "~{CS}": Net("QSPI_SS"),
+    "CLK":  Net("QSPI_SCLK"),
+
+    # NOTE: these pin names must match your library:
+    "DI/IO_{0}":                Net("QSPI_SD0"),
+    "DO/IO_{1}":                Net("QSPI_SD1"),
+    "~{WP}/IO_{2}":             Net("QSPI_SD2"),
+    "~{HOLD}/~{RESET}/IO_{3}":  Net("QSPI_SD3"),
+  },
+  mpn = "W25Q16JVSSIQ"
+)
+
+# Decoupling
+C(name="C_FLASH_VCC", value="100nF", package="0402", voltage="10V", P1=usbvdd, P2=gnd)
+
+# Optional but recommended: weak pull-ups on /WP and /HOLD if not driven during boot
+R(name="R_WP",    value="10kOhm", package="0402", P1=Net("QSPI_SD2"), P2=usbvdd)
+R(name="R_HOLD",  value="10kOhm", package="0402", P1=Net("QSPI_SD3"), P2=usbvdd)
+
+# ---- SWD header to TARGET (1.8V) ----
+TagConnect(
+  name="J_SWD",
+  tag_type="TC2030-IDC-NL-2x03",
+  P1=iovdd,    # VTREF advertises 1.8V
+  P2=swdio,
+  P3=nreset,
+  P4=swclk,
+  P5=gnd,
+  P6=NotConnected()
+)
