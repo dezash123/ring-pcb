@@ -23,6 +23,7 @@ Component(
     "BAT": bat,
     "NC": NotConnected(),
   },
+  mpn = "BQ29700"
 )
 
 qm = Net("bat_qm")
@@ -36,6 +37,8 @@ Component(
     "G": dout,
     "D": qm,
   },
+  prefix = "Q",
+  mpn = "CSD13380F3T"
 )
 
 Component(
@@ -47,6 +50,8 @@ Component(
     "G": cout,
     "D": qm,
   },
+  prefix = "Q",
+  mpn = "CSD13380F3T"
 )
 
 R(
@@ -80,5 +85,10 @@ Component(
   pins = {
     "+": vbatt,
     "-": vss 
+  },
+  prefix = "BT",
+  properties = {
+    "do_not_place": True,
+    "exclude_from_bom": True,
   },
 )

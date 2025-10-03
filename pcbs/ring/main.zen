@@ -11,7 +11,7 @@ scl = Net("scl")
 gnd = Net("GND")
 
 swdio = Net("swdio")
-swclk = Net("swclk")
+swdclk = Net("swdclk")
 
 port = Module("port.zen")
 port(
@@ -19,7 +19,7 @@ port(
   vbatt = vbatt,
   gnd = gnd,
   swdio = swdio,
-  swclk = swclk,
+  swdclk = swdclk,
 )
 
 battery = Module("battery.zen")
@@ -128,31 +128,32 @@ R(
 cpu = Module("cpu.zen")
 cpu(
   name = "cpu",
-  vdd = vdd,
-  gnd = gnd,
-  rstn = rst,
+  vdd   = vdd,
+  gnd   = gnd,
 
-  pc00 = hbt_int,
-  pc01 = imu_int2,
-  pc02 = scl,
-  pc03 = sda,
-  pc04 = bat_low,
-  pc05 = NotConnected(),
+  swdclk = swdclk,
+  swdio  = swdio,
+  resetn = rst,
 
-  pb00 = imu_int1,
-  pb01 = NotConnected(),
-  pb02 = NotConnected(),
+  p002 = tmp_int,
+  p003 = imu_int1,
+  p004 = sda,
+  p005 = scl,
 
-  pa00 = tmp_int,
-  pa01 = swclk,
-  pa02 = swdio,
-  pa03 = NotConnected(),
-  pa04 = NotConnected(),
-  pa05 = NotConnected(),
-  pa06 = NotConnected(),
+  nfc1 = Net("nfc1"),
+  nfc2 = Net("nfc2"),
 
-  pd00 = mic_data,
-  pd01 = mic_clk,
+  p011 = imu_int2,
+  p015 = hbt_int,
+  p017 = mic_data,
+  p020 = mic_clk,
+
+  p028 = NotConnected(),
+  p029 = NotConnected(),
+  p030 = NotConnected(),
+  p031 = NotConnected(),
+
+  p109 = bat_low,
 )
 
 Layout("layout", "layout/")

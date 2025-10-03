@@ -1,0 +1,25 @@
+L = Module("@stdlib/generics/Inductor.zen")
+C = Module("@stdlib/generics/Capacitor.zen")
+
+ant = io("ant", Net)
+gnd = io("gnd", Net)
+
+n1 = Net("n1")
+n2 = Net("n2")
+
+L(name="L1", value="4.7nH", package="0201", P1=ant, P2=n1)
+C(name="C3", value="1.0pF", package="0201", P1=n1,  P2=gnd)
+L(name="L2", value="2.2nH", package="0201", P1=n1,  P2=n2)
+C(name="C4", value="1.2pF", package="0201", P1=n2,  P2=gnd)
+
+Component(
+  name = "J1",
+  footprint = File("@kicad-footprints/RF_Antenna.pretty/Texas_SWRA117D_2.4GHz_Left.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Connector.kicad_sym:Conn_Coaxial_Small"),
+  pins = { "In": n2, "Ext": gnd },
+  prefix = "J",
+  properties = {
+    "do_not_place": True,
+    "exclude_from_bom": True,
+  }
+)
