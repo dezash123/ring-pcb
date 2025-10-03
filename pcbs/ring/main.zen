@@ -135,8 +135,8 @@ cpu(
   swdio  = swdio,
   resetn = rst,
 
-  p002 = imu_int1,
-  p003 = tmp_int,
+  p002 = tmp_int,
+  p003 = imu_int1,
   p004 = sda,
   p005 = scl,
 
@@ -144,9 +144,9 @@ cpu(
   nfc2 = Net("nfc2"),
 
   p011 = imu_int2,
-  p015 = mic_data,
-  p017 = mic_clk,
-  p020 = hbt_int,
+  p015 = hbt_int,
+  p017 = mic_data,
+  p020 = mic_clk,
 
   p028 = NotConnected(),
   p029 = NotConnected(),
