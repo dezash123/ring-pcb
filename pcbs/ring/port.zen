@@ -71,3 +71,26 @@ TP(
   P1 = gnd,
 )
 
+TP(
+  name = "TP7",
+  variant = "Pad_D2.0mm",
+  P1 = vbatt,
+)
+
+TP(
+  name = "TP8",
+  variant = "Pad_D1.0mm",
+  P1 = gnd,
+)
+
+TP(
+  name = "TP9",
+  variant = "Pad_D1.0mm",
+  P1 = swdio,
+)
+
+TP(
+  name = "TP10",
+  variant = "Pad_D1.0mm",
+  P1 = swdclk,
+)
