@@ -6,7 +6,7 @@ FB = Module("@stdlib/generics/FerriteBead.zen")
 vbus_out = io("vbus_out", Net)   # filtered 5V
 gnd      = io("gnd", Net)
 usb_dp   = io("usb_dp", Net)
-usb_dn   = io("usb_dn", Net)
+usb_dm   = io("usb_dm", Net)
 
 VBUS_RAW = Net("VBUS_RAW")
 CC1 = Net("CC1")
@@ -22,7 +22,7 @@ Component(
     "CC1": CC1,
     "CC2": CC2,
     "D+": usb_dp,
-    "D-": usb_dn,
+    "D-": usb_dm,
     "SBU1": NotConnected(),
     "SBU2": NotConnected(),
     "SHIELD": gnd,

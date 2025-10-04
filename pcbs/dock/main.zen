@@ -14,12 +14,12 @@ VDD_3V3  = Net("VDD_3V3")
 VDD_1V8  = Net("VDD_1V8")
 VBATT    = Net("VBATT")
 USB_DP   = Net("USB_DP")
-USB_DN   = Net("USB_DN")
+USB_DM   = Net("USB_DM")
 
-UsbIn(name="usb", vbus_out=VBUS_5V, gnd=GND, usb_dp=USB_DP, usb_dn=USB_DN)
+UsbIn(name="usb", vbus_out=VBUS_5V, gnd=GND, usb_dp=USB_DP, usb_dm=USB_DM)
 
-Ldo3v3(name="ldo3", vin=VBUS_5V, vout=VDD_3V3, gnd=GND)
-Ldo1v8(name="ldo1", vin=VBUS_5V, vout=VDD_1V8, gnd=GND)
+Ldo3v3(name="ldo3v3", vin=VBUS_5V, vout=VDD_3V3, gnd=GND)
+Ldo1v8(name="ldo1v8", vin=VBUS_5V, vout=VDD_1V8, gnd=GND)
 
 Chg(name="charger", vin=VBUS_5V, vbatt=VBATT, gnd=GND)
 BattOut(name="batt", vbatt=VBATT, gnd=GND)
@@ -34,7 +34,7 @@ Wlc(
 Probe(
   name="probe",
   iovdd=VDD_1V8, usbvdd=VDD_3V3, vregvin=VDD_1V8, gnd=GND,
-  usb_dp=USB_DP, usb_dn=USB_DN,
+  usb_dp=USB_DP, usb_dm=USB_DM,
   swdio=Net("PROBE_SWDIO"), swclk=Net("PROBE_SWCLK"), nreset=Net("PROBE_nRESET")
 )
 
