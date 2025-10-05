@@ -24916,7 +24916,6 @@
 	(zone
 		(net 2)
 		(net_name "GND")
-		(locked yes)
 		(layers "F.Cu" "B.Cu")
 		(uuid "064a5c47-5737-479a-a1ae-ddba84785962")
 		(hatch edge 0.5)
@@ -24939,7 +24938,7 @@
 		)
 		(polygon
 			(pts
-				(xy 134.6 80) (xy 178 80) (xy 178 86.2) (xy 134.6 86.2)
+				(xy 134.6 80) (xy 175.25 80) (xy 175.25 86.2) (xy 134.6 86.2)
 			)
 		)
 		(filled_polygon
