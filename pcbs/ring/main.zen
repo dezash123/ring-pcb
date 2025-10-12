@@ -135,8 +135,8 @@ cpu(
   swdio  = swdio,
   resetn = rst,
 
-  p002 = tmp_int,
-  p003 = imu_int1,
+  p002 = imu_int1,
+  p003 = tmp_int,
   p004 = sda,
   p005 = scl,
 
@@ -154,6 +154,17 @@ cpu(
   p031 = NotConnected(),
 
   p109 = bat_low,
+)
+
+Component(
+  name = "swd_conn",
+  footprint = File("@kicad-footprints/Connector_PinHeader_1.00mm.pretty/PinHeader_1x03_P1.00mm_Vertical_SMD_Pin1Left.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Connector.kicad_sym:Conn_01x03_Pin"),
+  pins = {
+    "Pin_1": swdclk,
+    "Pin_2": gnd,
+    "Pin_3": swdio,
+  },
 )
 
 Layout("layout", "layout/")

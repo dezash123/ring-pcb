@@ -23,42 +23,6 @@ TP(
   P1 = vbatt,
 )
 
-Component(
-  name = "D2",
-  footprint = File("@kicad-footprints/Diode_SMD.pretty/D_SOD-923.kicad_mod"),
-  symbol = Symbol("@kicad-symbols/Diode.kicad_sym:ESD9B5.0ST5G"),
-  pins = {
-    "A1": swdio,
-    "A2": gnd,
-  },
-  prefix = "D",
-  mpn = "ESD9B5.0ST5G"
-)
-
-TP(
-  name = "TP3",
-  variant = "Pad_D1.0mm",
-  P1 = swdio,
-)
-
-Component(
-  name = "D3",
-  footprint = File("@kicad-footprints/Diode_SMD.pretty/D_SOD-923.kicad_mod"),
-  symbol = Symbol("@kicad-symbols/Diode.kicad_sym:ESD9B5.0ST5G"),
-  pins = {
-    "A1": swdclk,
-    "A2": gnd,
-  },
-  prefix = "D",
-  mpn = "ESD9B5.0ST5G"
-)
-
-TP(
-  name = "TP4",
-  variant = "Pad_D1.0mm",
-  P1 = swdclk,
-)
-
 TP(
   name = "TP5",
   variant = "Pad_D1.0mm",
@@ -81,16 +45,4 @@ TP(
   name = "TP8",
   variant = "Pad_D1.0mm",
   P1 = gnd,
-)
-
-TP(
-  name = "TP9",
-  variant = "Pad_D1.0mm",
-  P1 = swdio,
-)
-
-TP(
-  name = "TP10",
-  variant = "Pad_D1.0mm",
-  P1 = swdclk,
 )

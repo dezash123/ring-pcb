@@ -14,6 +14,7 @@
   (lib (name "L_0603_1608Metric") (type "KiCad") (uri "${KIPRJMOD}/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Inductor_SMD.pretty/") (options "") (descr ""))
   (lib (name "Maxim_OLGA-14_3.3x5.6mm_P0.8mm") (type "KiCad") (uri "${KIPRJMOD}/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/OptoDevice.pretty/") (options "") (descr ""))
   (lib (name "Modified_QFN-40_5.0mmx5.0mm") (type "KiCad") (uri "${KIPRJMOD}/../") (options "") (descr ""))
+  (lib (name "PinHeader_1x03_P1.00mm_Vertical_SMD_Pin1Left") (type "KiCad") (uri "${KIPRJMOD}/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Connector_PinHeader_1.00mm.pretty/") (options "") (descr ""))
   (lib (name "R_0201_0603Metric") (type "KiCad") (uri "${KIPRJMOD}/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/Resistor_SMD.pretty/") (options "") (descr ""))
   (lib (name "TestPoint_Pad_D1.0mm") (type "KiCad") (uri "${KIPRJMOD}/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/TestPoint.pretty/") (options "") (descr ""))
   (lib (name "TestPoint_Pad_D2.0mm") (type "KiCad") (uri "${KIPRJMOD}/../../../../../.cache/pcb/gitlab/kicad/libraries/kicad-footprints/9.0.0/TestPoint.pretty/") (options "") (descr ""))
