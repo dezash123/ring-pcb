@@ -5,12 +5,12 @@ vout = io("vout", Net)
 gnd  = io("gnd", Net)
 
 Component(
-  name = "U_LDO3V3",
+  name = "U1",
   footprint = File("@kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-223.kicad_mod"),
   symbol = Symbol("@kicad-symbols/Regulator_Linear.kicad_sym:AMS1117-3.3"),
   pins = { "VI": vin, "VO": vout, "GND": gnd },
   mpn = "AMS1117-3.3"
 )
 
-C(name="CIN3",  value="10uF", package="1206", voltage="16V", P1=vin,  P2=gnd)
-C(name="COUT3", value="10uF", package="1206", voltage="10V", P1=vout, P2=gnd)
+C(name="CIN",  value="10uF", package="1206", voltage="16V", P1=vin,  P2=gnd)
+C(name="COUT", value="10uF", package="1206", voltage="10V", P1=vout, P2=gnd)

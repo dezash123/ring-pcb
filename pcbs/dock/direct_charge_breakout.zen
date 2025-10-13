@@ -1,9 +1,0 @@
-TP  = Module("@stdlib/generics/TestPoint.zen")
-MolexPicoBlade = Module("@stdlib/kicad/MolexPicoBlade.zen")
-
-vbatt = io("vbatt", Net)
-gnd   = io("gnd", Net)
-
-MolexPicoBlade(name="J_BATT", variant="53047-0210_1x02_Vertical", Pin_1=vbatt, Pin_2=gnd)
-TP(name="TP_VBATT", variant="Pad_D1.5mm", P1=vbatt)
-TP(name="TP_GND",   variant="Pad_D1.5mm", P1=gnd)

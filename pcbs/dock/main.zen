@@ -1,41 +1,45 @@
 load("@stdlib/properties.zen", "Layout")
 
-UsbIn   = Module("usb_c_frontend.zen")
+usb   = Module("usb_c.zen")
 Ldo3v3  = Module("ldo_3v3.zen")
 Ldo1v8  = Module("ldo_1v8.zen")
-Chg     = Module("liion_charger.zen")
-BattOut = Module("direct_charge_breakout.zen")
-Wlc     = Module("nfc_wlc_breakout.zen")
-Probe   = Module("rp2040_swd_probe.zen")
+charger = Module("charger.zen")
+Wlc     = Module("nfc_wlc.zen")
+Probe   = Module("rp2040.zen")
 
-GND      = Net("GND")
-VBUS_5V  = Net("VBUS_5V")
-VDD_3V3  = Net("VDD_3V3")
-VDD_1V8  = Net("VDD_1V8")
-VBATT    = Net("VBATT")
-USB_DP   = Net("USB_DP")
-USB_DM   = Net("USB_DM")
+TP  = Module("@stdlib/generics/TestPoint.zen")
+PinHeader = Module("@stdlib/kicad/PinHeader.zen")
 
-UsbIn(name="usb", vbus_out=VBUS_5V, gnd=GND, usb_dp=USB_DP, usb_dm=USB_DM)
+gnd      = Net("gnd")
+vbus_5v  = Net("vbus_5v")
+vdd_3v3  = Net("vdd_3v3")
+vdd_1v8  = Net("vdd_1v8")
+vbatt    = Net("vbatt")
+usb_dp   = Net("usb_dp")
+usb_dm   = Net("usb_dm")
 
-Ldo3v3(name="ldo3v3", vin=VBUS_5V, vout=VDD_3V3, gnd=GND)
-Ldo1v8(name="ldo1v8", vin=VBUS_5V, vout=VDD_1V8, gnd=GND)
+usb(name="usb", vbus_out=vbus_5v, gnd=gnd, usb_dp=usb_dp, usb_dm=usb_dm)
 
-Chg(name="charger", vin=VBUS_5V, vbatt=VBATT, gnd=GND)
-BattOut(name="batt", vbatt=VBATT, gnd=GND)
+Ldo3v3(name="ldo3v3", vin=vbus_5v, vout=vdd_3v3, gnd=gnd)
+Ldo1v8(name="ldo1v8", vin=vbus_5v, vout=vdd_1v8, gnd=gnd)
+
+charger(name="charger", vin=vbus_5v, vbatt=vbatt, gnd=gnd)
+
+PinHeader(name="J_BATT", pins=3, rows=1, pitch="2.54mm", orientation="Vertical", Pin_1=gnd, Pin_2=vbatt, Pin_3=gnd)
 
 Wlc(
   name="wlc",
-  vin5=VBUS_5V, gnd=GND,
-  txp=Net("WLC_TXP"), txn=Net("WLC_TXN"),
-  comm=Net("WLC_COMM"), vrect=Net("WLC_VRECT")
+  vdd33=vdd_3v3, gnd=gnd,
+  scl=Net("WLC_SCL"), sda=Net("WLC_SDA"),
+  irq=Net("WLC_IRQ"), en=Net("WLC_EN"),
+  coil_p=Net("COIL_P"), coil_n=Net("COIL_N")
 )
 
 Probe(
   name="probe",
-  iovdd=VDD_1V8, usbvdd=VDD_3V3, vregvin=VDD_1V8, gnd=GND,
-  usb_dp=USB_DP, usb_dm=USB_DM,
-  swdio=Net("PROBE_SWDIO"), swclk=Net("PROBE_SWCLK"), nreset=Net("PROBE_nRESET")
+  iovdd=vdd_1v8, usbvdd=vdd_3v3, vregvin=vdd_1v8, gnd=gnd,
+  usb_dp=usb_dp, usb_dm=usb_dm,
+  swdio=Net("probe_swdio"), swclk=Net("probe_swclk"), nreset=Net("probe_nreset")
 )
 
 Layout("layout", "layout/")
