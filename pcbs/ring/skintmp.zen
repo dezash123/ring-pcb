@@ -12,7 +12,7 @@ Component(
   symbol = Symbol("@kicad-symbols/Sensor_Temperature.kicad_sym:TMP117xxDRV"),
   pins = {
     "GND": gnd,
-    "ADD0": gnd,
+    "ADD0": vdd,
     "ALERT": int,
     "V+": vdd,
     "SDA": sda,
