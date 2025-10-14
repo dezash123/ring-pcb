@@ -1,55 +1,55 @@
-INFO: Loading schematic data from /tmp/.tmpiHCyjt/netlist.json
-INFO: Parsing JSON netlist from /tmp/.tmpiHCyjt/netlist.json
-INFO: Found module mic with layout_path: None
-INFO: Found module battery.C33 with layout_path: None
+INFO: Loading schematic data from /tmp/.tmpwW4Dy7/netlist.json
+INFO: Parsing JSON netlist from /tmp/.tmpwW4Dy7/netlist.json
+INFO: Found module cpu.C7 with layout_path: None
 INFO: Found module battery with layout_path: None
-INFO: Found module cpu.antenna.C4 with layout_path: None
-INFO: Found module battery.R4 with layout_path: None
-INFO: Found module cpu.L2 with layout_path: None
-INFO: Found module cpu.antenna with layout_path: None
-INFO: Found module cpu.C6 with layout_path: None
-INFO: Found module cpu.C9 with layout_path: None
-INFO: Found module hbt.C10 with layout_path: None
-INFO: Found module cpu.C1 with layout_path: None
-INFO: Found module batman with layout_path: None
+INFO: Found module mic with layout_path: None
+INFO: Found module cpu.X1 with layout_path: None
+INFO: Found module tmp with layout_path: None
+INFO: Found module cpu.antenna.L2 with layout_path: None
+INFO: Found module cpu with layout_path: None
 INFO: Found module tmp.C3 with layout_path: None
 INFO: Found module hbt.C8 with layout_path: None
-INFO: Found module cpu with layout_path: None
-INFO: Found module cpu.C4 with layout_path: None
-INFO: Found module cpu.X1 with layout_path: None
-INFO: Found module cpu.C12 with layout_path: None
-INFO: Found module imu.C5 with layout_path: None
-INFO: Found module tmp with layout_path: None
-INFO: Found module hbt.C11 with layout_path: None
-INFO: Found module vreg.C28 with layout_path: None
-INFO: Found module cpu.C5 with layout_path: None
-INFO: Found module batman.C34 with layout_path: None
-INFO: Found module battery.R3 with layout_path: None
-INFO: Found module cpu.antenna.L1 with layout_path: None
-INFO: Found module imu.C6 with layout_path: None
-INFO: Found module cpu.C7 with layout_path: None
-INFO: Found module vreg with layout_path: None
-INFO: Found module vreg.C50 with layout_path: None
-INFO: Found module imu with layout_path: None
-INFO: Found module cpu.C13 with layout_path: None
 INFO: Found module cpu.C10 with layout_path: None
-INFO: Found module mic.C26 with layout_path: None
-INFO: Found module cpu.antenna.L2 with layout_path: None
-INFO: Found module cpu.C11 with layout_path: None
-INFO: Found module R6 with layout_path: None
-INFO: Found module vreg.C27 with layout_path: None
-INFO: Found module hbt.C9 with layout_path: None
-INFO: Found module R1 with layout_path: None
-INFO: Found module cpu.C8 with layout_path: None
-INFO: Found module cpu.L1 with layout_path: None
-INFO: Found module cpu.antenna.C3 with layout_path: None
-INFO: Found module cpu.X2 with layout_path: None
-INFO: Found module TP1 with layout_path: None
-INFO: Found module batman.C11 with layout_path: None
 INFO: Found module imu.C7 with layout_path: None
-INFO: Found module hbt with layout_path: None
+INFO: Found module R6 with layout_path: None
+INFO: Found module cpu.C9 with layout_path: None
+INFO: Found module vreg.C27 with layout_path: None
+INFO: Found module hbt.C11 with layout_path: None
+INFO: Found module cpu.L1 with layout_path: None
+INFO: Found module cpu.C1 with layout_path: None
+INFO: Found module batman.C34 with layout_path: None
+INFO: Found module cpu.L2 with layout_path: None
+INFO: Found module cpu.X2 with layout_path: None
+INFO: Found module vreg.C50 with layout_path: None
 INFO: Found module batman.C4 with layout_path: None
+INFO: Found module batman.C11 with layout_path: None
+INFO: Found module cpu.antenna with layout_path: None
+INFO: Found module vreg.C28 with layout_path: None
+INFO: Found module cpu.antenna.C4 with layout_path: None
 INFO: Found module cpu.C2 with layout_path: None
+INFO: Found module imu with layout_path: None
+INFO: Found module hbt.C9 with layout_path: None
+INFO: Found module vreg with layout_path: None
+INFO: Found module cpu.antenna.C3 with layout_path: None
+INFO: Found module hbt with layout_path: None
+INFO: Found module cpu.C6 with layout_path: None
+INFO: Found module cpu.C12 with layout_path: None
+INFO: Found module cpu.C4 with layout_path: None
+INFO: Found module cpu.antenna.L1 with layout_path: None
+INFO: Found module battery.R3 with layout_path: None
+INFO: Found module imu.C6 with layout_path: None
+INFO: Found module cpu.C13 with layout_path: None
+INFO: Found module imu.C5 with layout_path: None
+INFO: Found module cpu.C5 with layout_path: None
+INFO: Found module batman with layout_path: None
+INFO: Found module battery.R4 with layout_path: None
+INFO: Found module cpu.C11 with layout_path: None
+INFO: Found module R1 with layout_path: None
+INFO: Found module mic.C26 with layout_path: None
+INFO: Found module battery.C33 with layout_path: None
+INFO: Found module hbt.C10 with layout_path: None
+INFO: Found module TP1 with layout_path: None
+INFO: Found module cpu.C8 with layout_path: None
 INFO: --------------------------------------------------------------------------------
 INFO: Running step: SetupBoard
 INFO: --------------------------------------------------------------------------------
@@ -67,152 +67,94 @@ INFO: --------------------------------------------------------------------------
 INFO: Starting ImportNetlist...
 DEBUG: Environment setup took 0.000 seconds
 DEBUG: Footprint library map loading took 0.001 seconds
-INFO: 0eabfc19-2f94-5e32-a124-2d617b24d696 (Y1): Updating metadata
-INFO: 20e16c33-b60e-5548-8f05-d489f521c8ad (C20): Updating metadata
-INFO: 38e7e301-dc39-5862-bc4b-b6fea9380161 (C26): Updating metadata
+INFO: ee68d577-cfe4-5ad4-abb1-926f6f0b3f09 (Q1): Updating metadata
+INFO: 167b18ae-6e9a-50ba-bac4-30d84832da0f (C4): Updating metadata
+INFO: bb1a363e-0250-5e18-a8ba-5d6cab5fd1fc (Q2): Updating metadata
+INFO: 3196de54-d670-51ec-86cd-4096fe36aca2 (C29): Updating metadata
+INFO: aee63c60-e7f8-55d6-a47f-49657dd7ba22 (C9): Updating metadata
+INFO: fbe92e9a-59bd-5512-b84c-1afa3474459d (C18): Updating metadata
+INFO: e7ebe672-e169-520a-a7ef-2b7b634c4638 (C7): Updating metadata
+INFO: dbcb03e4-8339-52a9-bae2-4eb4dd235c56 (C25): Updating metadata
+INFO: d527c2b8-3606-5386-bbed-5a45ed7b31a6 (R1): Updating metadata
+INFO: 5a5460de-0ec8-5a58-adba-0b2f2d6115d1 (TP1): Updating metadata
+INFO: e3f8af04-aa96-5287-8063-eb3ee7b408b6 (U6): Updating metadata
+INFO: f3cc2a80-3520-5d90-bbfe-b0ee0a3ab4c3 (U4): Updating metadata
+INFO: e4e1d187-9ca0-5a53-ba82-c700d40a53ca (R5): Updating metadata
+INFO: 93f94a35-099b-5eea-9243-a640a8819c49 (C27): Updating metadata
+INFO: 09093937-27d2-59fc-a076-dd07bf402e5c (C6): Updating metadata
 INFO: d764070e-82d7-5039-bce2-ab985bab38e4 (L2): Updating metadata
-INFO: 0dbf2a4e-154e-5776-ada1-d393ec718c93 (C14): Updating metadata
-INFO: 22799189-3654-5a2e-a713-f8775cec8e25 (C3): Updating metadata
+INFO: cdb2222f-f594-544c-8dc4-a9c59d6bd877 (C24): Updating metadata
+INFO: 1ede9d21-b2d6-5ccc-bd9a-ba80854b5432 (C21): Updating metadata
+INFO: a26a452f-5b49-5aa1-b218-e86dea99d17d (C16): Updating metadata
+INFO: 416ddbc4-8744-5d55-b101-44065736c16c (C19): Updating metadata
 INFO: 153876f6-7ede-569c-8d84-68fba1e36cac (C2): Updating metadata
-INFO: d0116d06-f51f-52e6-8fc4-a08a1d69ef09 (C11): Updating metadata
-INFO: 163eae90-bfbf-5c19-8d10-264cbcf087ec (L1): Updating metadata
-INFO: 199ae1c0-4261-5957-9ce4-45599981c23e (C13): Updating metadata
-INFO: 8af6d9cc-290d-5c92-8072-ab7bc0336f51 (MK1): Updating metadata
+INFO: 8ecdeb54-4f9b-55e8-991a-a5d84fb8fdb4 (R4): Updating metadata
+INFO: 59d4511c-fd6d-59a0-8a82-57f7670180de (C17): Updating metadata
+INFO: 7da687fc-0ee2-5b21-8e86-00ba7cb4806d (U5): Updating metadata
+INFO: 22799189-3654-5a2e-a713-f8775cec8e25 (C3): Updating metadata
 INFO: 8c1c7710-c072-5b96-a659-f3e473461043 (U3): Updating metadata
 INFO: 380516bc-4a6a-577c-bcc6-7f0ef97462c1 (U8): Updating metadata
-INFO: cdb2222f-f594-544c-8dc4-a9c59d6bd877 (C24): Updating metadata
-INFO: edb49511-de30-5815-9b59-0305e97593a9 (C1): Updating metadata
-INFO: 3196de54-d670-51ec-86cd-4096fe36aca2 (C29): Updating metadata
+INFO: 0eabfc19-2f94-5e32-a124-2d617b24d696 (Y1): Updating metadata
+INFO: f4a3fdcc-fee8-5d1d-93bb-f3df02d53599 (C28): Updating metadata
 INFO: a5271560-d25e-59d8-967e-4aaa1726453d (L4): Updating metadata
-INFO: f8c684c1-16c6-5af0-bb39-c9994e001b25 (J1): Updating metadata
 INFO: fb3cca66-5243-56c5-a653-6378be380f40 (U1): Updating metadata
-INFO: 80c9642f-46c5-5631-bf83-c1ea5a9b98f1 (U2): Updating metadata
-INFO: e7ebe672-e169-520a-a7ef-2b7b634c4638 (C7): Updating metadata
-INFO: e4e1d187-9ca0-5a53-ba82-c700d40a53ca (R5): Updating metadata
-INFO: a26a452f-5b49-5aa1-b218-e86dea99d17d (C16): Updating metadata
-INFO: 2c44b001-58bf-5185-affe-24e9ae1f8040 (R3): Updating metadata
-INFO: 167b18ae-6e9a-50ba-bac4-30d84832da0f (C4): Updating metadata
-INFO: 93f94a35-099b-5eea-9243-a640a8819c49 (C27): Updating metadata
-INFO: dbcb03e4-8339-52a9-bae2-4eb4dd235c56 (C25): Updating metadata
-INFO: 09093937-27d2-59fc-a076-dd07bf402e5c (C6): Updating metadata
 INFO: bf26c523-7924-5187-9103-f86a98452230 (U7): Updating metadata
-INFO: bb1a363e-0250-5e18-a8ba-5d6cab5fd1fc (Q2): Updating metadata
-INFO: ecefed9c-8e8d-5b9e-8f27-d8f757b0143a (C12): Updating metadata
-INFO: 7da687fc-0ee2-5b21-8e86-00ba7cb4806d (U5): Updating metadata
-INFO: fbe92e9a-59bd-5512-b84c-1afa3474459d (C18): Updating metadata
-INFO: f3cc2a80-3520-5d90-bbfe-b0ee0a3ab4c3 (U4): Updating metadata
 INFO: 19bdc466-beb6-56f1-8dc2-8304df35ec69 (C15): Updating metadata
+INFO: 6ed58d81-5652-58d5-8d58-a7d7e4bfdb10 (C23): Updating metadata
+INFO: 8af6d9cc-290d-5c92-8072-ab7bc0336f51 (MK1): Updating metadata
+INFO: 26d2bc06-2b3b-5925-a9c7-551ea3e2dab5 (C22): Updating metadata
+INFO: 80c9642f-46c5-5631-bf83-c1ea5a9b98f1 (U2): Updating metadata
+INFO: 20e16c33-b60e-5548-8f05-d489f521c8ad (C20): Updating metadata
+INFO: d0116d06-f51f-52e6-8fc4-a08a1d69ef09 (C11): Updating metadata
+INFO: 80d2b3f0-2f98-591f-b8dd-fc130ee4b327 (C5): Updating metadata
+INFO: edb49511-de30-5815-9b59-0305e97593a9 (C1): Updating metadata
+INFO: 9e949912-b10f-5667-bb8c-4bbdd6ff5bb7 (Y2): Updating metadata
+INFO: ecefed9c-8e8d-5b9e-8f27-d8f757b0143a (C12): Updating metadata
+INFO: 163eae90-bfbf-5c19-8d10-264cbcf087ec (L1): Updating metadata
+INFO: 4a6a413b-9c18-542a-88cc-ef04a41e5006 (C8): Updating metadata
+INFO: 199ae1c0-4261-5957-9ce4-45599981c23e (C13): Updating metadata
+INFO: 0dbf2a4e-154e-5776-ada1-d393ec718c93 (C14): Updating metadata
+INFO: 412ee531-6df4-5388-92bc-1d8c9dc60409 (BT1): Updating metadata
 INFO: a69e19c5-1806-5675-b11c-2e778912274c (R2): Updating metadata
 INFO: ab8cc31f-77b2-50c4-9604-d1d0ef7cd473 (C10): Updating metadata
-INFO: 416ddbc4-8744-5d55-b101-44065736c16c (C19): Updating metadata
-INFO: e3f8af04-aa96-5287-8063-eb3ee7b408b6 (U6): Updating metadata
-INFO: 1ede9d21-b2d6-5ccc-bd9a-ba80854b5432 (C21): Updating metadata
-INFO: 4a6a413b-9c18-542a-88cc-ef04a41e5006 (C8): Updating metadata
-INFO: 80d2b3f0-2f98-591f-b8dd-fc130ee4b327 (C5): Updating metadata
-INFO: d527c2b8-3606-5386-bbed-5a45ed7b31a6 (R1): Updating metadata
-INFO: aee63c60-e7f8-55d6-a47f-49657dd7ba22 (C9): Updating metadata
+INFO: f8c684c1-16c6-5af0-bb39-c9994e001b25 (J1): Updating metadata
+INFO: 2c44b001-58bf-5185-affe-24e9ae1f8040 (R3): Updating metadata
 INFO: 545cff0f-4285-5973-84c3-beb28c18cd33 (L3): Updating metadata
-INFO: 5a5460de-0ec8-5a58-adba-0b2f2d6115d1 (TP1): Updating metadata
-INFO: 412ee531-6df4-5388-92bc-1d8c9dc60409 (BT1): Updating metadata
-INFO: 26d2bc06-2b3b-5925-a9c7-551ea3e2dab5 (C22): Updating metadata
-INFO: 9e949912-b10f-5667-bb8c-4bbdd6ff5bb7 (Y2): Updating metadata
-INFO: 8ecdeb54-4f9b-55e8-991a-a5d84fb8fdb4 (R4): Updating metadata
-INFO: ee68d577-cfe4-5ad4-abb1-926f6f0b3f09 (Q1): Updating metadata
-INFO: 59d4511c-fd6d-59a0-8a82-57f7670180de (C17): Updating metadata
-INFO: 6ed58d81-5652-58d5-8d58-a7d7e4bfdb10 (C23): Updating metadata
-INFO: f4a3fdcc-fee8-5d1d-93bb-f3df02d53599 (C28): Updating metadata
-INFO: Footprint synchronization took 0.008 seconds
+INFO: 38e7e301-dc39-5862-bc4b-b6fea9380161 (C26): Updating metadata
+INFO: Footprint synchronization took 0.005 seconds
+INFO: Adding net swdclk
+INFO: Connecting pad U3/20 to net swdclk
+INFO: Connecting pad U6/1 to net swdclk
+INFO: Adding net batman.batman_vdd_out
+INFO: Connecting pad U1/B3 to net batman.batman_vdd_out
+INFO: Connecting pad C2/1 to net batman.batman_vdd_out
+INFO: Adding net NC_2
+INFO: Connecting pad U3/34 to net NC_2
+INFO: Adding net cpu.NC_2
+INFO: Connecting pad U3/11 to net cpu.NC_2
 INFO: Adding net cpu.dec1
 INFO: Connecting pad C12/1 to net cpu.dec1
 INFO: Connecting pad U3/1 to net cpu.dec1
-INFO: Adding net cpu.xl2
-INFO: Connecting pad Y2/3 to net cpu.xl2
-INFO: Connecting pad C11/1 to net cpu.xl2
-INFO: Connecting pad U3/3 to net cpu.xl2
-INFO: Adding net hbt.NC
-INFO: Connecting pad U4/1 to net hbt.NC
-INFO: Connecting pad U4/7 to net hbt.NC
-INFO: Connecting pad U4/8 to net hbt.NC
-INFO: Connecting pad U4/14 to net hbt.NC
-INFO: Connecting pad U4/6 to net hbt.NC
-INFO: Connecting pad U4/5 to net hbt.NC
-INFO: Adding net VBATT
-INFO: Connecting pad R5/1 to net VBATT
-INFO: Connecting pad BT1/1 to net VBATT
-INFO: Connecting pad U1/C3 to net VBATT
-INFO: Connecting pad C1/1 to net VBATT
-INFO: Connecting pad U8/3 to net VBATT
-INFO: Connecting pad U8/4 to net VBATT
-INFO: Connecting pad C27/1 to net VBATT
-INFO: Connecting pad U4/10 to net VBATT
-INFO: Connecting pad U4/9 to net VBATT
-INFO: Connecting pad C18/1 to net VBATT
-INFO: Connecting pad C19/1 to net VBATT
-INFO: Adding net cpu.NC_2
-INFO: Connecting pad U3/11 to net cpu.NC_2
-INFO: Adding net hbt_int
-INFO: Connecting pad U4/13 to net hbt_int
-INFO: Connecting pad U3/7 to net hbt_int
-INFO: Adding net battery.bat_vss
-INFO: Connecting pad U2/4 to net battery.bat_vss
-INFO: Connecting pad Q1/2 to net battery.bat_vss
-INFO: Connecting pad C3/2 to net battery.bat_vss
-INFO: Connecting pad BT1/2 to net battery.bat_vss
-INFO: Adding net battery.bat_vm
-INFO: Connecting pad U2/6 to net battery.bat_vm
-INFO: Connecting pad R4/1 to net battery.bat_vm
-INFO: Adding net mic_data
-INFO: Connecting pad MK1/1 to net mic_data
-INFO: Connecting pad U3/14 to net mic_data
-INFO: Adding net nfc1
-INFO: Connecting pad U3/22 to net nfc1
-INFO: Adding net cpu.dec3
-INFO: Connecting pad C13/1 to net cpu.dec3
-INFO: Connecting pad U3/27 to net cpu.dec3
-INFO: Adding net mic_clk
-INFO: Connecting pad MK1/3 to net mic_clk
-INFO: Connecting pad U3/15 to net mic_clk
+INFO: Adding net imu.NC
+INFO: Connecting pad U5/10 to net imu.NC
+INFO: Adding net imu.NC_2
+INFO: Connecting pad U5/11 to net imu.NC_2
 INFO: Adding net cpu.dec4_6
 INFO: Connecting pad C14/1 to net cpu.dec4_6
 INFO: Connecting pad C15/1 to net cpu.dec4_6
 INFO: Connecting pad L2/2 to net cpu.dec4_6
-INFO: Connecting pad U3/26 to net cpu.dec4_6
 INFO: Connecting pad U3/38 to net cpu.dec4_6
-INFO: Adding net cpu.NC_3
-INFO: Connecting pad U3/12 to net cpu.NC_3
-INFO: Adding net cpu.NC_4
-INFO: Connecting pad U3/13 to net cpu.NC_4
+INFO: Connecting pad U3/26 to net cpu.dec4_6
+INFO: Adding net battery.bat_cout
+INFO: Connecting pad U2/2 to net battery.bat_cout
+INFO: Connecting pad Q2/1 to net battery.bat_cout
 INFO: Adding net cpu.xout
 INFO: Connecting pad Y1/3 to net cpu.xout
 INFO: Connecting pad C9/1 to net cpu.xout
 INFO: Connecting pad U3/29 to net cpu.xout
-INFO: Adding net NC_4
-INFO: Connecting pad U3/36 to net NC_4
-INFO: Adding net cpu.dcc_mid
-INFO: Connecting pad L1/2 to net cpu.dcc_mid
-INFO: Connecting pad L2/1 to net cpu.dcc_mid
-INFO: Adding net cpu.ant
-INFO: Connecting pad L3/1 to net cpu.ant
-INFO: Connecting pad U3/24 to net cpu.ant
-INFO: Adding net NC
-INFO: Connecting pad U3/33 to net NC
-INFO: Adding net cpu.antenna.n2
-INFO: Connecting pad L4/2 to net cpu.antenna.n2
-INFO: Connecting pad C17/1 to net cpu.antenna.n2
-INFO: Connecting pad J1/1 to net cpu.antenna.n2
-INFO: Adding net NC_2
-INFO: Connecting pad U3/34 to net NC_2
-INFO: Adding net imu_int1
-INFO: Connecting pad U5/4 to net imu_int1
-INFO: Connecting pad U3/32 to net imu_int1
-INFO: Adding net battery.NC
-INFO: Connecting pad U2/1 to net battery.NC
-INFO: Adding net battery.bat_cout
-INFO: Connecting pad U2/2 to net battery.bat_cout
-INFO: Connecting pad Q2/1 to net battery.bat_cout
-INFO: Adding net battery.bat_qm
-INFO: Connecting pad Q1/3 to net battery.bat_qm
-INFO: Connecting pad Q2/3 to net battery.bat_qm
+INFO: Adding net batman.bin
+INFO: Connecting pad U1/B1 to net batman.bin
+INFO: Connecting pad R3/1 to net batman.bin
 INFO: Adding net sda
 INFO: Connecting pad U1/A2 to net sda
 INFO: Connecting pad U4/3 to net sda
@@ -220,33 +162,110 @@ INFO: Connecting pad U7/6 to net sda
 INFO: Connecting pad U5/14 to net sda
 INFO: Connecting pad R1/2 to net sda
 INFO: Connecting pad U3/5 to net sda
-INFO: Adding net batman.batman_vdd_out
-INFO: Connecting pad U1/B3 to net batman.batman_vdd_out
-INFO: Connecting pad C2/1 to net batman.batman_vdd_out
-INFO: Adding net battery.bat_dout
-INFO: Connecting pad U2/3 to net battery.bat_dout
-INFO: Connecting pad Q1/1 to net battery.bat_dout
-INFO: Adding net cpu.xl1
-INFO: Connecting pad Y2/1 to net cpu.xl1
-INFO: Connecting pad C10/1 to net cpu.xl1
-INFO: Connecting pad U3/2 to net cpu.xl1
-INFO: Adding net tmp_int
-INFO: Connecting pad U7/3 to net tmp_int
-INFO: Connecting pad U3/17 to net tmp_int
-INFO: Adding net nfc2
-INFO: Connecting pad U3/23 to net nfc2
+INFO: Adding net NC_3
+INFO: Connecting pad U3/35 to net NC_3
+INFO: Adding net battery.bat_qm
+INFO: Connecting pad Q1/3 to net battery.bat_qm
+INFO: Connecting pad Q2/3 to net battery.bat_qm
+INFO: Adding net cpu.antenna.n2
+INFO: Connecting pad L4/2 to net cpu.antenna.n2
+INFO: Connecting pad C17/1 to net cpu.antenna.n2
+INFO: Connecting pad J1/1 to net cpu.antenna.n2
+INFO: Adding net cpu.dcc
+INFO: Connecting pad L1/1 to net cpu.dcc
+INFO: Connecting pad U3/39 to net cpu.dcc
+INFO: Adding net cpu.NC_4
+INFO: Connecting pad U3/13 to net cpu.NC_4
 INFO: Adding net cpu.xin
 INFO: Connecting pad Y1/1 to net cpu.xin
 INFO: Connecting pad C4/1 to net cpu.xin
 INFO: Connecting pad U3/28 to net cpu.xin
-INFO: Adding net cpu.antenna.n1
-INFO: Connecting pad L3/2 to net cpu.antenna.n1
-INFO: Connecting pad C16/1 to net cpu.antenna.n1
-INFO: Connecting pad L4/1 to net cpu.antenna.n1
-INFO: Adding net imu.NC_2
-INFO: Connecting pad U5/11 to net imu.NC_2
-INFO: Adding net cpu.NC
-INFO: Connecting pad U3/21 to net cpu.NC
+INFO: Adding net battery.bat_vm
+INFO: Connecting pad U2/6 to net battery.bat_vm
+INFO: Connecting pad R4/1 to net battery.bat_vm
+INFO: Adding net rst
+INFO: Connecting pad TP1/1 to net rst
+INFO: Connecting pad U3/16 to net rst
+INFO: Adding net NC_4
+INFO: Connecting pad U3/36 to net NC_4
+INFO: Adding net cpu.NC_3
+INFO: Connecting pad U3/12 to net cpu.NC_3
+INFO: Adding net battery.NC
+INFO: Connecting pad U2/1 to net battery.NC
+INFO: Adding net bat_low
+INFO: Connecting pad U1/A1 to net bat_low
+INFO: Connecting pad U3/6 to net bat_low
+INFO: Adding net battery.bat2
+INFO: Connecting pad U2/5 to net battery.bat2
+INFO: Connecting pad R5/2 to net battery.bat2
+INFO: Connecting pad C3/1 to net battery.bat2
+INFO: Adding net GND
+INFO: Connecting pad Q2/2 to net GND
+INFO: Connecting pad R4/2 to net GND
+INFO: Connecting pad U1/B2 to net GND
+INFO: Connecting pad U1/C1 to net GND
+INFO: Connecting pad C1/2 to net GND
+INFO: Connecting pad C2/2 to net GND
+INFO: Connecting pad R3/2 to net GND
+INFO: Connecting pad U8/5 to net GND
+INFO: Connecting pad U8/2 to net GND
+INFO: Connecting pad C27/2 to net GND
+INFO: Connecting pad C28/2 to net GND
+INFO: Connecting pad C29/2 to net GND
+INFO: Connecting pad U4/12 to net GND
+INFO: Connecting pad U4/4 to net GND
+INFO: Connecting pad C20/2 to net GND
+INFO: Connecting pad C21/2 to net GND
+INFO: Connecting pad C18/2 to net GND
+INFO: Connecting pad C19/2 to net GND
+INFO: Connecting pad U7/2 to net GND
+INFO: Connecting pad C26/2 to net GND
+INFO: Connecting pad MK1/4 to net GND
+INFO: Connecting pad MK1/5 to net GND
+INFO: Connecting pad C25/2 to net GND
+INFO: Connecting pad U5/3 to net GND
+INFO: Connecting pad U5/6 to net GND
+INFO: Connecting pad U5/7 to net GND
+INFO: Connecting pad U5/1 to net GND
+INFO: Connecting pad U5/2 to net GND
+INFO: Connecting pad C22/2 to net GND
+INFO: Connecting pad C23/2 to net GND
+INFO: Connecting pad C24/2 to net GND
+INFO: Connecting pad Y1/4 to net GND
+INFO: Connecting pad Y1/2 to net GND
+INFO: Connecting pad C4/2 to net GND
+INFO: Connecting pad C9/2 to net GND
+INFO: Connecting pad Y2/2 to net GND
+INFO: Connecting pad Y2/4 to net GND
+INFO: Connecting pad C10/2 to net GND
+INFO: Connecting pad C11/2 to net GND
+INFO: Connecting pad C16/2 to net GND
+INFO: Connecting pad C17/2 to net GND
+INFO: Connecting pad J1/2 to net GND
+INFO: Connecting pad C12/2 to net GND
+INFO: Connecting pad C13/2 to net GND
+INFO: Connecting pad C14/2 to net GND
+INFO: Connecting pad C15/2 to net GND
+INFO: Connecting pad C5/2 to net GND
+INFO: Connecting pad C6/2 to net GND
+INFO: Connecting pad C7/2 to net GND
+INFO: Connecting pad C8/2 to net GND
+INFO: Connecting pad U3/10 to net GND
+INFO: Connecting pad U3/25 to net GND
+INFO: Connecting pad U3/37 to net GND
+INFO: Connecting pad U3/41 to net GND
+INFO: Connecting pad U6/2 to net GND
+INFO: Adding net cpu.dcc_mid
+INFO: Connecting pad L1/2 to net cpu.dcc_mid
+INFO: Connecting pad L2/1 to net cpu.dcc_mid
+INFO: Adding net NC
+INFO: Connecting pad U3/33 to net NC
+INFO: Adding net imu_int2
+INFO: Connecting pad U5/9 to net imu_int2
+INFO: Connecting pad U3/31 to net imu_int2
+INFO: Adding net mic_clk
+INFO: Connecting pad MK1/3 to net mic_clk
+INFO: Connecting pad U3/15 to net mic_clk
 INFO: Adding net VDD
 INFO: Connecting pad U1/C2 to net VDD
 INFO: Connecting pad U8/1 to net VDD
@@ -272,90 +291,77 @@ INFO: Connecting pad C5/1 to net VDD
 INFO: Connecting pad C6/1 to net VDD
 INFO: Connecting pad C7/1 to net VDD
 INFO: Connecting pad C8/1 to net VDD
+INFO: Connecting pad U3/9 to net VDD
 INFO: Connecting pad U3/18 to net VDD
 INFO: Connecting pad U3/30 to net VDD
 INFO: Connecting pad U3/40 to net VDD
 INFO: Connecting pad U3/8 to net VDD
-INFO: Connecting pad U3/9 to net VDD
-INFO: Adding net batman.bin
-INFO: Connecting pad U1/B1 to net batman.bin
-INFO: Connecting pad R3/1 to net batman.bin
-INFO: Adding net battery.bat2
-INFO: Connecting pad U2/5 to net battery.bat2
-INFO: Connecting pad R5/2 to net battery.bat2
-INFO: Connecting pad C3/1 to net battery.bat2
-INFO: Adding net imu.NC
-INFO: Connecting pad U5/10 to net imu.NC
-INFO: Adding net NC_3
-INFO: Connecting pad U3/35 to net NC_3
-INFO: Adding net cpu.dcc
-INFO: Connecting pad L1/1 to net cpu.dcc
-INFO: Connecting pad U3/39 to net cpu.dcc
-INFO: Adding net imu_int2
-INFO: Connecting pad U5/9 to net imu_int2
-INFO: Connecting pad U3/31 to net imu_int2
-INFO: Adding net GND
-INFO: Connecting pad Q2/2 to net GND
-INFO: Connecting pad R4/2 to net GND
-INFO: Connecting pad U1/B2 to net GND
-INFO: Connecting pad U1/C1 to net GND
-INFO: Connecting pad C1/2 to net GND
-INFO: Connecting pad C2/2 to net GND
-INFO: Connecting pad R3/2 to net GND
-INFO: Connecting pad U8/2 to net GND
-INFO: Connecting pad U8/5 to net GND
-INFO: Connecting pad C27/2 to net GND
-INFO: Connecting pad C28/2 to net GND
-INFO: Connecting pad C29/2 to net GND
-INFO: Connecting pad U4/4 to net GND
-INFO: Connecting pad U4/12 to net GND
-INFO: Connecting pad C20/2 to net GND
-INFO: Connecting pad C21/2 to net GND
-INFO: Connecting pad C18/2 to net GND
-INFO: Connecting pad C19/2 to net GND
-INFO: Connecting pad U7/2 to net GND
-INFO: Connecting pad C26/2 to net GND
-INFO: Connecting pad MK1/4 to net GND
-INFO: Connecting pad MK1/5 to net GND
-INFO: Connecting pad C25/2 to net GND
-INFO: Connecting pad U5/6 to net GND
-INFO: Connecting pad U5/7 to net GND
-INFO: Connecting pad U5/3 to net GND
-INFO: Connecting pad U5/2 to net GND
-INFO: Connecting pad U5/1 to net GND
-INFO: Connecting pad C22/2 to net GND
-INFO: Connecting pad C23/2 to net GND
-INFO: Connecting pad C24/2 to net GND
-INFO: Connecting pad Y1/2 to net GND
-INFO: Connecting pad Y1/4 to net GND
-INFO: Connecting pad C4/2 to net GND
-INFO: Connecting pad C9/2 to net GND
-INFO: Connecting pad Y2/4 to net GND
-INFO: Connecting pad Y2/2 to net GND
-INFO: Connecting pad C10/2 to net GND
-INFO: Connecting pad C11/2 to net GND
-INFO: Connecting pad C16/2 to net GND
-INFO: Connecting pad C17/2 to net GND
-INFO: Connecting pad J1/2 to net GND
-INFO: Connecting pad C12/2 to net GND
-INFO: Connecting pad C13/2 to net GND
-INFO: Connecting pad C14/2 to net GND
-INFO: Connecting pad C15/2 to net GND
-INFO: Connecting pad C5/2 to net GND
-INFO: Connecting pad C6/2 to net GND
-INFO: Connecting pad C7/2 to net GND
-INFO: Connecting pad C8/2 to net GND
-INFO: Connecting pad U3/37 to net GND
-INFO: Connecting pad U3/41 to net GND
-INFO: Connecting pad U3/25 to net GND
-INFO: Connecting pad U3/10 to net GND
-INFO: Connecting pad U6/2 to net GND
-INFO: Adding net bat_low
-INFO: Connecting pad U1/A1 to net bat_low
-INFO: Connecting pad U3/6 to net bat_low
-INFO: Adding net rst
-INFO: Connecting pad TP1/1 to net rst
-INFO: Connecting pad U3/16 to net rst
+INFO: Adding net battery.bat_vss
+INFO: Connecting pad U2/4 to net battery.bat_vss
+INFO: Connecting pad Q1/2 to net battery.bat_vss
+INFO: Connecting pad C3/2 to net battery.bat_vss
+INFO: Connecting pad BT1/2 to net battery.bat_vss
+INFO: Adding net hbt.NC
+INFO: Connecting pad U4/1 to net hbt.NC
+INFO: Connecting pad U4/7 to net hbt.NC
+INFO: Connecting pad U4/8 to net hbt.NC
+INFO: Connecting pad U4/14 to net hbt.NC
+INFO: Connecting pad U4/6 to net hbt.NC
+INFO: Connecting pad U4/5 to net hbt.NC
+INFO: Adding net cpu.NC
+INFO: Connecting pad U3/21 to net cpu.NC
+INFO: Adding net cpu.xl2
+INFO: Connecting pad Y2/3 to net cpu.xl2
+INFO: Connecting pad C11/1 to net cpu.xl2
+INFO: Connecting pad U3/3 to net cpu.xl2
+INFO: Adding net cpu.ant
+INFO: Connecting pad L3/1 to net cpu.ant
+INFO: Connecting pad U3/24 to net cpu.ant
+INFO: Adding net cpu.antenna.n1
+INFO: Connecting pad L3/2 to net cpu.antenna.n1
+INFO: Connecting pad C16/1 to net cpu.antenna.n1
+INFO: Connecting pad L4/1 to net cpu.antenna.n1
+INFO: Adding net hbt_int
+INFO: Connecting pad U4/13 to net hbt_int
+INFO: Connecting pad U3/7 to net hbt_int
+INFO: Adding net nfc1
+INFO: Connecting pad U3/22 to net nfc1
+INFO: Adding net nfc2
+INFO: Connecting pad U3/23 to net nfc2
+INFO: Adding net swdio
+INFO: Connecting pad U3/19 to net swdio
+INFO: Connecting pad U6/3 to net swdio
+INFO: Adding net cpu.dec3
+INFO: Connecting pad C13/1 to net cpu.dec3
+INFO: Connecting pad U3/27 to net cpu.dec3
+INFO: Adding net tmp_int
+INFO: Connecting pad U7/3 to net tmp_int
+INFO: Connecting pad U3/17 to net tmp_int
+INFO: Adding net cpu.xl1
+INFO: Connecting pad Y2/1 to net cpu.xl1
+INFO: Connecting pad C10/1 to net cpu.xl1
+INFO: Connecting pad U3/2 to net cpu.xl1
+INFO: Adding net mic_data
+INFO: Connecting pad MK1/1 to net mic_data
+INFO: Connecting pad U3/14 to net mic_data
+INFO: Adding net imu_int1
+INFO: Connecting pad U5/4 to net imu_int1
+INFO: Connecting pad U3/32 to net imu_int1
+INFO: Adding net battery.bat_dout
+INFO: Connecting pad U2/3 to net battery.bat_dout
+INFO: Connecting pad Q1/1 to net battery.bat_dout
+INFO: Adding net VBATT
+INFO: Connecting pad R5/1 to net VBATT
+INFO: Connecting pad BT1/1 to net VBATT
+INFO: Connecting pad U1/C3 to net VBATT
+INFO: Connecting pad C1/1 to net VBATT
+INFO: Connecting pad U8/4 to net VBATT
+INFO: Connecting pad U8/3 to net VBATT
+INFO: Connecting pad C27/1 to net VBATT
+INFO: Connecting pad U4/10 to net VBATT
+INFO: Connecting pad U4/9 to net VBATT
+INFO: Connecting pad C18/1 to net VBATT
+INFO: Connecting pad C19/1 to net VBATT
 INFO: Adding net scl
 INFO: Connecting pad U1/A3 to net scl
 INFO: Connecting pad U4/2 to net scl
@@ -363,21 +369,15 @@ INFO: Connecting pad U7/1 to net scl
 INFO: Connecting pad U5/13 to net scl
 INFO: Connecting pad R2/2 to net scl
 INFO: Connecting pad U3/4 to net scl
-INFO: Adding net swdclk
-INFO: Connecting pad U3/20 to net swdclk
-INFO: Connecting pad U6/1 to net swdclk
-INFO: Adding net swdio
-INFO: Connecting pad U3/19 to net swdio
-INFO: Connecting pad U6/3 to net swdio
-INFO: Net synchronization took 0.005 seconds
+INFO: Net synchronization took 0.004 seconds
 DEBUG: Will create group battery with 7 children
+DEBUG: Will create group hbt with 5 children
+DEBUG: Will create group cpu.antenna with 5 children
+DEBUG: Will create group batman with 4 children
 DEBUG: Will create group cpu with 18 children
 DEBUG: Will create group mic with 2 children
 DEBUG: Will create group imu with 4 children
-DEBUG: Will create group cpu.antenna with 5 children
-DEBUG: Will create group hbt with 5 children
 DEBUG: Will create group tmp with 2 children
-DEBUG: Will create group batman with 4 children
 DEBUG: Will create group vreg with 4 children
 INFO: Using existing group: batman
 INFO: Using existing group: battery
@@ -388,56 +388,56 @@ INFO: Using existing group: imu
 INFO: Using existing group: mic
 INFO: Using existing group: tmp
 INFO: Using existing group: vreg
-DEBUG: Added U5 to group imu
-DEBUG: Added C3 to group battery
-DEBUG: Added C1 to group batman
-DEBUG: Added L1 to group cpu
-DEBUG: Added C2 to group batman
-DEBUG: Added U8 to group vreg
-DEBUG: Added C10 to group cpu
-DEBUG: Added C13 to group cpu
-DEBUG: Added R4 to group battery
-DEBUG: Added C20 to group hbt
-DEBUG: Added Y2 to group cpu
-DEBUG: Added C19 to group hbt
-DEBUG: Added BT1 to group battery
-DEBUG: Added C22 to group imu
-DEBUG: Added C7 to group cpu
-DEBUG: Added Q2 to group battery
-DEBUG: Added C18 to group hbt
-DEBUG: Added C11 to group cpu
-DEBUG: Added C27 to group vreg
+DEBUG: Added C29 to group vreg
+DEBUG: Added J1 to group cpu.antenna
 DEBUG: Added R3 to group batman
-DEBUG: Added U1 to group batman
+DEBUG: Added Q2 to group battery
+DEBUG: Added C13 to group cpu
+DEBUG: Added C24 to group imu
+DEBUG: Added C3 to group battery
 DEBUG: Added C14 to group cpu
-DEBUG: Added C26 to group tmp
-DEBUG: Added L3 to group cpu.antenna
-DEBUG: Added Y1 to group cpu
-DEBUG: Added C8 to group cpu
-DEBUG: Added MK1 to group mic
+DEBUG: Added U1 to group batman
 DEBUG: Added R5 to group battery
-DEBUG: Added C23 to group imu
-DEBUG: Added L2 to group cpu
-DEBUG: Added C6 to group cpu
+DEBUG: Added L1 to group cpu
+DEBUG: Added C1 to group batman
+DEBUG: Added R4 to group battery
+DEBUG: Added U7 to group tmp
+DEBUG: Added U8 to group vreg
+DEBUG: Added Y2 to group cpu
+DEBUG: Added Y1 to group cpu
+DEBUG: Added C20 to group hbt
+DEBUG: Added C16 to group cpu.antenna
+DEBUG: Added C26 to group tmp
+DEBUG: Added C19 to group hbt
+DEBUG: Added L4 to group cpu.antenna
+DEBUG: Added C4 to group cpu
+DEBUG: Added U5 to group imu
 DEBUG: Added U3 to group cpu
 DEBUG: Added C28 to group vreg
 DEBUG: Added U2 to group battery
-DEBUG: Added C24 to group imu
-DEBUG: Added C16 to group cpu.antenna
-DEBUG: Added C29 to group vreg
-DEBUG: Added Q1 to group battery
-DEBUG: Added J1 to group cpu.antenna
-DEBUG: Added C21 to group hbt
-DEBUG: Added C4 to group cpu
 DEBUG: Added C9 to group cpu
-DEBUG: Added C17 to group cpu.antenna
-DEBUG: Added C25 to group mic
-DEBUG: Added C12 to group cpu
-DEBUG: Added U7 to group tmp
-DEBUG: Added L4 to group cpu.antenna
-DEBUG: Added U4 to group hbt
+DEBUG: Added C27 to group vreg
+DEBUG: Added C11 to group cpu
+DEBUG: Added C10 to group cpu
 DEBUG: Added C5 to group cpu
+DEBUG: Added C23 to group imu
+DEBUG: Added U4 to group hbt
+DEBUG: Added Q1 to group battery
+DEBUG: Added L3 to group cpu.antenna
+DEBUG: Added C22 to group imu
+DEBUG: Added C25 to group mic
+DEBUG: Added BT1 to group battery
+DEBUG: Added C17 to group cpu.antenna
+DEBUG: Added C12 to group cpu
+DEBUG: Added MK1 to group mic
 DEBUG: Added C15 to group cpu
+DEBUG: Added C7 to group cpu
+DEBUG: Added C18 to group hbt
+DEBUG: Added C21 to group hbt
+DEBUG: Added L2 to group cpu
+DEBUG: Added C6 to group cpu
+DEBUG: Added C2 to group batman
+DEBUG: Added C8 to group cpu
 INFO: Group synchronization took 0.003 seconds
 DEBUG: Board refresh took 0.000 seconds
 INFO: Virtual DOM building took 0.002 seconds
@@ -447,8 +447,8 @@ INFO: Board VirtualBoundingBox(x=118200000, y=79922500, width=49650000, height=6
     R1.R (R_0201_0603Metric:R_0201_0603Metric) VirtualBoundingBox(x=148525000, y=82425000, width=1450000, height=750000)
   R6 VirtualBoundingBox(x=149925000, y=82425000, width=1450000, height=750000)
     R6.R (R_0201_0603Metric:R_0201_0603Metric) VirtualBoundingBox(x=149925000, y=82425000, width=1450000, height=750000)
-  TP1 VirtualBoundingBox(x=146225000, y=81375000, width=2050000, height=2050000)
-    TP1.TP (TestPoint_Pad_D1.0mm:TestPoint_Pad_D1.0mm) VirtualBoundingBox(x=146225000, y=81375000, width=2050000, height=2050000)
+  TP1 VirtualBoundingBox(x=135525000, y=80225000, width=2050000, height=2050000)
+    TP1.TP (TestPoint_Pad_D1.0mm:TestPoint_Pad_D1.0mm) VirtualBoundingBox(x=135525000, y=80225000, width=2050000, height=2050000)
   batman VirtualBoundingBox(x=161777500, y=79987500, width=5850000, height=3650000)
     batman.C11 VirtualBoundingBox(x=166877500, y=80237500, width=750000, height=1450000)
       batman.C11.R (R_0201_0603Metric:R_0201_0603Metric) VirtualBoundingBox(x=166877500, y=80237500, width=750000, height=1450000)
@@ -473,8 +473,8 @@ INFO: Board VirtualBoundingBox(x=118200000, y=79922500, width=49650000, height=6
       cpu.C1.C (C_0201_0603Metric:C_0201_0603Metric) VirtualBoundingBox(x=135475000, y=82275000, width=750000, height=1450000)
     cpu.C10 VirtualBoundingBox(x=144245000, y=80045000, width=3010000, height=1510000)
       cpu.C10.C (C_0603_1608Metric:C_0603_1608Metric) VirtualBoundingBox(x=144245000, y=80045000, width=3010000, height=1510000)
-    cpu.C11 VirtualBoundingBox(x=146715000, y=84165000, width=970000, height=1870000)
-      cpu.C11.C (C_0402_1005Metric:C_0402_1005Metric) VirtualBoundingBox(x=146715000, y=84165000, width=970000, height=1870000)
+    cpu.C11 VirtualBoundingBox(x=146765000, y=84165000, width=970000, height=1870000)
+      cpu.C11.C (C_0402_1005Metric:C_0402_1005Metric) VirtualBoundingBox(x=146765000, y=84165000, width=970000, height=1870000)
     cpu.C12 VirtualBoundingBox(x=136975000, y=85275000, width=1450000, height=750000)
       cpu.C12.C (C_0201_0603Metric:C_0201_0603Metric) VirtualBoundingBox(x=136975000, y=85275000, width=1450000, height=750000)
     cpu.C13 VirtualBoundingBox(x=136975000, y=80175000, width=1450000, height=750000)
@@ -553,7 +553,7 @@ INFO: Board VirtualBoundingBox(x=118200000, y=79922500, width=49650000, height=6
   Graphic:PCB_SHAPE VirtualBoundingBox(x=118200000, y=80200000, width=49650000, height=100000)
   Graphic:PCB_SHAPE VirtualBoundingBox(x=118200000, y=85900000, width=49650000, height=100000)
   Graphic:PCB_SHAPE VirtualBoundingBox(x=118225000, y=79975000, width=49600000, height=6250000)
-INFO: Completed ImportNetlist in 0.023 seconds
+INFO: Completed ImportNetlist in 0.018 seconds
 INFO: --------------------------------------------------------------------------------
 INFO: Running step: SyncLayouts
 INFO: --------------------------------------------------------------------------------
@@ -623,13 +623,7 @@ INFO: Running step: FinalizeBoard
 INFO: --------------------------------------------------------------------------------
 INFO: Starting FinalizeBoard...
 INFO: Saved layout snapshot to /home/dezash/projects/ring/pcbs/ring/layout/snapshot.layout.json
-INFO: Snapshot export took 0.134 seconds
-INFO: Board saving took 0.012 seconds
-INFO: Completed FinalizeBoard in 0.152 seconds
-SPLIT: 'sda' (6 pads) split into:
-  -> 'sda' (5 pads, 83.3%)
-  -> 'scl' (1 pads, 16.7%)
-SPLIT: 'scl' (6 pads) split into:
-  -> 'scl' (5 pads, 83.3%)
-  -> 'sda' (1 pads, 16.7%)
-SUMMARY: 47 unchanged, 0 renamed, 2 split
+INFO: Snapshot export took 0.090 seconds
+INFO: Board saving took 0.018 seconds
+INFO: Completed FinalizeBoard in 0.115 seconds
+SUMMARY: 49 unchanged, 0 renamed, 0 split
