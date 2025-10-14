@@ -15,7 +15,7 @@ Component(
     "GND": gnd,
     "Pad": gnd,
   },
-  mpn = "TPS7A2018PDQN"
+  mpn = "TPS7A2033PDQNR"
 )
 
 C(
