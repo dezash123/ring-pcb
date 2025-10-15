@@ -17,7 +17,6 @@ battery = Module("battery.zen")
 battery(
   name = "battery",
   vbatt = vbatt,
-  gnd = gnd,
 )
 
 bat_low = Net("bat_low")
@@ -30,14 +29,6 @@ batman(
   sda = sda,
   scl = scl,
   int = bat_low,
-  gnd = gnd,
-)
-
-vreg = Module("vreg.zen")
-vreg(
-  name = "vreg",
-  vbatt = vbatt,
-  vdd = vdd,
   gnd = gnd,
 )
 

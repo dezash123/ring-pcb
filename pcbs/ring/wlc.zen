@@ -1,0 +1,89 @@
+load("@stdlib/interfaces.zen", "Power", "Ground", "I2c", "Gpio", "NotConnected")
+C = Module("@stdlib/generics/Capacitor.zen")
+R = Module("@stdlib/generics/Resistor.zen")
+TestPoint = Module("@stdlib/generics/TestPoint.zen")
+
+bat_p   = io("bat_p", Net)         # raw pouch + tab
+bat_n   = io("bat_n", Net)         # raw pouch - tab
+vbatt   = io("vbatt", Net)         # internal battery rail into PTX30W (after startup switch)
+coil_p  = Net("coil_p")
+coil_n  = Net("coil_n")
+v3v3    = io("v3v3", Net)          # regulated 3.3V from VDMCU (up to 50 mA)
+gnd     = io("gnd")
+
+sda     = io("sda", Net)
+scl     = io("scl", Net)
+irq     = io("irq", Net)
+gpo0    = io("gpo0", Net)          # also used to control startup switch EN
+gpo1    = io("gpo1", Net)
+sm      = io("sm_btn", Net)        # shipping-mode pushbutton input (active-low)
+
+vddc    = Net("vddc")              # unregulated system bus (limited ~5.2V)
+vdbufc  = Net("vdbufc")            # rectifier buffer capacitor node
+ntc     = Net("ntc_sense")
+
+# -------- Mandatory startup circuit (tiny load switch between BAT and VBATT; GPO0 -> EN)
+# Use a small DFN load switch; example SLG59M1558V-like pinout (replace with your exact part)
+Component(
+  name = "U_START",
+  footprint = File("@kicad-footprints/Package_DFN_QFN.pretty/DFN-6-1.2x1.6mm_P0.4mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Power_Management.kicad_sym:Load_Switch"),
+  pins = {
+    "VIN": bat_p,
+    "VOUT": vbatt,
+    "EN": gpo0,           # PTX30W GPO_0 controls attach per integration manual
+    "GND": gnd,
+    "NC1": NotConnected(),
+    "NC2": NotConnected(),
+  },
+  mpn = "DFN_LoadSwitch_Example"
+)
+
+# SM pin pull-up to VBATT; press-to-GND enters/exits shipping mode
+R("R_SM", "1MOhm", "0402", P1=vbatt, P2=sm)
+TestPoint("TP_SM", variant="Pad_D1.0mm", P1=sm)
+
+# -------- PTX30W WL-CSP16 (0.4mm pitch). Pins per datasheet.
+Component(
+  name = "U_PTX30W",
+  footprint = File("@kicad-footprints/Package_BGA.pretty/BGA-16_1.78x1.78mm_P0.4mm.kicad_mod"),
+  symbol = Symbol("@kicad-symbols/Interface_Wireless.kicad_sym:PTX30W"),
+  pins = {
+    # Row A
+    "VDBAT": vbatt,     # internal battery node after startup switch
+    "VDDC":  vddc,
+    "VDBUFC": vdbufc,
+    "RF1":   coil_p,
+    # Row B
+    "VDMCU": v3v3,      # 3.3V MCU LDO OUT (variant configured to 3V3)
+    "NTC":   ntc,
+    "VS":    gnd,
+    "RF2":   coil_n,
+    # Row C
+    "SM":    sm,
+    "GPO_0": gpo0,
+    "GPO_1": gpo1,
+    "NC":    NotConnected(),
+    # Row D
+    "SCL":   scl,
+    "IRQ":   irq,
+    "SDA":   sda,
+    "NC2":   NotConnected(),
+  },
+  mpn = "PTX30WCC16D7A2"
+)
+
+# -------- RF matching placeholders (keep tiny; tune to your coil @ 13.56 MHz)
+# Start simple: a differential series C and two shunt Cs; all C0G, ≥50V (single-ended), ≥100V (diff lines)
+C("C_RF_SER",  "150pF", "0402", voltage="100V", P1=coil_p, P2=coil_n)
+C("C_RF_P_G",  "1nF",   "0402", voltage="50V",  P1=coil_p, P2=gnd)
+C("C_RF_N_G",  "1nF",   "0402", voltage="50V",  P1=coil_n, P2=gnd)
+
+# -------- Buffer & decoupling (minimum set per docs)
+C("C_VBUF",  "4.7uF", "0402", voltage="10V", P1=vdbufc,  P2=gnd)     # keeps analog alive during modulation gaps
+C("C_VDDC1","10uF",  "0402", voltage="10V", P1=vddc, P2=gnd)
+C("C_VDDC2","100nF", "0402", voltage="10V", P1=vddc, P2=gnd)
+C("C_VDMCU","4.7uF", "0402", voltage="6.3V", P1=v3v3, P2=gnd)
+C("C_VDMCU2","100nF","0402", voltage="6.3V", P1=v3v3, P2=gnd)
+
+R("R_NTC_ALT", "10kOhm", "0201", P1=ntc, P2=gnd)
