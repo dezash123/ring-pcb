@@ -26,7 +26,7 @@ bq27427 = Symbol(
 
 Component(
   name = "U6",
-  footprint = File("@kicad-footprints/Package_BGA.pretty/BGA-9_1.6x1.6mm_Layout3x3_P0.5mm.kicad_mod"),
+  footprint = File("BGA-9_1.6x1.6mm_Layout3x3_P0.5mm.kicad_mod"),
   symbol = bq27427,
   pins = {
     "SRX": vdd,
