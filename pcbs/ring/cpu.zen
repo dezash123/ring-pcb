@@ -29,13 +29,40 @@ p109 = io("p109", Net)  # P1.09
 
 xin  = Net("xin")
 xout = Net("xout")
-Y(name="X1", frequency="32MHz", package="1210_4Pin", XIN=xin, XOUT=xout, GND=gnd, mpn="8J32076001")
+clk = Symbol(
+    definition = [
+        ("XIN", ["1"]),
+        ("GND", ["2"]),
+        ("XOUT", ["3"]),
+    ]
+)
+Component(
+  name = "Y1",
+  footprint = File("@kicad-footprints/Crystal.pretty/Crystal_SMD_1210-4Pin_1.2x1.0mm.kicad_mod"),
+  symbol = clk,
+  pins = {
+    "XIN": xin,
+    "XOUT": xout,
+    "GND": gnd,
+  },
+  mpn = "8J32076001"
+)
 C(name="C1", value="5pF", package="0201", P1=xin, P2=gnd)
 C(name="C2", value="5pF", package="0201", P1=xout, P2=gnd)
 
 xl1 = Net("xl1")
 xl2 = Net("xl2")
-Y(name="X2", frequency="32.768kHz", package="1210_4Pin", XIN=xl1, XOUT=xl2, GND=gnd, mpn="3110M4-32.768DTTLLLL")
+Component(
+  name = "Y2",
+  footprint = File("@kicad-footprints/Crystal.pretty/Crystal_SMD_1210-4Pin_1.2x1.0mm.kicad_mod"),
+  symbol = clk,
+  pins = {
+    "XIN": xl1,
+    "XOUT": xl2,
+    "GND": gnd,
+  },
+  mpn = "3110M4-32.768DTTLLLL"
+)
 C(name="C4", value="12pF", package="0201", P1=xl1, P2=gnd)
 C(name="C5", value="12pF", package="0201", P1=xl2, P2=gnd)
 
